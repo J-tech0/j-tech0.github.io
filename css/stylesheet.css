@@ -17,6 +17,7 @@
     --color5: #293437;    /*dark grey-blue*/
     outline: none !important;
     scroll-behavior: smooth;
+    text-size-adjust: none;
 }
 
 /*between-page animations*/
@@ -352,6 +353,7 @@ h1 {
     font-weight: 700;
     margin: 10px 0px;
     word-break: break-word;
+    max-width: 100%;
 }
 
 h2 {
@@ -361,6 +363,7 @@ h2 {
     font-weight: 400;
     margin: 10px 0px;
     word-break: break-word;
+    max-width: 100%;
 }
 
 h3 {
@@ -370,6 +373,7 @@ h3 {
     font-weight: 300;
     margin: 20px 0px;
     word-break: break-word;
+    max-width: 100%;
 }
 
 h4 {
@@ -439,7 +443,7 @@ h4 {
     border-radius: 50%;
 }
 .flexitemteam h3 {
-    margin: 10px 0px;
+    margin: 10px 1px;
 }
 .flexitemteam h4 {
     visibility: hidden;
@@ -645,8 +649,11 @@ h4 {
         display: none !important;
     }
     .flexitemteam {
-        width: 150px;
-        height: 320px;
+        width: 180px;
+        height: 360px;
+    }
+    .flexitemteam img{
+        width: 180px;
     }
     .flexcontainer img {
         order: 0;
