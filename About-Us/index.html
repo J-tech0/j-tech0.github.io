@@ -1,4 +1,4 @@
-<html> <!-- It's an HTML document yay. Welcome. -->
+<html>
     <head> <!-- Head meta stuff in here -->
         <title>SWG - About Us</title> <!-- Page title. Quite important -->
         <!-- Description Meta etc ok i'll stop commenting every line -->
@@ -10,7 +10,7 @@
         <meta name="application-name" content="SynergySolutions">
     
         <!-- Overall style code, fonts, CSS file -->
-        <link rel="stylesheet" href="/css/stylesheet.css?v=cache3765">
+        <link rel="stylesheet" href="/css/stylesheet.css?v=cache5485">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap" rel="stylesheet">
         
         <!-- Logo Code -->
@@ -29,6 +29,8 @@
         <!--import swup library for those smooth transitions and magical page preloading-->
         <script defer src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>
         <script defer src="/js/script.js"></script>
+
+        <meta name="google-site-verification" content="r_VWCdwGioAISApKdbFcDT59EZG-pFP-oCXlhbhvQSY" />
     </head>
     <body>
 
@@ -45,7 +47,7 @@
         <div class="topbar"> <!-- Topbar -->
             <div class="menubtn" onclick="doMenu()"> <!-- This is the button to open the sidenav -->
                 <div class="bar1"></div>
-                <div class="bar2"></div> <!-- These are the button bits -->
+                <div class="bar2"></div> <!-- These are the button bits so we can have nice animations -->
                 <div class="bar3"></div>
             </div>
             <img src="/media/logos/SynSolLogoWide.svg" class="logo"> <!-- logo for topbar -->
@@ -66,6 +68,9 @@
                 </div>
                 <div>
                     <a href="/Contact/" onclick="navClose()">Contact</a>
+                </div>
+                <div>
+                    <a href="/Internships/" onclick="navClose()">Internships</a>
                 </div>
             </div> <!-- end of the sidemenu links -->
 
@@ -132,23 +137,37 @@
                     <div>
                         <a href="/Contact/">Contact</a>
                     </div>
+                    <div>
+                    <a href="/Internships/">Internships</a>
+                </div>
                 </div>
             </div> <!-- end of the topmenu links -->
-            <div class="transition-fade main top">
-                <h1>Welcome to Synergy Works Group!</h1>
-                <hr>
-                <h2>Who We Are:</h2>
-                <h3>Synergy Works Group is a start-up whose main focus is delivering value to clients by positioning them for greater success utilizing business intelligence recommendations.</h3>
-                <h3>Synergy Works Group is a group of college graduates and undergraduates who want to make a difference in society, starting with those affected by Covid-19. We aim to serve small businesses where we can use our expertise to provide business solutions. </h3>
-                <h2>Why You Should Trust Us:</h2>
-                <h3>Synergy Works Group is a group of highly motivated Kelley Business School students. It was founded by Kolton Tebbey, a double major in marketing and information systems and a self-taught coder.</h3>
-                <h3>He started this venture to help smaller businesses unlock their potential through business intelligence. As Kelley students, we have had the opportunity to work with real world cases to create multi-dimensional solutions.</h3>
-                <h3>Collectively, we have worked on multiple case competitions where we have implemented data analysis and market research, utilized Adobe suites for marketing materials, and have had internships across a variety of industries.</h3>
-                <h3>Synergy Works Group started off working with data to create business intelligence solutions for companies, and now we want to take all of our knowledge to help the small businesses we know and love. </h3>
-                <h2>What We Are Offering:</h2>
-                <h3>During these hard times we know that everyone is struggling, and we want to help. We want to know what the most frustrating aspect of your business and eliminate it. Whether it’s lack of marketing materials or not knowing how to utilize the data you have, we are here to find a resolution for it.</h3>
-                <h3>By using our knowledge and experience of analyzing real-world business problems, we aim to alleviate the pain points to make your work easier. Synergy Works Groups knows that business intelligence empowers you to make more effective and informed decisions, and with our recommendations you will have the insight on how to efficiently implement them.</h3>
-
+            <div class="transition-fade main cardlayout">
+                <div class="cardrow" style="background-color: var(--color2)">
+                    <div class="cardtext">
+                        <h1>About Synergy Works Group!</h1>
+                        <hr>
+                        <h2>Who We Are:</h2>
+                        <h3>Synergy Works Group is a start-up whose main focus is delivering value to clients by positioning them for greater success utilizing business intelligence recommendations.</h3>
+                        <h3>Synergy Works Group is a group of college graduates and undergraduates who want to make a difference in society, starting with those affected by Covid-19. We aim to serve small businesses where we can use our expertise to provide business solutions. </h3>
+                    </div>
+                </div>
+                <div class="cardrow" style="background-color: var(--color4)">
+                    <div class="cardtext">
+                        <h2 style="color: var(--color1)">Why You Should Trust Us:</h2>
+                        <h3 style="color: var(--color1)">Synergy Works Group is a group of highly motivated Kelley Business School students. It was founded by Kolton Tebbey, a double major in marketing and information systems and a self-taught coder.</h3>
+                        <h3 style="color: var(--color1)">He started this venture to help smaller businesses unlock their potential through business intelligence. As Kelley students, we have had the opportunity to work with real world cases to create multi-dimensional solutions.</h3>
+                        <h3 style="color: var(--color1)">Collectively, we have worked on multiple case competitions where we have implemented data analysis and market research, utilized Adobe suites for marketing materials, and have had internships across a variety of industries.</h3>
+                        <h3 style="color: var(--color1)">Synergy Works Group started off working with data to create business intelligence solutions for companies, and now we want to take all of our knowledge to help the small businesses we know and love. </h3>
+                    </div>
+                </div>
+                <div class="cardrow" style="background-color: var(--color3)">
+                    <div class="cardtext">
+                        <h2 style="color: var(--color1)">What We Are Offering:</h2>
+                        <h3 style="color: var(--color1)">During these hard times we know that everyone is struggling, and we want to help. We want to know what the most frustrating aspect of your business and eliminate it. Whether it’s lack of marketing materials or not knowing how to utilize the data you have, we are here to find a resolution for it.</h3>
+                        <h3 style="color: var(--color1)">By using our knowledge and experience of analyzing real-world business problems, we aim to alleviate the pain points to make your work easier. Synergy Works Groups knows that business intelligence empowers you to make more effective and informed decisions, and with our recommendations you will have the insight on how to efficiently implement them.</h3>
+                    </div>
+                </div>
             </div>
         </div>
     </body>

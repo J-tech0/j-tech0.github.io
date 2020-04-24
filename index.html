@@ -10,7 +10,7 @@
         <meta name="application-name" content="SynergySolutions">
     
         <!-- Overall style code, fonts, CSS file -->
-        <link rel="stylesheet" href="/css/stylesheet.css?v=cache3765">
+        <link rel="stylesheet" href="/css/stylesheet.css?v=cache5485">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap" rel="stylesheet">
         
         <!-- Logo Code -->
@@ -47,7 +47,7 @@
         <div class="topbar"> <!-- Topbar -->
             <div class="menubtn" onclick="doMenu()"> <!-- This is the button to open the sidenav -->
                 <div class="bar1"></div>
-                <div class="bar2"></div> <!-- These are the button bits -->
+                <div class="bar2"></div> <!-- These are the button bits so we can have nice animations -->
                 <div class="bar3"></div>
             </div>
             <img src="/media/logos/SynSolLogoWide.svg" class="logo"> <!-- logo for topbar -->
@@ -68,6 +68,9 @@
                 </div>
                 <div>
                     <a href="/Contact/" onclick="navClose()">Contact</a>
+                </div>
+                <div>
+                    <a href="/Internships/" onclick="navClose()">Internships</a>
                 </div>
             </div> <!-- end of the sidemenu links -->
 
@@ -134,15 +137,31 @@
                     <div>
                         <a href="/Contact/">Contact</a>
                     </div>
+                    <div>
+                    <a href="/Internships/">Internships</a>
+                </div>
                 </div>
             </div> <!-- end of the topmenu links -->
-            <div class="transition-fade main top">
-                <h1>Welcome to Synergy Works Group!</h1>
-                <hr>
-                <h3>Synergy Works Group is a start-up whose main focus is delivering value to clients by positioning them for greater success utilizing business intelligence recommendations.</h3>
-                <h3>At Synergy we see the value that technology and analytics brings to companies, but have noticed a divide between larger and smaller companies in being able to leverage these opportunities.</h3>
-                <h3>It is our mission to empower decision makers at all levels, not just large corporations, to have the tools and resources they need to succeed.</h3>
-
+            <div class="transition-fade main cardlayout">
+                <div class="cardrow" style="background-color: var(--color2)">
+                    <div class="cardtext">
+                        <h1>Welcome to Synergy Works Group!</h1>
+                        <hr>
+                        <h3>Synergy Works Group is a start-up whose main focus is delivering value to clients by positioning them for greater success utilizing business intelligence recommendations.</h3>
+                        <div class="cta-buttons">
+                            <a href="/About-Us/">About us</a>
+                        </div>
+                    </div>
+                    <div class="cardimg">
+                        <img src="/media/images/homepage/business.jpg">
+                    </div>
+                </div>
+                <div class="cardrow" style="background-color: var(--color4)">
+                    <div class="cardtext">
+                        <h3 style="color: var(--color1)">At Synergy we see the value that technology and analytics brings to companies, but have noticed a divide between larger and smaller companies in being able to leverage these opportunities.</h3>
+                        <h3 style="color: var(--color1)">It is our mission to empower decision makers at all levels, not just large corporations, to have the tools and resources they need to succeed.</h3>
+                    </div>
+                </div>
             </div>
         </div>
     </body>

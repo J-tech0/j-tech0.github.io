@@ -1,62 +1,60 @@
-/*     _       _           _
-      | |     | |         | |
-  __ _| | ___ | |__   __ _| |
- / _` | |/ _ \| '_ \ / _` | |
-| (_| | | (_) | |_) | (_| | |
- \__, |_|\___/|_.__/ \__,_|_|
-  __/ |                      
- |___/  
+/* Large comments using http://patorjk.com/software/taag/#p=display&f=Standard*/
+/*
+   ____ _       _           _
+  / ___| | ___ | |__   __ _| |
+ | |  _| |/ _ \| '_ \ / _` | |
+ | |_| | | (_) | |_) | (_| | |
+  \____|_|\___/|_.__/ \__,_|_|
 */
 * {
     transition: 0.3s;
     font-family: 'Open Sans', sans-serif, Arial;
+
+    /*Colour variables for colour scheme*/
     --color1: #f0ede6;    /*off-white*/
     --color2: #83bec8;    /*light blue*/
     --color3: #1a7fba;    /*blue*/
     --color4: #61637A;    /*grey*/
     --color5: #293437;    /*dark grey-blue*/
+
     outline: none !important;
     scroll-behavior: smooth;
     text-size-adjust: none;
 }
 
+
 /*between-page animations*/
-.transition-fade {
+.transition-fade {/*makes the website body normally shown*/
     opacity: 1;
 }
-
-html.is-animating .transition-fade {
+html.is-animating .transition-fade {/*fade out page for transition*/
     opacity: 0;
 }
-
-html.is-animating .sidenav .transition-current {
+html.is-animating .sidenav .transition-current {/*make the sidenav bar background transparent when changing page*/
     background-color: transparent;
 }
-
-html.is-animating hr {
+html.is-animating hr {/*animate the top horizontal rule*/
     max-width: 0px;
 }
 
-.clicktocloseoverlay {
+
+.clicktocloseoverlay { /*Overlay for sidemenu and popups*/
     position: fixed;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
+    left: 0; right: 0; top: 0; bottom: 0;
     background-color: rgba(0, 0, 0, .3);
-    visibility: hidden;
+    visibility: hidden; /*so that it doesn't interfere with scrolling while invisible*/
     opacity: 0;
     z-index: 1;
-
 }
 
 .clicktocloseoverlay.show {
     visibility: visible;
     opacity: 1;
 }
-:target {
+
+
+:target { /*flash the target div when a tag link is used*/
     animation: targetflash 1s ease;
-    border-radius: 5px;
 }
 @keyframes targetflash {
     0% {background-color: none;}
@@ -64,18 +62,60 @@ html.is-animating hr {
     100% {background-color: none;}
 }
 
-/*
-     _     _                                   
-    (_)   | |                                  
- ___ _  __| | ___   _ __ ___   ___ _ __  _   _ 
-/ __| |/ _` |/ _ \ | '_ ` _ \ / _ \ '_ \| | | |
-\__ \ | (_| |  __/ | | | | | |  __/ | | | |_| |
-|___/_|\__,_|\___| |_| |_| |_|\___|_| |_|\__,_|
-*/
 
-.sidenav {
-    /*side navigation menu style*/
-    height: 100%;
+/*
+  __  __       _     _ _        __  __
+ |  \/  | ___ | |__ (_) | ___  |  \/  | ___ _ __  _   _
+ | |\/| |/ _ \| '_ \| | |/ _ \ | |\/| |/ _ \ '_ \| | | |
+ | |  | | (_) | |_) | | |  __/ | |  | |  __/ | | | |_| |
+ |_|  |_|\___/|_.__/|_|_|\___| |_|  |_|\___|_| |_|\__,_|
+*/
+.topbar { /*top bar style*/
+    visibility: hidden;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 52px;
+    z-index: 3;
+    background-color: var(--color3);
+    box-shadow: 0px 0px 5px var(--color5);
+}
+
+.topbar .logo { /*Logo position in topbar*/
+    height: 36px;
+    display: block;
+    margin: 8px auto;
+    filter: drop-shadow(0 0 10px var(--color5));
+}
+
+.menubtn { /*Menu button position*/
+    cursor: pointer;
+    width: 30px;
+    height: 35px;
+    position: absolute;
+    left: 10px;
+    top: 7px;
+}
+
+.bar1, /*menu button styling*/
+.bar2,
+.bar3 {
+    width: 30px;
+    height: 4px;
+    background-color: var(--color1);
+    margin: 6px 0px;
+    border-radius: 2px;
+}
+
+/*Animation for the menu button when sidemenu is open*/
+.open .bar1 {transform: rotate(-45deg) translate(-7px, 7px);}
+.open .bar2 {opacity: 0;}
+.open .bar3 {transform: rotate(45deg) translate(-7px, -7px);}
+
+.sidenav { /*side navigation menu style*/
+    height: 100vh;
     width: 300px;
     position: fixed;
     z-index: 2;
@@ -84,22 +124,13 @@ html.is-animating hr {
     background-color: var(--color3);
     overflow-x: hidden;
     box-shadow: 0px 0px 5px var(--color5);
+    transform: translate3d(-320px, 0px, 0px); /*keep it hidden at desktop resolutions*/
+
 }
 
-.sidenav.open {
-    /*when the side menu is open*/
-    transform: translate3d(320px, 0px, 0px);
-}
 
-.sidenav .logo {
-    /*position the logo at the top of the sidenav*/
-    position: relative;
-    left: 10px;
-    height: 52px;
-}
 
-.sidenav a:first-child {
-    /*style for main links in sidenav*/
+.sidenav a { /*style for main links in sidenav*/
     padding: 10px 8px 10px 32px;
     text-decoration: none;
     height: 30px;
@@ -110,230 +141,115 @@ html.is-animating hr {
     opacity: 1;
 }
 
-.sidenav a {
-    /*style for sub-links in sidenav*/
-    padding: 0px 8px 0px 52px;
-    text-decoration: none;
-    font-size: 20px;
-    color: var(--color1);
-    display: block;
-    white-space: nowrap;
-    height: 0px;
-    opacity: 0;
-    overflow-y: hidden;
-    text-shadow: 0px 0px 2px var(--color4);
-
-}
-
-.sidenav .show2a a:nth-child(n+2) {
-    padding: 10px 8px 10px 52px;
-    height: 25px;
-    opacity: 1;
-}
-
-.sidenav a:hover {
-    /*change link style on hover*/
+.sidenav a:hover { /*change link style on hover*/
     transform: scale(1.03);
     text-shadow: 1px 1px 3px #111111;
     outline: none !important;
-
 }
 
-.sidenav .transition-current {
-    /*highlight current page*/
+.sidenav .transition-current { /*highlight current page*/
     background-color: var(--color4);
 }
 
-html.is-animating .sidenav a {
+html.is-animating .sidenav a { /*swup animation when a link is clicked*/
     transform: scale(1) !important;
     text-shadow: 0px 0px 2px var(--color4) !important;
     outline: none !important;
-
 }
 
-/*
-  _                                           
- | |                                          
- | |_ ___  _ __    _ __ ___   ___ _ __  _   _ 
- | __/ _ \| '_ \  | '_ ` _ \ / _ \ '_ \| | | |
- | || (_) | |_) | | | | | | |  __/ | | | |_| |
-  \__\___/| .__/  |_| |_| |_|\___|_| |_|\__,_|
-          | |                                 
-          |_|                                 
-*/
 
+/*
+  ____            _    _                _____           _
+ |  _ \  ___  ___| | _| |_ ___  _ __   |_   _|__  _ __ | |__   __ _ _ __
+ | | | |/ _ \/ __| |/ / __/ _ \| '_ \    | |/ _ \| '_ \| '_ \ / _` | '__|
+ | |_| |  __/\__ \   <| || (_) | |_) |   | | (_) | |_) | |_) | (_| | |
+ |____/ \___||___/_|\_\\__\___/| .__/    |_|\___/| .__/|_.__/ \__,_|_|
+                               |_|               |_|
+*/
 .topnav {
     /*side navigation menu style*/
     height: 70px;
     width: 100%;
     position: fixed;
     z-index: 3;
-    opacity: 0;
-    visibility: hidden;
     top: 0px;
     left: 0px;
     background-color: var(--color3);
     overflow-x: hidden;
     box-shadow: 0px 0px 5px var(--color5);
-    display: inline-flex;
 }
 
-.topnav .logo {
-    /*position the logo at the top of the sidenav*/
+.topnav .logo { /*position the logo at the top of the sidenav*/
     position: absolute;
-    display: flex;
-    padding: 5px 15px;
-    left: 0px;
-    top: 4px;
+    padding: 9px 20px;
+    left: 0px; top: 0px;
     height: 52px;
     filter: drop-shadow(0 0 10px var(--color5));
-
 }
 
-.toplinks {
-    position: absolute;
-    display: flex;
+.toplinks { /*container with top links inside it*/
+    position: relative;
     left: 240px;
     top: 6px;
     height: 58px;
 }
 
-.toplinks div {
+.toplinks div { /*div for each link*/
+    float: left;
     margin: 10px 5px;
     border-radius: 10px;
 }
 
-.topnav a {
-    /*style for sub-links in sidenav*/
+.topnav a { /*style for top link text*/
     padding: 6px;
     text-decoration: none;
     font-size: 20px;
     color: var(--color1);
     float: left;
-    opacity: 1;
-    overflow-y: hidden;
     text-shadow: 0px 0px 2px var(--color4);
 
 }
 
-.toplinks div:hover {
-    /*change link style on hover*/
+.toplinks div:hover { /*change link style on hover*/
     transform: scale(1.03);
     box-shadow: 1px 1px 3px #111111;
     outline: none !important;
-
 }
 
-.toplinks .transition-current {
-    /*highlight current page*/
+.toplinks .transition-current { /*highlight current page*/
     background-color: var(--color4);
 }
 
-html.is-animating .toplinks .transition-current {
+html.is-animating .toplinks .transition-current { /*swup animaton when link is clicked*/
     background-color: var(--color3);
 }
 
-html.is-animating .toplinks a {
+html.is-animating .toplinks a { /*swup animation when link is clicked*/
     transform: scale(1) !important;
     text-shadow: 0px 0px 2px var(--color4) !important;
     outline: none !important;
-
-}
-
-
-
-/*
- _                _                
-| |              | |               
-| |_ ___  _ __   | |__   __ _ _ __ 
-| __/ _ \| '_ \  | '_ \ / _` | '__|
-| || (_) | |_) | | |_) | (_| | |   
- \__\___/| .__/  |_.__/ \__,_|_|   
-         | |                       
-         |_|                       
-*/
-.topbar {
-    /*top bar style*/
-    overflow: hidden;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 52px;
-    z-index: 3;
-    background-color: var(--color3);
-    box-shadow: 0px 0px 5px var(--color5);
-
-}
-
-.topbar .logo {
-    height: 36px;
-    display: block;
-    margin: 8px auto;
-    filter: drop-shadow(0 0 10px var(--color5));
-}
-
-.menubtn {
-    cursor: pointer;
-    width: 30px;
-    height: 35px;
-    position: absolute;
-    left: 10px;
-    top: 7px;
-}
-
-.bar1,
-.bar2,
-.bar3 {
-    width: 30px;
-    height: 4px;
-    background-color: var(--color1);
-    margin: 6px 0px;
-    border-radius: 2px;
-}
-
-.open .bar1 {
-    transform: rotate(-45deg) translate(-7px, 7px);
-}
-
-.open .bar2 {
-    opacity: 0;
-}
-
-.open .bar3 {
-    transform: rotate(45deg) translate(-7px, -7px);
 }
 
 
 /*
- _               _       
-| |             | |      
-| |__   ___   __| |_   _ 
-| '_ \ / _ \ / _` | | | |
-| |_) | (_) | (_| | |_| |
-|_.__/ \___/ \__,_|\__, |
-                    __/ |
-                   |___/                
+  ____                    ____            _
+ |  _ \ __ _  __ _  ___  | __ )  ___   __| |_   _
+ | |_) / _` |/ _` |/ _ \ |  _ \ / _ \ / _` | | | |
+ |  __/ (_| | (_| |  __/ | |_) | (_) | (_| | |_| |
+ |_|   \__,_|\__, |\___| |____/ \___/ \__,_|\__, |
+             |___/                          |___/
 */
-body {
-    /*body styling*/
-    background-color: var(--color1);
-
+body {/*body styling*/
+    background-color: var(--color1); /*if not set default to off-white*/
+    margin: 0px;
 }
 
-.main {
+.main{
     position: absolute;
-    margin: 45px 0px 0px 0px;
-    padding: 20px 20px 20px 20px;
+    margin: 70px 0px 0px 0px;
+    padding: 20px;
     overflow-x: hidden;
-}
-
-.main.top {
-    position: absolute;
-    margin: 45px 0px 0px 0px;
-    padding: 20px 20px 20px 20px;
-    overflow-x: hidden;
-
+    width: calc(100vw - 40px)
 }
 
 hr {
@@ -349,7 +265,7 @@ hr {
 h1 {
     color: var(--color5);
     line-height: 1.0;
-    font-size: 1.7em;
+    font-size: 3em;
     font-weight: 700;
     margin: 10px 0px;
     word-break: break-word;
@@ -359,7 +275,7 @@ h1 {
 h2 {
     color: var(--color5);
     line-height: 1.0;
-    font-size: 1.4em;
+    font-size: 2.4em;
     font-weight: 400;
     margin: 10px 0px;
     word-break: break-word;
@@ -369,7 +285,7 @@ h2 {
 h3 {
     color: var(--color5);
     line-height: 1.1;
-    font-size: 1em;
+    font-size: 1.9em;
     font-weight: 300;
     margin: 20px 0px;
     word-break: break-word;
@@ -385,38 +301,66 @@ h4 {
     word-break: break-word;
 }
 
-.main a {
+.main a { /*links in page body*/
     color: var(--color3);
     text-decoration: none;
 }
 
-.main .a {
-    /*change link style on hover*/
-    box-shadow: 0 0 2px black;
-}
-
 /*Flex elements*/
-.flexcontainer {
+.cardlayout {
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    width: 100%;
+}
+.cardrow {
+    padding: 0px;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    align-items: center;
+    align-items: stretch;
+}
+.cardtext {
+    max-width: 768px;
+    flex: 2 0 300px;
+    padding: 30px;
+}
+.cardimg {
+    flex: 1 0 400px;
+    overflow: hidden;
+    top: 0px; bottom: 0px; left: 0px; right: 0px;
+}
+.cardimg img {
+    height: 100%;
+    min-height: 300px;
+    width: 100%;
+    object-fit: cover;
+}
+.cta-buttons {
+    margin: 30px auto;
+    justify-content: center;
+    display: flex;
+
+}
+.cta-buttons a {
+    font-size: 1.5rem;
+    color: var(--color1);
+    padding: 10px;
+    margin: 0px 10px;
+    border-radius: 10px;
+    background-color: var(--color3);
+    position: relative;
+    text-shadow: 0 0 1px black;
+
 }
 
-.flexcontainer img {
-    flex-basis 100px;
-    max-width: 200px;
-    margin: 15px;
-    flex-grow: 1;
-    order: -1;
+.cta-buttons:hover a { /*change link style on hover*/
+    transform: scale(1.03);
+    box-shadow: 1px 1px 3px #111111
 }
 
-.flexcontainer h3 {
-    flex-basis: 400px;
-    flex-grow: 5;
-}
 
-/*SPECIFIC TO PAGES OF SIDE*/
+/*SPECIFIC TO PAGES OF SITE*/
 /*The-Team*/
 .flexteamcontainer {
     display: flex;
@@ -429,8 +373,8 @@ h4 {
 .flexitemteam {
     display: flex;
     flex-flow: column wrap;
-    width: 150px;
-    height: 280px;
+    width: 180px;
+    height: 320px;
     padding: 20px;
     margin: 10px;
     border-radius: 20px;
@@ -439,7 +383,7 @@ h4 {
 }
 
 .flexitemteam img {
-    width: 150px;
+    width: 180px;
     border-radius: 50%;
 }
 .flexitemteam h3 {
@@ -447,6 +391,7 @@ h4 {
 }
 .flexitemteam h4 {
     visibility: hidden;
+    margin: 0;
     height: 0;
     overflow: hidden;
 }
@@ -459,14 +404,14 @@ h4 {
 
 .flexitemteam:hover {
     box-shadow: 1px 1px 10px var(--color4);
+    transform: scale(1.03)
 }
 
 .flexitemteam:hover img {
     border-radius: 10px;
 }
 
-.teambio {
-    /*side navigation menu style*/
+.teambio { /*team bio popups*/
     position: fixed;
     left: 0px;
     right: 0px;
@@ -548,7 +493,6 @@ h4 {
     box-shadow: inset -0px 20px 10px -10px var(--color1), inset 0px -20px 10px -10px var(--color1);
 }
 @media only screen and (min-width:500px) {
-
     .teambio h2,
     .teambio h3 {
         max-width: 200px;
@@ -569,46 +513,24 @@ h4 {
 
 
 
-/*Divisions*/
-
-.flexitemdivis {
-    width: 300px;
-    height: 100px;
-    margin: 10px;
-    border-radius: 10px;
-    background-color: var(--color1);
-    padding: 5px;
-}
-
-.flexitemdivis h2,
-.flexitemdivis h3 {
-    color: var(--color1);
-    text-align: center;
-}
-
 
 /*
-  _____            _    _                                        _  __ _      
- |  __ \          | |  | |                                      (_)/ _(_)     
- | |  | | ___  ___| | _| |_ ___  _ __ ______ ___ _ __   ___  ___ _| |_ _  ___ 
- | |  | |/ _ \/ __| |/ / __/ _ \| '_ \______/ __| '_ \ / _ \/ __| |  _| |/ __|
- | |__| |  __/\__ \   <| || (_) | |_) |     \__ \ |_) |  __/ (__| | | | | (__ 
- |_____/ \___||___/_|\_\\__\___/| .__/      |___/ .__/ \___|\___|_|_| |_|\___|
-                                | |             | |                           
-                                |_|             |_|                           
+  __  __       _     _ _           ____                  _  __ _
+ |  \/  | ___ | |__ (_) | ___     / ___| _ __   ___  ___(_)/ _(_) ___
+ | |\/| |/ _ \| '_ \| | |/ _ \____\___ \| '_ \ / _ \/ __| | |_| |/ __|
+ | |  | | (_) | |_) | | |  __/_____|__) | |_) |  __/ (__| |  _| | (__
+ |_|  |_|\___/|_.__/|_|_|\___|    |____/| .__/ \___|\___|_|_| |_|\___|
+                                        |_|
 */
-@media only screen and (min-width: 768px) {
-    .topbar {
-        height: 0px;
-    }
-
-    .topnav {
-        opacity: 1 !important;
+@media only screen and (max-width: 768px) {
+    .topbar { /*show the mobile navmenu*/
         visibility: visible !important;
+        opacity: 1 !important;
     }
 
-    .sidenav {
-        transform: translate3d(-320px, 0px, 0px) !important;
+    .topnav { /*get rid of the desktop navbar*/
+        opacity: 0 !important;
+        visibility: hidden !important;
     }
 
     .sidenav .logo {
@@ -617,46 +539,32 @@ h4 {
         filter: drop-shadow(0 0 20px var(--color5));
     }
 
-    .main {
-        transform: translate3d(0px, 0px, 0px) !important;
-        margin: 0px 0px 0px 300px;
-        padding-top: 10px;
-        max-width: 768px;
-        position: absolute;
-        left: 50%;
-        margin-left: -384px!important;
+    .sidenav.open { /*when the side menu is open, only on mobile*/
+    transform: translate3d(320px, 0px, 0px)!important;
     }
 
-    .main.top {
-        transform: translate3d(0px, 0px, 0px) !important;
-        margin: 0px 0px 0px 0px;
-        padding-top: 90px;
+    .main {
+        margin: 52px 0px 0px 0px;
     }
 
     .main h1 {
-        font-size: 2.1em;
-    }
-
-    .main h2 {
         font-size: 1.7em;
     }
 
-    .main h3 {
+    .main h2 {
         font-size: 1.3em;
     }
 
-    .menubtn {
-        display: none !important;
+    .main h3 {
+        font-size: 1em;
     }
+
     .flexitemteam {
-        width: 180px;
-        height: 360px;
+        width: 150px;
+        height: 280px;
     }
     .flexitemteam img{
-        width: 180px;
-    }
-    .flexcontainer img {
-        order: 0;
+        width: 150px;
     }
     .teambio{
         top: 90px;
