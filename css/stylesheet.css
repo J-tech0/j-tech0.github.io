@@ -29,14 +29,21 @@
 }
 html.is-animating .transition-fade {/*fade out page for transition*/
     opacity: 0;
+    transform: translateY(-30px);
+    filter: blur(5px) grayscale(1);
+    transition-timing-function: cubic-bezier(0, 0, 0, 1);
+}
+html.is-leaving .transition-fade {
+    transform: translateY(30px);
+    transition-timing-function: cubic-bezier(1, 0, 1, 1);
 }
 html.is-animating .sidenav .transition-current {/*make the sidenav bar background transparent when changing page*/
     background-color: transparent;
 }
 html.is-animating hr {/*animate the top horizontal rule*/
     max-width: 0px;
-}
 
+}
 
 .clicktocloseoverlay { /*Overlay for sidemenu and popups*/
     position: fixed;
@@ -224,9 +231,9 @@ html.is-animating .toplinks .transition-current { /*swup animaton when link is c
     background-color: var(--color3);
 }
 
-html.is-animating .toplinks a { /*swup animation when link is clicked*/
+html.is-animating .toplinks div { /*swup animation when link is clicked*/
     transform: scale(1) !important;
-    text-shadow: 0px 0px 2px var(--color4) !important;
+    box-shadow: none;
     outline: none !important;
 }
 
@@ -253,7 +260,7 @@ body {/*body styling*/
 }
 
 hr {
-    transition-duration: 1s;
+    transition-duration: 1.2s;
     border: none;
     background-color: var(--color4);
     height: 3px;
@@ -295,7 +302,7 @@ h3 {
 h4 {
     color: var(--color5);
     line-height: 1.1;
-    font-size: 0.8em;
+    font-size: 1.2em;
     font-weight: 300;
     margin: 10px 0px;
     word-break: break-word;
@@ -327,7 +334,8 @@ h4 {
 }
 .cardimg {
     flex: 1 0 400px;
-    overflow: hidden;
+    overflow-y: hidden;
+    overflow-x: hidden;
     top: 0px; bottom: 0px; left: 0px; right: 0px;
 }
 .cardimg img {
@@ -335,6 +343,9 @@ h4 {
     min-height: 300px;
     width: 100%;
     object-fit: cover;
+}
+.cardimg.nocover img {
+    object-fit: contain;
 }
 .cta-buttons {
     margin: 30px auto;
@@ -386,8 +397,12 @@ h4 {
     width: 180px;
     border-radius: 50%;
 }
+.flexitemteam h2{
+    font-size: 1.5em;
+}
 .flexitemteam h3 {
     margin: 10px 1px;
+    font-size: 1.1em;
 }
 .flexitemteam h4 {
     visibility: hidden;
@@ -548,23 +563,31 @@ h4 {
     }
 
     .main h1 {
-        font-size: 1.7em;
+        font-size:2.5em;
     }
 
     .main h2 {
-        font-size: 1.3em;
+        font-size: 1.8em;
     }
 
     .main h3 {
-        font-size: 1em;
+        font-size: 1.7em;
     }
-
+    .cardimg.nocover {
+        order: -1;
+    }
     .flexitemteam {
         width: 150px;
         height: 280px;
     }
     .flexitemteam img{
         width: 150px;
+    }
+    .flexitemteam h2{
+        font-size: 1.3em;
+    }
+    .flexitemteam h3 {
+        font-size: 0.9em;
     }
     .teambio{
         top: 90px;

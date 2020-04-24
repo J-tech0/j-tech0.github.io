@@ -10,7 +10,7 @@
         <meta name="application-name" content="SynergySolutions">
     
         <!-- Overall style code, fonts, CSS file -->
-        <link rel="stylesheet" href="/css/stylesheet.css?v=cache5485">
+        <link rel="stylesheet" href="/css/stylesheet.css?v=cache5258">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap" rel="stylesheet">
         
         <!-- Logo Code -->
@@ -29,6 +29,8 @@
         <!--import swup library for those smooth transitions and magical page preloading-->
         <script defer src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>
         <script defer src="/js/script.js"></script>
+
+        <meta name="google-site-verification" content="r_VWCdwGioAISApKdbFcDT59EZG-pFP-oCXlhbhvQSY" />
     </head>
     <body>
 
@@ -45,7 +47,7 @@
         <div class="topbar"> <!-- Topbar -->
             <div class="menubtn" onclick="doMenu()"> <!-- This is the button to open the sidenav -->
                 <div class="bar1"></div>
-                <div class="bar2"></div> <!-- These are the button bits -->
+                <div class="bar2"></div> <!-- These are the button bits so we can have nice animations -->
                 <div class="bar3"></div>
             </div>
             <img src="/media/logos/SynSolLogoWide.svg" class="logo"> <!-- logo for topbar -->
@@ -66,6 +68,9 @@
                 </div>
                 <div class="transition-current">
                     <a href="/Contact/" onclick="navClose()">Contact</a>
+                </div>
+                <div>
+                    <a href="/Internships/" onclick="navClose()">Internships</a>
                 </div>
             </div> <!-- end of the sidemenu links -->
 
@@ -132,14 +137,28 @@
                     <div class="transition-current">
                         <a href="/Contact/">Contact</a>
                     </div>
+                    <div>
+                        <a href="/Internships/">Internships</a>
+                    </div>
                 </div>
             </div> <!-- end of the topmenu links -->
-            <div class="transition-fade main top">
-                <h1>Contact</h1>
-                <hr>
-                <h3>After an internship with us? <a href="/Internships/">Head here to apply!</a></h3>
-                <h3>If you are a business who would like our services, please fill out the form below!</h3>
-                <iframe scrolling="no" src="https://docs.google.com/forms/d/e/1FAIpQLScLxWW0VZv0epmkJA_OjJPS8E763QHZM2EgA3n-F7KogamYXQ/viewform?embedded=true" width="768px" height="1154" frameborder="0" marginheight="0" marginwidth="0" style="max-width: 100%;">Loading…</iframe>
+            <div class="transition-fade main cardlayout">
+                <div class="cardrow">
+                    <div class="cardtext">
+                        <h1>Contact</h1>
+                        <hr>
+                        <h3>After an internship with us? Check out our intern info page:</h3>
+                        <div class="cta-buttons">
+                            <a class="cta-buttons" href="/Internships/">Apply for an Internship</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="cardrow" style="background-color: var(--color3)">
+                    <div class="cardtext">
+                        <h3 style="color: var(--color1)">If you are a business who would like our services, please fill out the form below!</h3>
+                        <iframe scrolling="no" src="https://docs.google.com/forms/d/e/1FAIpQLScLxWW0VZv0epmkJA_OjJPS8E763QHZM2EgA3n-F7KogamYXQ/viewform?embedded=true" width="768px" height="1170" frameborder="0" marginheight="0" marginwidth="0" style="max-width: 100%;">Loading…</iframe>
+                    </div>
+                </div>
             </div>
         </div>
     </body>

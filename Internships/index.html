@@ -10,7 +10,7 @@
         <meta name="application-name" content="SynergySolutions">
 
         <!-- Overall style code, fonts, CSS file -->
-        <link rel="stylesheet" href="/css/stylesheet.css?v=cache5485">
+        <link rel="stylesheet" href="/css/stylesheet.css?v=cache5258">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap" rel="stylesheet">
 
         <!-- Logo Code -->
@@ -29,6 +29,8 @@
         <!--import swup library for those smooth transitions and magical page preloading-->
         <script defer src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>
         <script defer src="/js/script.js"></script>
+
+        <meta name="google-site-verification" content="r_VWCdwGioAISApKdbFcDT59EZG-pFP-oCXlhbhvQSY" />
     </head>
     <body>
 
@@ -45,7 +47,7 @@
         <div class="topbar"> <!-- Topbar -->
             <div class="menubtn" onclick="doMenu()"> <!-- This is the button to open the sidenav -->
                 <div class="bar1"></div>
-                <div class="bar2"></div> <!-- These are the button bits -->
+                <div class="bar2"></div> <!-- These are the button bits so we can have nice animations -->
                 <div class="bar3"></div>
             </div>
             <img src="/media/logos/SynSolLogoWide.svg" class="logo"> <!-- logo for topbar -->
@@ -64,8 +66,11 @@
                 <div>
                     <a href="/The-Team/" onclick="navClose()">The Team</a>
                 </div>
-                <div class="transition-current">
+                <div>
                     <a href="/Contact/" onclick="navClose()">Contact</a>
+                </div>
+                <div class="transition-current">
+                    <a href="/Internships/" onclick="navClose()">Internships</a>
                 </div>
             </div> <!-- end of the sidemenu links -->
 
@@ -129,24 +134,31 @@
                     <div>
                         <a href="/The-Team/">The Team</a>
                     </div>
-                    <div class="transition-current">
+                    <div>
                         <a href="/Contact/">Contact</a>
+                    </div>
+                    <div class="transition-current">
+                        <a href="/Internships/">Internships</a>
                     </div>
                 </div>
             </div> <!-- end of the topmenu links -->
-            <div class="transition-fade main top">
-                <h1>Internships</h1>
-                <hr>
-                <h3>If you have been displaced from the Covid-19 crisis, we understand - and want to help! While we can't afford the same paid opportunities you had before, we are offering unpaid<a href="#note">*</a> internships to as many candidates as we can support. We want to help provide the essential experience, personal growth, and professional connections that are the basis for any business student as they approach the working world. Candidates who will succeed at Synergy have:</h3>
-                <h3>-Strong written/verbal communication skills</h3>
-                <h3>-Strong leadership skills</h3>
-                <h3>-Flexible and able to tackle tasks head on</h3>
-                <h3>-Strong analytical skills</h3>
-                <h3>-A desire to learn, improve, and succeed</h3>
-                <h3>-A team player</h3>
-                <h3>If you are someone who likes formulating multi-dimensional solutions to complex and unique problems for clients, <a href=https://forms.gle/HjAKJGmjHfKKwsG49>Apply Now</a>!</h3>
+            <div class="transition-fade main cardlayout">
+                <div class="cardrow">
+                    <div class="cardtext">
+                        <h1>Internships</h1>
+                        <hr>
+                        <h3>If you have been displaced from the Covid-19 crisis, we understand - and want to help! While we can't afford the same paid opportunities you had before, we are offering unpaid<a href="#note">*</a> internships to as many candidates as we can support. We want to help provide the essential experience, personal growth, and professional connections that are the basis for any business student as they approach the working world. Candidates who will succeed at Synergy have:</h3>
+                        <h3>- Strong written/verbal communication skills</h3>
+                        <h3>- Strong leadership skills</h3>
+                        <h3>- Flexible and able to tackle tasks head on</h3>
+                        <h3>- Strong analytical skills</h3>
+                        <h3>- A desire to learn, improve, and succeed</h3>
+                        <h3>- A team player</h3>
+                        <h3>If you are someone who likes formulating multi-dimensional solutions to complex and unique problems for clients, <a href=https://forms.gle/HjAKJGmjHfKKwsG49>Apply Now</a>!</h3>
 
-                <h4 id="note">*Depending on the level of paid work growth, this could change</h4>
+                        <h4 id="note">*Depending on the level of paid work growth, this could change</h4>
+                    </div>
+                </div>
             </div>
         </div>
     </body>

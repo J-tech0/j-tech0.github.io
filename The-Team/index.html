@@ -10,7 +10,7 @@
         <meta name="application-name" content="SynergySolutions">
     
         <!-- Overall style code, fonts, CSS file -->
-        <link rel="stylesheet" href="/css/stylesheet.css?v=cache5485">
+        <link rel="stylesheet" href="/css/stylesheet.css?v=cache5258">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap" rel="stylesheet">
         
         <!-- Logo Code -->
@@ -29,6 +29,8 @@
         <!--import swup library for those smooth transitions and magical page preloading-->
         <script defer src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>
         <script defer src="/js/script.js"></script>
+
+        <meta name="google-site-verification" content="r_VWCdwGioAISApKdbFcDT59EZG-pFP-oCXlhbhvQSY" />
     </head>
     <body>
 
@@ -45,7 +47,7 @@
         <div class="topbar"> <!-- Topbar -->
             <div class="menubtn" onclick="doMenu()"> <!-- This is the button to open the sidenav -->
                 <div class="bar1"></div>
-                <div class="bar2"></div> <!-- These are the button bits -->
+                <div class="bar2"></div> <!-- These are the button bits so we can have nice animations -->
                 <div class="bar3"></div>
             </div>
             <img src="/media/logos/SynSolLogoWide.svg" class="logo"> <!-- logo for topbar -->
@@ -66,6 +68,9 @@
                 </div>
                 <div>
                     <a href="/Contact/" onclick="navClose()">Contact</a>
+                </div>
+                <div>
+                    <a href="/Internships/" onclick="navClose()">Internships</a>
                 </div>
             </div> <!-- end of the sidemenu links -->
 
@@ -102,7 +107,7 @@
                     document.getElementsByClassName("clicktocloseoverlay")[0].classList.remove("show");
                 }
             </script>
-            <div class="clicktocloseoverlay" onclick="teamitemclose(); navClose()"> <!--overlay to close popup -->
+            <div class="clicktocloseoverlay" onclick="navClose()"> <!--overlay to close popup -->
             </div>
 <!--
   _______                               _____          _      
@@ -132,9 +137,12 @@
                     <div>
                         <a href="/Contact/">Contact</a>
                     </div>
+                    <div>
+                        <a href="/Internships/">Internships</a>
+                    </div>
                 </div>
             </div> <!-- end of the topmenu links -->
-            <div class="transition-fade main top">
+            <div class="transition-fade main">
                 <h1>Meet The Team!</h1>
                 <hr>
                 <div class="flexteamcontainer">
