@@ -29,12 +29,11 @@
 }
 html.is-animating .transition-fade {/*fade out page for transition*/
     opacity: 0;
-    transform: translateY(-30px);
-    filter: blur(5px) grayscale(1);
+    transform: translate3d(0px, -30px, 0px);
     transition-timing-function: cubic-bezier(0, 0, 0, 1);
 }
 html.is-leaving .transition-fade {
-    transform: translateY(30px);
+    transform: translate3d(0px, 30px, 0px);
     transition-timing-function: cubic-bezier(1, 0, 1, 1);
 }
 html.is-animating .sidenav .transition-current {/*make the sidenav bar background transparent when changing page*/
@@ -42,7 +41,6 @@ html.is-animating .sidenav .transition-current {/*make the sidenav bar backgroun
 }
 html.is-animating hr {/*animate the top horizontal rule*/
     max-width: 0px;
-
 }
 
 .clicktocloseoverlay { /*Overlay for sidemenu and popups*/
