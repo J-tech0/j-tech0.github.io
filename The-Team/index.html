@@ -107,7 +107,7 @@
                     document.getElementsByClassName("clicktocloseoverlay")[0].classList.remove("show");
                 }
             </script>
-            <div class="clicktocloseoverlay" onclick="navClose()"> <!--overlay to close popup -->
+            <div class="clicktocloseoverlay" onclick="navClose(); teamitemclose()"> <!--overlay to close popup -->
             </div>
 <!--
   _______                               _____          _      
@@ -142,164 +142,183 @@
                     </div>
                 </div>
             </div> <!-- end of the topmenu links -->
-            <div class="transition-fade main">
-                <h1>Meet The Team!</h1>
-                <hr>
-                <div class="flexteamcontainer">
-                    <div class="flexitemteam 1" onclick="teamitemopen(1)">
-                        <img src="/media/images/team/KoltonTebbey.png">
-                        <h2>Kolton Tebbey</h2>
-                        <h3>President and CEO</h3>
-                        <h3><a href="https://www.linkedin.com/in/koltontebbey/">Linkedin</a></h3>
-                        <h4>
-                            <p>Kolton Tebbey is the founder and CEO of Synergy Works Group.</p> 
-                            <p>He brings over 10 years of experience in areas such as product management, strategic leadership, marketing, software development, data analysis, and more.</p>
-                            <p>Throughout his past experiences he has been able to drive traffic over a quarter-billion hits across a portfolio of brands with a focus in targeted advertising, user acquisition &amp; retention, as well as community monetization.</p>
-                            <p>Kolton studied Information Systems and Marketing at the Kelley School of Business and is currently pursuing a Master of Science in Information Systems.</p>
-                        </h4>
-                    </div>
-                    <div class="flexitemteam 2" onclick="teamitemopen(2)">
-                        <img src="/media/images/team/AjaySharma.jpg">
-                        <h2>Ajay Sharma</h2>
-                        <h3>Director of Business Development</h3>
-                        <h3><a href="https://www.linkedin.com/in/ajaysharmaiu/">Linkedin</a></h3>
-                        <h4>
-                            <p>Ajay Sharma is the manager of New Business Development.</p>
-                            <p>Ajay has experience in both consulting and systems management. At Synergy Works Group, Ajay is responsible for leading sales and client relationship management.</p>
-                            <p>Ajay studied Corporate Innovation and Technology Management at the Kelley School of Business. He currently resides in Bloomington, Indiana.</p>
-                        </h4>
-                    </div>
-                    <div class="flexitemteam 3" onclick="teamitemopen(3)">
-                        <img src="/media/images/team/JosephineJeffries.jpg">
-                        <h2>Josie Jeffries</h2>
-                        <h3>Director of Human Resources</h3>
-                        <h3><a href="https://www.linkedin.com/in/joemjeff/">Linkedin</a></h3>
-                        <h4>
-                            <p>Josie Jeffries is currently an undergraduate student studying Business Management and International Business at the Kelley School of Business at Indiana University, set to graduate in May of 2021.</p>
-                            <p>She is pursuing a career path in Human Resources with a focus on recruiting/talent management to help make workplaces worldwide a better place for everyone!</p>
-                        </h4>
-                    </div>
-                    <div class="flexitemteam 4" onclick="teamitemopen(4)">
-                        <img src="/media/images/team/SydneySpindel.png">
-                        <h2>Sydney Spindel</h2>
-                        <h3>Director of Marketing</h3>
-                        <h4>
-                            <p>Sydney Spindel is the Director of Marketing.</p>
-                            <p>Sydney has experience in retail and brand management through working with small businesses, as well as applied knowledge of data analytics.</p>
-                            <p>She is in charge of all of the marketing materials for Synergy Works Group.</p>
-                            <p>Sydney studied Marketing and Digital and Social Media Business Applications at the Kelley School of Business.</p>
-                        </h4>
-                    </div>
-                    <div class="flexitemteam 5" onclick="teamitemopen(5)">
-                        <img src="/media/images/team/DennisRauchhaus.jpeg">
-                        <h2>Dennis Rauchhaus</h2>
-                        <h3>Director of Operations</h3>
-                        <h4>
-                        <p>Dennis Rauchhaus is the Director of Operations for Synergy Works Group.</p>
-                            <p>Dennis has extensive experience in marketing and sales and a wide array of business knowledge. He has worked in different industries including, hydraulics overseas, advertising in Chicago, and in a retail position at his University.</p>
-                            <p>Dennis is fluent in German and has gained global business insight while living overseas and across the US. Dennis studied International Business and minored in Marketing &amp; Management.</p>
-                            <p>He will further increase his skill set and business knowledge at Loyola University Chicago where he is achieving his Master’s in Business Administration.</p>
-                        </h4>
-                    </div>
-                    <div class="flexitemteam 6" onclick="teamitemopen(6)">
-                        <img src="/media/images/team/NickAndry.jpeg">
-                        <h2>Nick Andry</h2>
-                        <h3>Data Manager</h3>
-                        <h3><a href="https://www.linkedin.com/in/nick-andry/">Linkedin</a></h3>
-                        <h4>
-                            <p>Nick Andry is a Business Data Analyst for Synergy Works Group.</p>
-                            <p>Nick is certified in Python programming and software development. He has made it to nationals for Java programming in Business Professionals for America.</p>
-                            <p>For data analysis, he utilizes modern, feature-rich Python data science libraries to find the best trends and solutions for businesses.</p>
-                        </h4>
+            <div class="transition-fade main cardlayout">
+                <div class="cardrow">
+                    <div class="cardtext">
+                        <h1>Meet The Team!</h1>
+                        <hr>
+                        <div class="flexteamcontainer">
+                            <div class="flexitemteam 1" onclick="teamitemopen(1)">
+                                <img src="/media/images/team/KoltonTebbey.png">
+                                <h2>Kolton Tebbey</h2>
+                                <h3>President and CEO</h3>
+                                <h3><a href="https://www.linkedin.com/in/koltontebbey/">Linkedin</a></h3>
+                                <h4>
+                                    <p>Kolton Tebbey is the founder and CEO of Synergy Works Group.</p>
+                                    <p>He brings over 10 years of experience in areas such as product management, strategic leadership, marketing, software development, data analysis, and more.</p>
+                                    <p>Throughout his past experiences he has been able to drive traffic over a quarter-billion hits across a portfolio of brands with a focus in targeted advertising, user acquisition &amp; retention, as well as community monetization.</p>
+                                    <p>Kolton studied Information Systems and Marketing at the Kelley School of Business and is currently pursuing a Master of Science in Information Systems.</p>
+                                </h4>
+                            </div>
+                            <div class="flexitemteam 2" onclick="teamitemopen(2)">
+                                <img src="/media/images/team/AjaySharma.jpg">
+                                <h2>Ajay Sharma</h2>
+                                <h3>Director of Business Development</h3>
+                                <h3><a href="https://www.linkedin.com/in/ajaysharmaiu/">Linkedin</a></h3>
+                                <h4>
+                                    <p>Ajay Sharma is the manager of New Business Development.</p>
+                                    <p>Ajay has experience in both consulting and systems management. At Synergy Works Group, Ajay is responsible for leading sales and client relationship management.</p>
+                                    <p>Ajay studied Corporate Innovation and Technology Management at the Kelley School of Business. He currently resides in Bloomington, Indiana.</p>
+                                </h4>
+                            </div>
+                            <div class="flexitemteam 3" onclick="teamitemopen(3)">
+                                <img src="/media/images/team/JosephineJeffries.jpg">
+                                <h2>Josie Jeffries</h2>
+                                <h3>Director of Human Resources</h3>
+                                <h3><a href="https://www.linkedin.com/in/joemjeff/">Linkedin</a></h3>
+                                <h4>
+                                    <p>Josie Jeffries is currently an undergraduate student studying Business Management and International Business at the Kelley School of Business at Indiana University, set to graduate in May of 2021.</p>
+                                    <p>She is pursuing a career path in Human Resources with a focus on recruiting/talent management to help make workplaces worldwide a better place for everyone!</p>
+                                </h4>
+                            </div>
+                            <div class="flexitemteam 4" onclick="teamitemopen(4)">
+                                <img src="/media/images/team/SydneySpindel.png">
+                                <h2>Sydney Spindel</h2>
+                                <h3>Director of Marketing</h3>
+                                <h4>
+                                    <p>Sydney Spindel is the Director of Marketing.</p>
+                                    <p>Sydney has experience in retail and brand management through working with small businesses, as well as applied knowledge of data analytics.</p>
+                                    <p>She is in charge of all of the marketing materials for Synergy Works Group.</p>
+                                    <p>Sydney studied Marketing and Digital and Social Media Business Applications at the Kelley School of Business.</p>
+                                </h4>
+                            </div>
+                            <div class="flexitemteam 5" onclick="teamitemopen(5)">
+                                <img src="/media/images/team/DennisRauchhaus.jpeg">
+                                <h2>Dennis Rauchhaus</h2>
+                                <h3>Director of Operations</h3>
+                                <h4>
+                                <p>Dennis Rauchhaus is the Director of Operations for Synergy Works Group.</p>
+                                    <p>Dennis has extensive experience in marketing and sales and a wide array of business knowledge. He has worked in different industries including, hydraulics overseas, advertising in Chicago, and in a retail position at his University.</p>
+                                    <p>Dennis is fluent in German and has gained global business insight while living overseas and across the US. Dennis studied International Business and minored in Marketing &amp; Management.</p>
+                                    <p>He will further increase his skill set and business knowledge at Loyola University Chicago where he is achieving his Master’s in Business Administration.</p>
+                                </h4>
+                            </div>
+                            <div class="flexitemteam 6" onclick="teamitemopen(6)">
+                                <img src="/media/images/team/NickAndry.jpeg">
+                                <h2>Nick Andry</h2>
+                                <h3>Data Manager</h3>
+                                <h3><a href="https://www.linkedin.com/in/nick-andry/">Linkedin</a></h3>
+                                <h4>
+                                    <p>Nick Andry is a Business Data Analyst for Synergy Works Group.</p>
+                                    <p>Nick is certified in Python programming and software development. He has made it to nationals for Java programming in Business Professionals for America.</p>
+                                    <p>For data analysis, he utilizes modern, feature-rich Python data science libraries to find the best trends and solutions for businesses.</p>
+                                </h4>
 
-                    </div>
-                    <div class="flexitemteam 7" onclick="teamitemopen(7)">
-                        <img src="/media/images/team/NicoleMalinowski.jpg">
-                        <h2>Nicole Malinowski</h2>
-                        <h3>Consultant Manager</h3>
-                        <h3><a href="https://www.linkedin.com/in/nmalinowski14/">Linkedin</a></h3>
-                        <h4>
-                            <p>Nicole Malinowski is a consultant team manager for Synergy Works Group.</p>
-                            <p>Having won several case competitions throughout her collegiate career in business analytics, Microsoft Access, and accounting communications, Nicole understands how to implement creative solutions and drive teams to succeed in multiple different business areas. Nicole has had internship experience in audit and business performance and insights, and she has been able to work with multiple successful teams and gain valuable knowledge through these experiences.</p>
-                            <p>She studied accounting, business analytics, and minored in mathematics at the Kelley School of Business, graduating at the top of her class. She is continuing her education at Kelley by pursuing her Masters of Science in Accounting and plans to sit for the CPA exam in the next year.</p>
-                        </h4>
-                    </div>
-                    <div class="flexitemteam 8" onclick="teamitemopen(8)">
-                        <img src="/media/images/team/DakotaSuomela.jpg">
-                        <h2>Dakota Suomela</h2>
-                        <h3>Consultant Manager</h3>
-                        <h4>
-                            <p>Dakota Suomela is a Consultant Manager for Synergy Works Group.</p>
-                            <p>Dakota has experience in customer service, marketing, creative development, and brand management.</p>
-                            <p>Having lead many teams and projects in her collegiate and professional tenure, she understands how to utilize each individual's skills and talents to reap the most benefit for each client or cause. Her attention to detail and growth mindset will ensure that both her team and client gain valuable insights from their work.</p>
-                            <p>Dakota studied Management and Marketing at the Kelley School of Business.</p>
-                        </h4>
-                    </div>
-                    <div class="flexitemteam 9" onclick="teamitemopen(9)">
-                        <img class="headpic" src="/media/images/team/RaulBledea.jpg">
-                        <h2>Raul Bledea</h2>
-                        <h3>Data Analyst</h3>
-                        <h4>
-                            <p>In his last year of high school, Raul Bledea is a Data Analyst for Synergy Works Group.</p>
-                            <p>He is completely self taught on Python, C++, C# and PHP with experience in Informatoin Security and Cryptography.</p>
-                            <p>Currently learning Machine Learning and Artificial Intelligence.</p>
-                        </h4>
-                    </div>
-                    <div class="flexitemteam 10" onclick="teamitemopen(10)">
-                        <img src="/media/images/team/WiktorCielebon.jpg">
-                        <h2>Wiktor Cielebon</h2>
-                        <h3>Data Analyst</h3>
-                        <h3><a href="https://www.linkedin.com/in/wiktor-cielebon/">Linkedin</a></h3>
-                        <h4>
-                            <p>Wiktor Cielebon is a Data Analyst for Synergy Works Group.</p>
-                            <p>He has nearly 15 years of informal experience with various programming languages stemming from his fascination with computer science since being a kid.</p>
-                            <p>Wiktor has worked on projects such as a custom operating system as well as a highly modular game engine spanning over 20 thousand lines of code. He is skilled in ASP.Net and C# development.</p>
-                        </h4>
-                    </div>
-                    <div class="flexitemteam 11" onclick="teamitemopen(11)">
-                        <img src="/media/images/team/JamesTurner.jpg">
-                        <h2>James Turner</h2>
-                        <h3>Web Designer</h3>
-                        <h4>
-                            <p>James Turner is the Website Developer for Synergy Works Group.</p>
-                            <p>Before joining Synergy, he designed and maintained an interactive webapp to accompany a children's book as part of the Young Enterprise Programme.</p>
-                            <p>When it comes to web programming, he is entirely self-taught, using HTML, CSS and JavaScript. He is planning to study Electronic Engineering at university.</p>
-                        </h4>
-                    </div>
-                    <div class="flexitemteam 12" onclick="teamitemopen(12)">
-                        <img src="/media/images/team/DanielBerry.jpg">
-                        <h2>Daniel Berry</h2>
-                        <h3>Consultant</h3>
-                        <h3><a href="http://linkedin.com/in/daniel-berry-33a1811a7">Linkedin</a></h3>
-                        <h4>
-                            <p>Daniel Berry is a Tech Consultant for Synergy Works Group.</p>
-                            <p>He has been part of an Innovate and Create Living learning Community at his University. He finds creative and helpful solutions to many modern Tech problems.</p>
-                            <p>He studies Engineering Technology and German at Temple University in Philadelphia, PA.</p>
-                        </h4>
-                    </div>
-                    <div class="flexitemteam 13" onclick="teamitemopen(13)">
-                        <img src="/media/images/team/LukeHarris.jpg">
-                        <h2>Luke Harris</h2>
-                        <h3>Consultant</h3>
-                        <h3><a href="https://www.linkedin.com/in/lkhrs/">Linkedin</a></h3>
-                        <h4>
-                            <p>Luke Harris brings over 10 years of experience working with non-profits as well as businesses.</p>
-                            <p>He has experience helping them grow their online presence through website design, SEO optimization, and enterprise-wide IT solutions and support.</p>
-                        </h4>
+                            </div>
+                            <div class="flexitemteam 7" onclick="teamitemopen(7)">
+                                <img src="/media/images/team/NicoleMalinowski.jpg">
+                                <h2>Nicole Malinowski</h2>
+                                <h3>Consultant Manager</h3>
+                                <h3><a href="https://www.linkedin.com/in/nmalinowski14/">Linkedin</a></h3>
+                                <h4>
+                                    <p>Nicole Malinowski is a consultant team manager for Synergy Works Group.</p>
+                                    <p>Having won several case competitions throughout her collegiate career in business analytics, Microsoft Access, and accounting communications, Nicole understands how to implement creative solutions and drive teams to succeed in multiple different business areas. Nicole has had internship experience in audit and business performance and insights, and she has been able to work with multiple successful teams and gain valuable knowledge through these experiences.</p>
+                                    <p>She studied accounting, business analytics, and minored in mathematics at the Kelley School of Business, graduating at the top of her class. She is continuing her education at Kelley by pursuing her Masters of Science in Accounting and plans to sit for the CPA exam in the next year.</p>
+                                </h4>
+                            </div>
+                            <div class="flexitemteam 8" onclick="teamitemopen(8)">
+                                <img src="/media/images/team/DakotaSuomela.jpg">
+                                <h2>Dakota Suomela</h2>
+                                <h3>Consultant Manager</h3>
+                                <h4>
+                                    <p>Dakota Suomela is a Consultant Manager for Synergy Works Group.</p>
+                                    <p>Dakota has experience in customer service, marketing, creative development, and brand management.</p>
+                                    <p>Having lead many teams and projects in her collegiate and professional tenure, she understands how to utilize each individual's skills and talents to reap the most benefit for each client or cause. Her attention to detail and growth mindset will ensure that both her team and client gain valuable insights from their work.</p>
+                                    <p>Dakota studied Management and Marketing at the Kelley School of Business.</p>
+                                </h4>
+                            </div>
+                            <div class="flexitemteam 9" onclick="teamitemopen(9)">
+                                <img src="/media/images/team/TimothyLe.jpeg">
+                                <h2>Timothy Le</h2>
+                                <h3>Consultant Manager</h3>
+                                <h3><a href="https://www.linkedin.com/in/le66332">Linkedin</a></h3>
+                                <h4>
+                                    <p>Timothy Le is a Consultant Manager for Synergy Works Group.</p>
+                                    <p>Timothy has experience in data analytics through his internship last summer where he converted over 10 million data points into dashboards for the company. He is pursuing a career in IT or tech consulting.</p>
+                                    <p>Timothy Le is a junior studying Information Systems and Business Analytics.</p>
+                                </h4>
+                            </div>
+                            <div class="flexitemteam 10" onclick="teamitemopen(10)">
+                                <img class="headpic" src="/media/images/team/RaulBledea.jpg">
+                                <h2>Raul Bledea</h2>
+                                <h3>Data Analyst</h3>
+                                <h4>
+                                    <p>In his last year of high school, Raul Bledea is a Data Analyst for Synergy Works Group.</p>
+                                    <p>He is completely self taught on Python, C++, C# and PHP with experience in Informatoin Security and Cryptography.</p>
+                                    <p>Currently learning Machine Learning and Artificial Intelligence.</p>
+                                </h4>
+                            </div>
+                            <div class="flexitemteam 11" onclick="teamitemopen(11)">
+                                <img src="/media/images/team/WiktorCielebon.jpg">
+                                <h2>Wiktor Cielebon</h2>
+                                <h3>Data Analyst</h3>
+                                <h3><a href="https://www.linkedin.com/in/wiktor-cielebon/">Linkedin</a></h3>
+                                <h4>
+                                    <p>Wiktor Cielebon is a Data Analyst for Synergy Works Group.</p>
+                                    <p>He has nearly 15 years of informal experience with various programming languages stemming from his fascination with computer science since being a kid.</p>
+                                    <p>Wiktor has worked on projects such as a custom operating system as well as a highly modular game engine spanning over 20 thousand lines of code. He is skilled in ASP.Net and C# development.</p>
+                                </h4>
+                            </div>
+                            <div class="flexitemteam 12" onclick="teamitemopen(12)">
+                                <img src="/media/images/team/JamesTurner.jpg">
+                                <h2>James Turner</h2>
+                                <h3>Web Designer</h3>
+                                <h4>
+                                    <p>James Turner is the Website Developer for Synergy Works Group.</p>
+                                    <p>Before joining Synergy, he designed and maintained an interactive webapp to accompany a children's book as part of the Young Enterprise Programme.</p>
+                                    <p>When it comes to web programming, he is entirely self-taught, using HTML, CSS and JavaScript. He is planning to study Electronic Engineering at university.</p>
+                                </h4>
+                            </div>
+                            <div class="flexitemteam 13" onclick="teamitemopen(13)">
+                                <img src="/media/images/team/DanielBerry.jpg">
+                                <h2>Daniel Berry</h2>
+                                <h3>Consultant</h3>
+                                <h3><a href="http://linkedin.com/in/daniel-berry-33a1811a7">Linkedin</a></h3>
+                                <h4>
+                                    <p>Daniel Berry is a Tech Consultant for Synergy Works Group.</p>
+                                    <p>He has been part of an Innovate and Create Living learning Community at his University. He finds creative and helpful solutions to many modern Tech problems.</p>
+                                    <p>He studies Engineering Technology and German at Temple University in Philadelphia, PA.</p>
+                                </h4>
+                            </div>
+                            <div class="flexitemteam 14" onclick="teamitemopen(14)">
+                                <img src="/media/images/team/LukeHarris.jpg">
+                                <h2>Luke Harris</h2>
+                                <h3>Consultant</h3>
+                                <h3><a href="https://www.linkedin.com/in/lkhrs/">Linkedin</a></h3>
+                                <h4>
+                                    <p>Luke Harris brings over 10 years of experience working with non-profits as well as businesses.</p>
+                                    <p>He has experience helping them grow their online presence through website design, SEO optimization, and enterprise-wide IT solutions and support.</p>
+                                </h4>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <h2>Advisors</h2>
-                <div class="flexteamcontainer">
-                    <div class="flexitemteam 14" onclick="teamitemopen(14)">
-                        <img src="/media/images/team/PaulTebbey.jpg">
-                        <h2>Paul Tebbey</h2>
-                        <h3>Advisor</h3>
-                        <h4>
-                            <p>Dr Paul W. Tebbey is Vice-President, Oncology, US Medical Affairs, Abbvie, based in Chicago, IL, USA.  He has 25 years of healthcare experience across the biotechnology and pharmaceutical sectors.</p>
-                            <p>Dr Tebbey received a PhD in Microbiology and Immunology from East Carolina University School of Medicine (Greenville, NC) where his research focused on T lymphocyte cell signalling, immunosuppression and transformation.  Subsequent to his postdoctoral studies at Vanderbilt University (Nashville, TN), which focused on the regulation of gene expression, he then graduated with a MBA in Marketing from Rochester Institute of Technology (Rochester, NY).</p>
-                            <p>Dr Tebbey’s research, development and launch experiences include therapeutic monoclonal antibodies (adalimumab, infliximab and ustekinumab) &amp; antibody-drug conjugates, oncolytics (venetoclax) as well as complex vaccines (conjugated pneumococcal vaccine).</p>
-                            <p>Dr Tebbey’s publications include over 40 peer-reviewed articles that span immunology, immune-mediated and infectious diseases, as well as pharmaceutical publication planning and brand success.</p>
-                        </h4>
+                <div class="cardrow">
+                    <div class="cardtext">
+                        <h2>Advisors</h2>
+                        <div class="flexteamcontainer">
+                            <div class="flexitemteam 15" onclick="teamitemopen(15)">
+                                <img src="/media/images/team/PaulTebbey.jpg">
+                                <h2>Paul Tebbey</h2>
+                                <h3>Advisor</h3>
+                                <h4>
+                                    <p>Dr Paul W. Tebbey is Vice-President, Oncology, US Medical Affairs, Abbvie, based in Chicago, IL, USA.  He has 25 years of healthcare experience across the biotechnology and pharmaceutical sectors.</p>
+                                    <p>Dr Tebbey received a PhD in Microbiology and Immunology from East Carolina University School of Medicine (Greenville, NC) where his research focused on T lymphocyte cell signalling, immunosuppression and transformation.  Subsequent to his postdoctoral studies at Vanderbilt University (Nashville, TN), which focused on the regulation of gene expression, he then graduated with a MBA in Marketing from Rochester Institute of Technology (Rochester, NY).</p>
+                                    <p>Dr Tebbey’s research, development and launch experiences include therapeutic monoclonal antibodies (adalimumab, infliximab and ustekinumab) &amp; antibody-drug conjugates, oncolytics (venetoclax) as well as complex vaccines (conjugated pneumococcal vaccine).</p>
+                                    <p>Dr Tebbey’s publications include over 40 peer-reviewed articles that span immunology, immune-mediated and infectious diseases, as well as pharmaceutical publication planning and brand success.</p>
+                                </h4>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
