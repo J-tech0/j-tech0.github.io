@@ -470,7 +470,7 @@ h4 {
 .teambio h3 {
     position: relative;
     left: 10px;
-    top: 10px;
+    top: 5px;
     margin: 0;
     max-width: 100vw;
     font-size: 1.3em;
@@ -479,14 +479,14 @@ h4 {
 .teambio h4 {
     position: absolute;
     font-size: 1.2em;
-    left: 10px;
-    top: 280px;
-    right: 10px;
-    height: calc(100vh - 370px);
+    left: 220px;
+    top: 0px;
+    right: 28px;
+    height: calc(100vh - 130px);
     margin: 0;
     padding: 0px;
     overflow-x: hidden;
-    overflow-y: auto;
+    overflow-y: scroll;
 }
 .teambio a{
     color: var(--color3)
@@ -496,27 +496,27 @@ h4 {
     pointer-events: none;
     content: "";
     position: fixed;
-    left: 10px;
+    left: 220px;
     right: 10px;
-    top: 280px;
+    top: 0px;
     bottom: 0px;
     box-shadow: inset -0px 20px 10px -10px var(--color1), inset 0px -20px 10px -10px var(--color1);
 }
-@media only screen and (min-width:500px) {
+@media only screen and (max-width: 500px) {
     .teambio h2,
     .teambio h3 {
         max-width: 200px;
     }
     .teambio h4 {
-        left: 220px;
-        top: 0px;
-        right: 28px;
-        height: calc(100vh - 90px);
+        left: 10px;
+        top: 300px;
+        right: 10px;
+        height: calc(100vh - 412px)!important;
     }
     .teambio h4:after {
-        left: 220px;
-        right: 28px;
-        top: 0px;
+        left: 10px;
+        right: 10px;
+        top: 300px;
         bottom: 0px;
     }
 }
@@ -585,11 +585,11 @@ h4 {
         font-size: 0.9em;
     }
     .teambio{
-        top: 90px;
-        height: calc(100vh - 110px);
+        top: 82px;
+        height: calc(100vh - 112px);
     }
     .teambio h4 {
-        height: calc(100vh - 110px);
+        height: calc(100vh - 112px);
 
     }
 }
