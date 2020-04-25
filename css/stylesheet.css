@@ -251,7 +251,7 @@ body {/*body styling*/
 
 .main{
     position: absolute;
-    margin: 70px 0px 0px 0px;
+    margin: 70px 0px 70px 0px;
     padding: 20px;
     overflow-x: hidden;
 }
