@@ -341,6 +341,30 @@ h4 {
 .cardimg.nocover {
     background-size: contain !important;
 }
+.cardthird{
+    flex-grow: 1;
+    min-width: 300px;
+    width: 30%;
+    background-color: var(--color5);
+    margin: 20px;
+    border-radius: 5px;
+    overflow: hidden;
+    cursor: pointer;
+    display: block;
+}
+.cardthird h3 {
+    color: var(--color1);
+    padding: 10px;
+}
+.cardthird img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+}
+.cardthird:hover {
+    transform: scale(1.03);
+    box-shadow: 1px 1px 3px #111111
+}
 .cta-buttons {
     margin: 30px auto;
     justify-content: center;
@@ -357,7 +381,6 @@ h4 {
     position: relative;
     text-shadow: 0 0 1px black;
 }
-
 .cta-buttons:hover a { /*change link style on hover*/
     transform: scale(1.03);
     box-shadow: 1px 1px 3px #111111
