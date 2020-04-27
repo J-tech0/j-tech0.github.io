@@ -393,7 +393,7 @@ h4 {
     position: relative;
     text-shadow: 0 0 1px black;
 }
-.cta-buttons:hover a { /*change link style on hover*/
+.cta-buttons a:hover { /*change link style on hover*/
     transform: scale(1.03);
     box-shadow: 1px 1px 3px #111111
 }
