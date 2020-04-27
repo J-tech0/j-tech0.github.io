@@ -603,9 +603,6 @@ h4 {
     .main h3 {
         font-size: 1.7em;
     }
-    .cardimg.nocover {
-        order: -1;
-    }
     .cardthird{
         max-width: unset;
         width: 40%
@@ -623,6 +620,12 @@ h4 {
     .flexitemteam h3 {
         font-size: 0.9em;
     }
+    .teambio h2{
+        max-width: unset;
+    }
+    .teambio h3 {
+        max-width: unset;
+    }
     .teambio{
         top: 82px;
         height: calc(100vh - 112px);
@@ -630,5 +633,10 @@ h4 {
     .teambio h4 {
         height: calc(100vh - 112px);
 
+    }
+}
+@media only screen and (max-width: 675px) {
+    .cardimg {
+        order: -1;
     }
 }
