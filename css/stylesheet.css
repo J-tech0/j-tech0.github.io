@@ -16,9 +16,7 @@
     --color3: #1a7fba;    /*blue*/
     --color4: #61637A;    /*grey*/
     --color5: #293437;    /*dark grey-blue*/
-
     outline: none !important;
-    scroll-behavior: smooth;
     text-size-adjust: none;
 }
 
@@ -42,7 +40,12 @@ html.is-animating .sidenav .transition-current {/*make the sidenav bar backgroun
 html.is-animating hr {/*animate the top horizontal rule*/
     max-width: 0px;
 }
-
+html {
+        scroll-behavior: smooth;
+}
+html.is-animating {
+        scroll-behavior: unset;
+}
 .clicktocloseoverlay { /*Overlay for sidemenu and popups*/
     position: fixed;
     left: 0; right: 0; top: 0; bottom: 0;
@@ -56,7 +59,12 @@ html.is-animating hr {/*animate the top horizontal rule*/
     visibility: visible;
     opacity: 1;
 }
+.anchor {
+    position: absolute;
+    margin-top: -50px;
+    visibility: hidden;
 
+}
 
 :target { /*flash the target div when a tag link is used*/
     animation: targetflash 1s ease;
@@ -322,6 +330,7 @@ h4 {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
+    overflow: hidden;
 }
 .cardtext {
     max-width: 1024px;
@@ -336,6 +345,7 @@ h4 {
     background-size: cover;
     background-repeat: no-repeat;
     min-height: 300px;
+    max-width: 1024px;
     background-position: center;
 }
 .cardimg.nocover {
@@ -351,15 +361,28 @@ h4 {
     overflow: hidden;
     cursor: pointer;
     display: block;
+    position: relative;
+}
+.cardthird h2 {
+    color: var(--color1);
+    padding: 10px;
+    margin: 0px;
+    font-size: 2.0em;
 }
 .cardthird h3 {
     color: var(--color1);
-    padding: 10px;
+    padding: 10px 10px 50px 10px;
+    margin: 0px;
     font-size: 1.5em;
+}
+.cardthird .learnmore {
+    position:absolute;
+    padding: 10px;
+    bottom:0; right:0;
 }
 .cardthird img {
     width: 100%;
-    max-height: 200px;
+    height: 200px;
     object-fit: cover;
 }
 .cardthird:hover {
@@ -451,7 +474,7 @@ h4 {
     opacity: 1;
     height: calc(100vh - 130px);
     width: 90vw;
-    max-width: 768px;
+    max-width: 1024px;
     top: 100px;
     margin: 0 auto;
     background-color: var(--color1);
@@ -487,7 +510,7 @@ h4 {
     left: 10px;
     top: 0px;
     margin: 0;
-    max-width: 100vw;
+    max-width: 200px;
     font-size: 1.7em;
 }
 
@@ -496,7 +519,7 @@ h4 {
     left: 10px;
     top: 5px;
     margin: 0;
-    max-width: 100vw;
+    max-width: 200px;
     font-size: 1.3em;
 }
 
@@ -521,7 +544,7 @@ h4 {
     content: "";
     position: fixed;
     left: 220px;
-    right: 10px;
+    right: 28px;
     top: 0px;
     bottom: 0px;
     box-shadow: inset -0px 20px 10px -10px var(--color1), inset 0px -20px 10px -10px var(--color1);
@@ -556,7 +579,7 @@ h4 {
  |_|  |_|\___/|_.__/|_|_|\___|    |____/| .__/ \___|\___|_|_| |_|\___|
                                         |_|
 */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1024px) {
     .topbar { /*show the mobile navmenu*/
         visibility: visible !important;
         opacity: 1 !important;

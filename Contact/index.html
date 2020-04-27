@@ -10,7 +10,7 @@
         <meta name="application-name" content="SynergySolutions">
     
         <!-- Overall style code, fonts, CSS file -->
-        <link rel="stylesheet" href="/css/stylesheet.css?v=cache8842">
+        <link rel="stylesheet" href="/css/stylesheet.css?v=cache5758">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap" rel="stylesheet">
         
         <!-- Logo Code -->
@@ -28,6 +28,7 @@
         
         <!--import swup library for those smooth transitions and magical page preloading-->
         <script defer src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>
+        <script defer src="https://unpkg.com/@swup/scroll-plugin@1.0.6/dist/SwupScrollPlugin.min.js"></script>
         <script defer src="/js/script.js"></script>
 
         <meta name="google-site-verification" content="r_VWCdwGioAISApKdbFcDT59EZG-pFP-oCXlhbhvQSY" />
@@ -53,12 +54,15 @@
             <img src="/media/logos/SynSolLogoWide.svg" class="logo"> <!-- logo for topbar -->
         </div>
         <div id="swup"> <!-- contain the sidebar and body in swup animation - this should encapsulate the page content too -->
-            <div id="mySidenav" class="sidenav"> <!-- Links for side menu bar -->
+            <div class="sidenav"> <!-- Links for side menu bar -->
                 <div>
                     <a href="/" onclick="navClose()">Home</a>
                 </div>
                 <div>
                     <a href="/About-Us/" onclick="navClose()">About Us</a>
+                </div>
+                <div>
+                    <a href="/Our-Services/" onclick="navClose()">Our Services</a>
                 </div>
                 <div>
                     <a href="/Our-Work/" onclick="navClose()">Our Work</a>
@@ -129,6 +133,9 @@
                         <a href="/About-Us/">About Us</a>
                     </div>
                     <div>
+                        <a href="/Our-Services/">Our Services</a>
+                    </div>
+                    <div>
                         <a href="/Our-Work/">Our Work</a>
                     </div>
                     <div>
@@ -154,9 +161,10 @@
                     </div>
                 </div>
                 <div class="cardrow" style="background-color: var(--color3)">
+                    <a id="form" class="anchor"></a>
                     <div class="cardtext">
                         <h3 style="color: var(--color1)">If you are a business who would like our services, please fill out the form below!</h3>
-                        <iframe scrolling="no" src="https://docs.google.com/forms/d/e/1FAIpQLScLxWW0VZv0epmkJA_OjJPS8E763QHZM2EgA3n-F7KogamYXQ/viewform?embedded=true" width="1024px" height="1170" frameborder="0" marginheight="0" marginwidth="0" style="max-width: 100%;">Loading…</iframe>
+                        <iframe scrolling="no" src="https://docs.google.com/forms/d/e/1FAIpQLScLxWW0VZv0epmkJA_OjJPS8E763QHZM2EgA3n-F7KogamYXQ/viewform?embedded=true" width="1024px" height="1170" frameborder="0" marginheight="0" marginwidth="0" style="max-width: 100%; opacity: 0;" onload="this.style.opacity='1'">Loading…</iframe>
                     </div>
                 </div>
             </div>
