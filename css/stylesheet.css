@@ -63,19 +63,7 @@ html.is-animating {
     position: absolute;
     margin-top: -50px;
     visibility: hidden;
-
 }
-
-:target { /*flash the target div when a tag link is used*/
-    animation: targetflash 1s ease;
-}
-@keyframes targetflash {
-    0% {background-color: none;}
-    50% {background-color: var(--color2);}
-    100% {background-color: none;}
-}
-
-
 /*
   __  __       _     _ _        __  __
  |  \/  | ___ | |__ (_) | ___  |  \/  | ___ _ __  _   _
