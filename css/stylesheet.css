@@ -247,7 +247,7 @@ body {/*body styling*/
 
 .main{
     position: absolute;
-    margin: 70px 0px 70px 0px;
+    margin: 70px 0px 0px 0px;
     padding: 20px;
     overflow-x: hidden;
 }
@@ -312,6 +312,7 @@ h4 {
     flex-direction: column;
     padding: 0px;
     width: 100%;
+    height: calc(100vh - 70px);
 }
 .cardrow {
     padding: 0px;
@@ -319,6 +320,7 @@ h4 {
     flex-flow: row wrap;
     justify-content: center;
     overflow: hidden;
+    flex: 1 0 auto;
 }
 .cardtext {
     max-width: 1024px;
@@ -398,6 +400,27 @@ h4 {
     box-shadow: 1px 1px 3px #111111
 }
 
+footer {
+    height: 72px;
+    background-color: var(--color5);
+    border-top: 1px solid var(--color1);
+    flex-shrink: 0;
+}
+footer .copyright {
+    position: absolute;
+    right: 28px;
+    font-size: 15px;
+    margin: 28px 0px;
+    color: var(--color1)
+}
+footer .footerlink {
+    position: absolute;
+    left: 28px;
+    float: left;
+    font-size: 15px;
+    margin: 28px 0px;
+    color: var(--color1);
+}
 
 /*SPECIFIC TO PAGES OF SITE*/
 /*The-Team*/
@@ -602,6 +625,9 @@ h4 {
 
     .main h3 {
         font-size: 1.7em;
+    }
+    .cardlayout {
+        height: calc(100vh - 50px);
     }
     .cardthird{
         max-width: unset;
