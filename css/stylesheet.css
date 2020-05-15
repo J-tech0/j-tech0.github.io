@@ -80,7 +80,7 @@ html.is-animating {
     left: 0;
     width: 100vw;
     height: 52px;
-    z-index: 1003;
+    z-index: 1004;
     background-color: var(--color3);
     box-shadow: 0px 0px 5px var(--color5);
 }
@@ -120,7 +120,7 @@ html.is-animating {
     height: 100vh;
     width: 300px;
     position: fixed;
-    z-index: 1002;
+    z-index: 1003;
     top: 52px;
     left: -320px;
     background-color: var(--color3);
@@ -173,7 +173,7 @@ html.is-animating .sidenav a { /*swup animation when a link is clicked*/
     height: 70px;
     width: 100%;
     position: fixed;
-    z-index: 3;
+    z-index: 1004;
     top: 0px;
     left: 0px;
     background-color: var(--color3);
@@ -491,7 +491,7 @@ footer .footerlink {
     position: fixed;
     left: 0px;
     right: 0px;
-    z-index: 2;
+    z-index: 1002;
     opacity: 1;
     height: calc(100vh - 130px);
     width: 90vw;
