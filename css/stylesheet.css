@@ -6,7 +6,7 @@
  | |_| | | (_) | |_) | (_| | |
   \____|_|\___/|_.__/ \__,_|_|
 */
-* {
+*:not(.leaflet-zoom-animated):not(.leaflet-interactive) {
     transition: 0.3s;
     font-family: 'Open Sans', sans-serif, Arial;
 
@@ -589,12 +589,40 @@ footer .footerlink {
     }
 }
 /*DataAnalysisDemo*/
-#mapembed {
-    min-height: 300px;
-    width: 100%
+.mapembed {
+    min-height: 60vh;
+    top: 50px;
+    display: flex;
+    height: 10px;
+    width: 100%;
+    padding: 10px;
+    margin: 0px;
+    background-color: var(--color3);
+    border-radius: 10px;
+    border-top-left-radius: 0px;
 }
-
-
+#leaflet {
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+}
+.maptab {
+    float: left;
+    padding: 10px 20px;
+    margin: 0px 2px 0px 0px;
+    background-color: var(--color4);
+    border-top-left-radius: 10px; border-top-right-radius: 10px;
+    cursor: pointer;
+    color: var(--color1);
+    height:
+}
+.maptab:hover {
+    background-color: var(--color3);
+    transform: scaleY(1.05);
+}
+.maptab.current {
+    background-color: var(--color3)
+}
 
 /*
   __  __       _     _ _           ____                  _  __ _

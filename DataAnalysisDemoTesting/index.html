@@ -39,7 +39,6 @@
         <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
         integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
         crossorigin=""></script>
-
     </head>
     <body>
 
@@ -156,28 +155,56 @@
                     <div class="cardtext">
                         <h1>Data Analysis Demo</h1>
                         <hr>
-                        <h3>python eats data for breakfast</h3>
+                        <h3>We did a Covid Map</h3>
                     </div>
                 </div>
                 <div class="cardrow">
                     <div class="cardtext">
-                        <a class="maptab" href=""><h3>US</h3></a>
-                        <div id="mapembed">
-                            <script>
-                                var mymap = L.map('mapembed').fitBounds([
-                                    [50, -126],
-                                    [25, -66]
-                                ]);
-                                L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-                                    maxZoom: 19,
-                                    attribution: '&copy; <a href="https://openstreetmap.org/copyright">OpenStreetMap contributors</a>'
-                                }).addTo(mymap);
-                                L.control.scale().addTo(mymap);
-                            </script>
+                        <h3 class="maptab current" onclick="showUS()">United States</h3>
+                        <h3 class="maptab" onclick="showGlobal()">Global</h3>
+                        <script>
+                            function showUS() {
+                                document.getElementsByClassName("maptab")[0].classList.add("current");
+                                document.getElementsByClassName("maptab")[1].classList.remove("current");
+                                mymap.fitBounds([[22, -134],[52, -57]]);
+                                mymap.removeLayer(GlobalData);
+                                mymap.addLayer(USData);
+
+                            }
+                            function showGlobal() {
+                                document.getElementsByClassName("maptab")[0].classList.remove("current");
+                                document.getElementsByClassName("maptab")[1].classList.add("current");
+                                mymap.fitBounds([[-57, -189],[83, 189]]);
+                                mymap.removeLayer(USData);
+                                mymap.addLayer(GlobalData);
+                            }
+                        </script>
+                        <div class="mapembed">
+                            <div id="leaflet">
+                                <script type="text/javascript" src="/DataAnalysisDemoTesting/lastUpdateStates.js"></script>
+                                <script type="text/javascript" src="/DataAnalysisDemoTesting/lastUpdateCountries.js"></script>
+                                <script>
+                                    var mymap = L.map('leaflet', {
+                                        zoomSnap: 0.05
+                                    }).fitBounds([[22, -134],[52, -57]]);
+                                    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                                        maxZoom: 19,
+                                        attribution: '&copy; <a href="https://openstreetmap.org/copyright">OpenStreetMap contributors</a>'
+                                    }).addTo(mymap);
+                                    L.control.scale().addTo(mymap);
+                                    var USData = L.geoJson(statesData, {
+                                        onEachFeature: function (feature, layer) {
+                                            layer.bindPopup('<b>'+feature.properties.name+'<br></b>Confirmed: <b>'+feature.properties.confirmed+'</b><br>Recovered: <b>'+feature.properties.recovered+'</b><br>Dead: <b>'+feature.properties.dead+'</b>');
+                                        }
+                                    }).addTo(mymap);
+                                    var GlobalData = L.geoJson(countriesData, {
+                                        onEachFeature: function (feature, layer) {
+                                            layer.bindPopup('<b>'+feature.properties.name_long+'<br></b>Confirmed: <b>'+feature.properties.confirmed+'</b><br>Recovered: <b>'+feature.properties.recovered+'</b><br>Deaths: <b>'+feature.properties.dead+'</b>');
+                                        }
+                                    });
+                                </script>
+                            </div>
                         </div>
-                    </div>
-                    <div class="cardtext">
-                    <h3> text</h3>
                     </div>
                 </div>
 
