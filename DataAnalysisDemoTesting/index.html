@@ -29,6 +29,7 @@
         <!--import swup library for those smooth transitions and magical page preloading-->
         <script defer src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>
         <script defer src="https://unpkg.com/@swup/scroll-plugin@1.0.6/dist/SwupScrollPlugin.min.js"></script>
+        <script defer src="https://unpkg.com/@swup/scripts-plugin@1.1.0/dist/SwupScriptsPlugin.js"></script>
         <script defer src="/js/script.js"></script>
 
         <meta name="google-site-verification" content="r_VWCdwGioAISApKdbFcDT59EZG-pFP-oCXlhbhvQSY" />
@@ -39,6 +40,8 @@
         <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
         integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
         crossorigin=""></script>
+        <script type="text/javascript" src="/DataAnalysisDemoTesting/lastUpdateStates.js"></script>
+        <script type="text/javascript" src="/DataAnalysisDemoTesting/lastUpdateCountries.js"></script>
     </head>
     <body>
 
@@ -155,14 +158,14 @@
                     <div class="cardtext">
                         <h1>Data Analysis Demo</h1>
                         <hr>
-                        <h3>We did a Covid Map</h3>
+                        <h3>Using python, we pull data from both covid19api.com and covidtracking.com and parse that data into a file that can be loaded into the map below. Click an area to see data, and use the tabs to view Global data or state-by-state data for just the US</h3>
                     </div>
                 </div>
                 <div class="cardrow">
                     <div class="cardtext">
                         <h3 class="maptab current" onclick="showUS()">United States</h3>
                         <h3 class="maptab" onclick="showGlobal()">Global</h3>
-                        <script>
+                        <script data-swup-reload-script>
                             function showUS() {
                                 document.getElementsByClassName("maptab")[0].classList.add("current");
                                 document.getElementsByClassName("maptab")[1].classList.remove("current");
@@ -180,10 +183,8 @@
                             }
                         </script>
                         <div class="mapembed">
-                            <div id="leaflet">
-                                <script type="text/javascript" src="/DataAnalysisDemoTesting/lastUpdateStates.js"></script>
-                                <script type="text/javascript" src="/DataAnalysisDemoTesting/lastUpdateCountries.js"></script>
-                                <script>
+                            <div id="leaflet" >
+                                <script data-swup-reload-script>
                                     var mymap = L.map('leaflet', {
                                         zoomSnap: 0.05
                                     }).fitBounds([[22, -134],[52, -57]]);
