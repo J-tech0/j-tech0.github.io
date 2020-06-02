@@ -1,6 +1,6 @@
 <html> <!-- It's an HTML document yay. Welcome. -->
     <head> <!-- Head meta stuff in here -->
-        <title>SWG - Home</title> <!-- Page title. Quite important -->
+        <title>SWG - Openings</title> <!-- Page title. Quite important -->
         <!-- Description Meta etc ok i'll stop commenting every line -->
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,11 +8,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="author" content="J_tech0">
         <meta name="application-name" content="Synergy Works Group">
-    
+
         <!-- Overall style code, fonts, CSS file -->
         <link rel="stylesheet" href="/css/stylesheet.css?v=cache41236">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap" rel="stylesheet">
-        
+
         <!-- Logo Code -->
         <link rel="apple-touch-icon" sizes="180x180" href="/media/logos/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="/media/logos/favicon-32x32.png">
@@ -25,13 +25,13 @@
         <meta name="msapplication-TileColor" content="#1a7fba">
         <meta name="msapplication-config" content="/media/logos/browserconfig.xml">
         <meta name="theme-color" content="#1a7fba">
-        
+
         <!--import swup library for those smooth transitions and magical page preloading-->
         <script defer src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>
         <script defer src="https://unpkg.com/@swup/scroll-plugin@1.0.6/dist/SwupScrollPlugin.min.js"></script>
         <script defer src="https://unpkg.com/@swup/scripts-plugin@1.1.0/dist/SwupScriptsPlugin.js"></script>
         <script defer src="/js/script.js"></script>
-        
+
         <meta name="google-site-verification" content="r_VWCdwGioAISApKdbFcDT59EZG-pFP-oCXlhbhvQSY" />
 
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
@@ -46,13 +46,13 @@
     <body>
 
 <!--
-   _____ _     _                           _______          _                   _____          _      
-  / ____(_)   | |                         |__   __|        | |                 / ____|        | |     
- | (___  _  __| | ___ _ __   __ ___   ___| |_| | ___  _ __ | |__   __ _ _ __  | |     ___   __| | ___ 
+   _____ _     _                           _______          _                   _____          _
+  / ____(_)   | |                         |__   __|        | |                 / ____|        | |
+ | (___  _  __| | ___ _ __   __ ___   ___| |_| | ___  _ __ | |__   __ _ _ __  | |     ___   __| | ___
   \___ \| |/ _` |/ _ \ '_ \ / _` \ \ / /_   _| |/ _ \| '_ \| '_ \ / _` | '__| | |    / _ \ / _` |/ _ \
   ____) | | (_| |  __/ | | | (_| |\ V /  |_| | | (_) | |_) | |_) | (_| | |    | |___| (_) | (_| |  __/
  |_____/|_|\__,_|\___|_| |_|\__,_| \_/       |_|\___/| .__/|_.__/ \__,_|_|     \_____\___/ \__,_|\___|
-                                                     | |                                              
+                                                     | |
                                                      |_| this is for mobile/tablet users
 -->
         <div class="topbar"> <!-- Topbar -->
@@ -65,7 +65,7 @@
         </div>
         <div id="swup"> <!-- contain the sidebar and body in swup animation - this should encapsulate the page content too -->
             <div class="sidenav"> <!-- Links for side menu bar -->
-                <div class="transition-current">
+                <div>
                     <a href="/" onclick="navClose()">Home</a>
                 </div>
                 <div>
@@ -83,7 +83,7 @@
                 <div>
                     <a href="/Contact/" onclick="navClose()">Contact</a>
                 </div>
-                <div>
+                <div class="transition-current">
                     <a href="/Openings/" onclick="navClose()">Openings</a>
                 </div>
             </div> <!-- end of the sidemenu links -->
@@ -124,19 +124,19 @@
             <div class="clicktocloseoverlay" onclick="navClose()"> <!--overlay to close popup -->
             </div>
 <!--
-  _______                               _____          _      
- |__   __|                             / ____|        | |     
-    | | ___  _ __  _ __   __ ___   __ | |     ___   __| | ___ 
+  _______                               _____          _
+ |__   __|                             / ____|        | |
+    | | ___  _ __  _ __   __ ___   __ | |     ___   __| | ___
     | |/ _ \| '_ \| '_ \ / _` \ \ / / | |    / _ \ / _` |/ _ \
     | | (_) | |_) | | | | (_| |\ V /  | |___| (_) | (_| |  __/
     |_|\___/| .__/|_| |_|\__,_| \_/    \_____\___/ \__,_|\___|
-            | |                                               
+            | |
             |_|                this is for desktop users
 -->
             <div class="topnav"> <!--Links for top menu bar-->
                 <a href="/"><img src="/media/logos/SynSolLogoWide.svg" class="logo"></a>
                 <div class="toplinks">
-                    <div class="transition-current">
+                    <div>
                         <a href="/">Home</a>
                     </div>
                     <div>
@@ -154,69 +154,29 @@
                     <div>
                         <a href="/Contact/">Contact</a>
                     </div>
-                    <div>
-                        <a href="/Openings/" onclick="navClose()">Openings</a>
+                    <div class="transition-current">
+                        <a href="/Openings/">Openings</a>
                     </div>
                 </div>
             </div> <!-- end of the topmenu links -->
             <div class="transition-fade main cardlayout">
                 <div class="cardrow" style="background-color: var(--color2)">
                     <div class="cardtext">
-                        <h1>Welcome to Synergy Works Group!</h1>
+                        <h1>Openings</h1>
                         <hr>
-                        <h3>Synergy Works Group is a consulting firm that wants to help you achieve the highest potential for your business.</h3>
-                        <div class="cta-buttons">
-                            <a href="/About-Us/">About Us</a>
-                        </div>
-                    </div>
-                    <div class="cardimg" style="background-image: url(/media/images/homepage/business.jpg); order: 1;">
+                        <h3></h3>
                     </div>
                 </div>
                 <div class="cardrow" style="background-color: var(--color4)">
-                    <div class="cardtext">
-                        <h3 style="color: var(--color1)">At Synergy we see the value that technology and analytics brings to companies, but have noticed a divide between larger and smaller companies in being able to leverage these opportunities.</h3>
-                        <h3 style="color: var(--color1)">It is our mission to empower decision makers at all levels, not just large corporations, to have the tools and resources they need to succeed.</h3>
-                    </div>
+                    <a href="https://forms.gle/Y9z7RAuyXTdTuCDX9" class="cardthird">
+                        <h2>Business Development</h2>
+                        <h3 class="learnmore">Apply ➔</h3>
+                    </a>
+                    <a href="https://forms.gle/heHM1uY5aSSqMjSv9" class="cardthird">
+                        <h2>Human Resources</h2>
+                        <h3 class="learnmore">Apply ➔</h3>
+                    </a>
                 </div>
-                <div class="cardrow" style="background-color: var(--color4)">
-                    <a href="/Our-Services/#Business-Intelligence" class="cardthird">
-                        <img src='/media/images/homepage/businessintelligence.jpg'>
-                        <h2>Business Intelligence:</h2>
-                        <h3>Are you presented with challenges and don’t know how to best leverage your data to find a solution?</h3>
-                        <h3 class="learnmore">Learn More ➔</h3>
-                    </a>
-                    <a href="/Our-Services/#Market-Analysis" class="cardthird">
-                        <img src='/media/images/homepage/marketanalysis.jpg'>
-                        <h2>Market Analysis:</h2>
-                        <h3>Are you unsure about what external factors are affecting your business?</h3>
-                        <h3 class="learnmore">Learn More ➔</h3>
-                    </a>
-                    <a href="/Our-Services/#Enterprise-Systems-Management" class="cardthird">
-                        <img src='/media/images/homepage/enterprisesystemsmanagement.jpg'>
-                        <h2>Enterprise Systems Management:</h2>
-                        <h3>Are you overwhelmed by unreliable communication methods or cluttered files?</h3>
-                        <h3 class="learnmore">Learn More ➔</h3>
-                    </a>
-                    <a href="/Our-Services/#Web-Services" class="cardthird">
-                        <img src='/media/images/homepage/webservices.jpg'>
-                        <h2>Web Services:</h2>
-                        <h3>Do you want to build a website or an app and are struggling to get started?</h3>
-                        <h3 class="learnmore">Learn More ➔</h3>
-                    </a>
-                    <a href="/Our-Services/#Payment-Solutions" class="cardthird">
-                        <img src='/media/images/homepage/paymentsolutions.jpg'>
-                        <h2>Payment Solutions:</h2>
-                        <h3>Do you want to make your money work for you and learn how to gain rewards while you pay your bills?</h3>
-                        <h3 class="learnmore">Learn More ➔</h3>
-                    </a>
-                    <a href="/Our-Services/#General-Strategy" class="cardthird">
-                        <img src='/media/images/homepage/generalstrategy.jpg'>
-                        <h2>General Strategy:</h2>
-                        <h3>Don’t know where to start but know change needs to happen?</h3>
-                        <h3 class="learnmore">Learn More ➔</h3>
-                    </a>
-                </div>penings/" onclick="navClose()">Openings</a>
-                    </div>
                 <footer>
                     <a href="/Investors/"><h4 class="footerlink">Investors</h4></a>
                     <h4 class="copyright">&copy; Synergy Works Group 2019-2020</h4>

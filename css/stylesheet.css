@@ -322,6 +322,7 @@ h4 {
     flex: 1 0 auto;
     max-width: 100vw;
 }
+
 .cardwork { /*for Our-Work page*/
     padding: 0px;
     display: flex;
