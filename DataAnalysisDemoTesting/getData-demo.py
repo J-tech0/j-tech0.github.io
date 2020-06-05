@@ -90,6 +90,7 @@ def getUSStatesLive():
     r = requests.get(url="https://covidtracking.com/api/v1/states/current.json")
     data = r.json()
     for i in range(0, 51):
+        print(i)
         statesData["features"][i]["properties"]["confirmed"] = data[i]["positive"]
         statesData["features"][i]["properties"]["recovered"] = data[i]["recovered"]
         statesData["features"][i]["properties"]["dead"] = data[i]["death"]
@@ -100,6 +101,7 @@ def getAllCountriesLive():
     countries = r.json()
     queue = Queue()
     for i in range(len(countries)):
+        print(i)
         worker = Worker(queue)
         worker.daemon = True
         worker.start()
@@ -124,6 +126,8 @@ def updateAll():
     c = "var countriesData = " + json.dumps(countriesData) + ";"
     with open('lastUpdateCountries.js', 'w', encoding='utf-8') as f:
         f.write(c)
+    print("written all")
+
 
 updateAll() #update once when you start the script then only every hour
 
