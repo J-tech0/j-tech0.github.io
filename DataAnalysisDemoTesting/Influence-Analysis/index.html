@@ -162,60 +162,68 @@
             <div class="transition-fade main cardlayout">
                 <div class="cardrow">
                     <div class="cardtext">
-                        <h1>Data Analysis Demo</h1>
-                        <hr>
-                        <h3>Using python, we pull data from both covid19api.com and covidtracking.com and parse that data into a file that can be loaded into the map below. Click an area to see data, and use the tabs to view Global data or state-by-state data for just the US.</h3>
-                        <h3>See <a href="/DataAnalysisDemoTesting/Influence-Analysis/">here</a> for an Influence analysis.</h3>
+                        <h1>Covid-19: Largest Influences on Cases in U.S. States</h1>
                     </div>
                 </div>
                 <div class="cardrow">
                     <div class="cardtext">
-                        <h3 class="maptab current" onclick="showUS()">United States</h3>
-                        <h3 class="maptab" onclick="showGlobal()">Global</h3>
-                        <script data-swup-reload-script>
-                            function showUS() {
-                                document.getElementsByClassName("maptab")[0].classList.add("current");
-                                document.getElementsByClassName("maptab")[1].classList.remove("current");
-                                mymap.fitBounds([[22, -134],[52, -57]]);
-                                mymap.removeLayer(GlobalData);
-                                mymap.addLayer(USData);
-
-                            }
-                            function showGlobal() {
-                                document.getElementsByClassName("maptab")[0].classList.remove("current");
-                                document.getElementsByClassName("maptab")[1].classList.add("current");
-                                mymap.fitBounds([[-57, -189],[83, 189]]);
-                                mymap.removeLayer(USData);
-                                mymap.addLayer(GlobalData);
-                            }
-                        </script>
-                        <div class="mapembed">
-                            <div id="leaflet" >
-                                <script data-swup-reload-script>
-                                    var mymap = L.map('leaflet', {
-                                        zoomSnap: 0.05
-                                    }).fitBounds([[22, -134],[52, -57]]);
-                                    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-                                        maxZoom: 19,
-                                        attribution: '&copy; <a href="https://openstreetmap.org/copyright">OpenStreetMap contributors</a>'
-                                    }).addTo(mymap);
-                                    L.control.scale().addTo(mymap);
-                                    var USData = L.geoJson(statesData, {
-                                        onEachFeature: function (feature, layer) {
-                                            layer.bindPopup('<b>'+feature.properties.name+'<br></b>Confirmed: <b>'+feature.properties.confirmed+'</b><br>Recovered: <b>'+feature.properties.recovered+'</b><br>Dead: <b>'+feature.properties.dead+'</b>');
-                                        }
-                                    }).addTo(mymap);
-                                    var GlobalData = L.geoJson(countriesData, {
-                                        onEachFeature: function (feature, layer) {
-                                            layer.bindPopup('<b>'+feature.properties.name_long+'<br></b>Confirmed: <b>'+feature.properties.confirmed+'</b><br>Recovered: <b>'+feature.properties.recovered+'</b><br>Deaths: <b>'+feature.properties.dead+'</b>');
-                                        }
-                                    });
-                                </script>
-                            </div>
+                        <h2>Initial Variables with Hypotheses</h2>
+                        <hr>
+                    </div>
+                </div>
+                <div class="cardrow">
+                    <div class="cardtext" style="max-width: 482px">
+                        <h2>Population Density</h2>
+                        <h3>If people reside in more compact areas, the interactions between them are likely to be more frequent. With more interactions comes better opportunities for those people to become infected.</h3>
+                        <h3><a href="https://state.1keydata.com/state-population-density.php">Source</a></h3>
+                    </div>
+                    <div class="cardtext" style="max-width: 482px">
+                        <h2>Revenue Per Capita</h2>
+                        <h3>Similar to government spending, revenue may allow for better handling of the pandemic, with more resources.</h3>
+                        <h3><a href="https://ballotpedia.org/Total_state_government_expenditures">Source</a></h3>
+                    </div>
+                </div>
+                <div class="cardrow">
+                    <div class="cardtext" style="max-width: 482px">
+                        <h2>Health Rankings</h2>
+                        <h3>This ranks the healthcare system of the various states based on various factors. A better healthcare system would enable those who are sick to recover more quickly, reducing the chances of him/her spreading the virus.</h3>
+                        <h3><a href="https://www.usnews.com/news/best-states/rankings/health-care">Source</a></h3>
+                    </div>
+                    <div class="cardtext" style="max-width: 482px">
+                        <h2>Obesity Percentages</h2>
+                        <h3>The percentage of obese people in a state can show the health of the community, to an extent, and less healthy citizens have a better chance of catching the virus.</h3>
+                        <h3><a href="https://stateofchildhoodobesity.org/adult-obesity/">Source</a></h3>
+                    </div>
+                </div>
+                <div class="cardrow">
+                    <div class="cardtext" style="max-width: 482px">
+                        <h2>Spending Per Capita</h2>
+                        <h3>The expenditures of a state’s government is an indicator of its economy’s well-being. Through more wealth, a state may be more efficient in mitigation and remediation of the virus.</h3>
+                        <h3><a href="https://ballotpedia.org/Total_state_government_expenditures">Source</a></h3>
+                    </div>
+                    <div class="cardtext" style="max-width: 482px">
+                        <h2>Smoking Percentages</h2>
+                        <h3>Covid-19 has been shown to cause many complications in the lungs. With more people in a state smoking, the residents’ health can bring about further detriments, increasing infection rates.</h3>
+                        <h3><a href="https://worldpopulationreview.com/states/smoking-rates-by-state/">Source</a></h3>
+                    </div>
+                </div>
+                <div class="cardrow">
+                    <div class="cardtext">
+                        <h2>Linear Regression</h2>
+                        <hr>
+                        <h3>To find the largest Covid-19 influences, the Python programming language was utilized to fit linear regression models, using data science libraries such as pandas and statsmodels. A regression model was created using each subset of the independent variables listed above, with the percentage of people with Covid-19 in each state as the dependent variable. The model with the highest Adjusted R-Squared was chosen, as it better explains the case percentages, in theory.</h3>
+                        <div class="cardimg nocover" style="background-image: url(/media/images/dataanalysisdemotesting/independentvariables.png)">
+                        </div>
+                        <h3>These independent variables yielded the model with the highest Adjusted R-Squared of 5.8%. While that may seem low, this is a very complex issue with millions of other factors, so it only makes sense that a small percentage of the cases would be accounted for, using a small number of factors.</h3>
+                        <h2>Beta Coefficients</h2>
+                        <hr>
+                        <div class="cardimg nocover" style="background-image: url(/media/images/dataanalysisdemotesting/betacoefficients.png); height:500px;">
+                        </div>
+                        <div class="cta-buttons">
+                            <a href="/DataAnalysisDemoTesting/">Back to the Map</a>
                         </div>
                     </div>
                 </div>
-
                 <footer>
                     <a href="/Investors/"><h4 class="footerlink">Investors</h4></a>
                     <h4 class="copyright">&copy; Synergy Works Group 2019-2020</h4>
