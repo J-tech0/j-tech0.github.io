@@ -45,7 +45,6 @@ html {
 }
 html.is-animating {
     scroll-behavior: unset;
-    overflow: hidden;
 }
 .clicktocloseoverlay { /*Overlay for sidemenu and popups*/
     position: fixed;
@@ -311,7 +310,6 @@ h4 {
     flex-direction: column;
     padding: 0px;
     width: 100%;
-    height: calc(100vh - 70px);
 }
 .cardrow {
     padding: 0px;
@@ -592,6 +590,52 @@ footer .footerlink {
         bottom: 0px;
     }
 }
+
+/*NEWSROOM*/
+.newscard {
+    flex-grow: 1;
+    max-width: 600px;
+    background-color: var(--color5);
+    margin: 20px;
+    border-radius: 5px;
+    overflow: hidden;
+    cursor: pointer;
+    display: block;
+    position: relative;
+}
+.newscard.latest {
+    background-color: var(--color3)
+}
+.newscard:hover {
+    transform: scale(1.03);
+    box-shadow: 1px 1px 3px #696969
+}
+.newscard h2 {
+    color: var(--color1);
+    padding: 15px 15px 0px 15px;
+    margin: 0px;
+    font-size: 2.1em;
+}
+.newscard h3 {
+    color: var(--color1);
+    padding: 5px 15px 5px 15px;
+    margin: 0px;
+    font-size: 1.1em!important;
+}
+.newscard h4 {
+    color: var(--color1);
+    padding: 10px 10px 30px 10px;
+    margin: 0px;
+    font-size: 1em;
+}
+.oldarticles { /*for Our-Work page*/
+    padding: 0px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    overflow: hidden;
+    max-width: 100vw;
+}
 /*DataAnalysisDemo*/
 .mapembed {
     min-height: 60vh;
@@ -671,9 +715,6 @@ footer .footerlink {
 
     .main h3 {
         font-size: 1.7em;
-    }
-    .cardlayout {
-        height: calc(100vh - 50px);
     }
     .cardthird {
         max-width: unset;
