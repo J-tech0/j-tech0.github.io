@@ -651,6 +651,12 @@ footer .footerlink {
     overflow: hidden;
     max-width: 100vw;
 }
+
+.newsarticle h3 {
+    font-family: "Times New Roman", "Nimbus Roman", "Open Sans"!important;
+}
+
+
 /*DataAnalysisDemo*/
 .mapembed {
     min-height: 60vh;
