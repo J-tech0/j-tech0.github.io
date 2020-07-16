@@ -601,7 +601,7 @@ footer .footerlink {
     }
 }
 
-/*NEWSROOM*/
+/*Insights*/
 .newscard {
     flex-grow: 1;
     max-width: 600px;
@@ -654,6 +654,9 @@ footer .footerlink {
 
 .newsarticle h3 {
     font-family: "Times New Roman", "Nimbus Roman", "Open Sans"!important;
+}
+.newsarticle h2 {
+    font-family: "Arial", "Open Sans"!important;
 }
 
 

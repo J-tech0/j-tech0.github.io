@@ -1,6 +1,6 @@
 <html> <!-- It's an HTML document yay. Welcome. -->
     <head> <!-- Head meta stuff in here -->
-        <title>SWG - Home</title> <!-- Page title. Quite important -->
+        <title>SWG - Insights</title> <!-- Page title. Quite important -->
         <!-- Description Meta etc ok i'll stop commenting every line -->
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,11 +8,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="author" content="J_tech0">
         <meta name="application-name" content="Synergy Works Group">
-    
+
         <!-- Overall style code, fonts, CSS file -->
         <link rel="stylesheet" href="/css/stylesheet.css?v=cache87428">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap" rel="stylesheet">
-        
+
         <!-- Logo Code -->
         <link rel="apple-touch-icon" sizes="180x180" href="/media/logos/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="/media/logos/favicon-32x32.png">
@@ -25,25 +25,25 @@
         <meta name="msapplication-TileColor" content="#1a7fba">
         <meta name="msapplication-config" content="/media/logos/browserconfig.xml">
         <meta name="theme-color" content="#1a7fba">
-        
+
         <!--import swup library for those smooth transitions and magical page preloading-->
         <script defer src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>
         <script defer src="https://unpkg.com/@swup/scroll-plugin@latest/dist/SwupScrollPlugin.min.js"></script>
         <script defer src="https://unpkg.com/@swup/debug-plugin@1.0.3/dist/SwupDebugPlugin.min.js"></script>
         <script defer src="/js/script.js"></script>
-        
+
         <meta name="google-site-verification" content="r_VWCdwGioAISApKdbFcDT59EZG-pFP-oCXlhbhvQSY" />
     </head>
     <body>
 
 <!--
-   _____ _     _                           _______          _                   _____          _      
-  / ____(_)   | |                         |__   __|        | |                 / ____|        | |     
- | (___  _  __| | ___ _ __   __ ___   ___| |_| | ___  _ __ | |__   __ _ _ __  | |     ___   __| | ___ 
+   _____ _     _                           _______          _                   _____          _
+  / ____(_)   | |                         |__   __|        | |                 / ____|        | |
+ | (___  _  __| | ___ _ __   __ ___   ___| |_| | ___  _ __ | |__   __ _ _ __  | |     ___   __| | ___
   \___ \| |/ _` |/ _ \ '_ \ / _` \ \ / /_   _| |/ _ \| '_ \| '_ \ / _` | '__| | |    / _ \ / _` |/ _ \
   ____) | | (_| |  __/ | | | (_| |\ V /  |_| | | (_) | |_) | |_) | (_| | |    | |___| (_) | (_| |  __/
  |_____/|_|\__,_|\___|_| |_|\__,_| \_/       |_|\___/| .__/|_.__/ \__,_|_|     \_____\___/ \__,_|\___|
-                                                     | |                                              
+                                                     | |
                                                      |_| this is for mobile/tablet users
 -->
         <div class="topbar"> <!-- Topbar -->
@@ -56,7 +56,7 @@
         </div>
         <div id="swup"> <!-- contain the sidebar and body in swup animation - this should encapsulate the page content too -->
             <div class="sidenav"> <!-- Links for side menu bar -->
-                <div class="transition-current">
+                <div>
                     <a href="/" onclick="navClose()">Home</a>
                 </div>
                 <div>
@@ -118,19 +118,19 @@
             <div class="clicktocloseoverlay" onclick="navClose()"> <!--overlay to close popup -->
             </div>
 <!--
-  _______                               _____          _      
- |__   __|                             / ____|        | |     
-    | | ___  _ __  _ __   __ ___   __ | |     ___   __| | ___ 
+  _______                               _____          _
+ |__   __|                             / ____|        | |
+    | | ___  _ __  _ __   __ ___   __ | |     ___   __| | ___
     | |/ _ \| '_ \| '_ \ / _` \ \ / / | |    / _ \ / _` |/ _ \
     | | (_) | |_) | | | | (_| |\ V /  | |___| (_) | (_| |  __/
     |_|\___/| .__/|_| |_|\__,_| \_/    \_____\___/ \__,_|\___|
-            | |                                               
+            | |
             |_|                this is for desktop users
 -->
             <div class="topnav"> <!--Links for top menu bar-->
                 <a href="/"><img src="/media/logos/SynSolLogoWide.svg" class="logo"></a>
                 <div class="toplinks">
-                    <div class="transition-current">
+                    <div>
                         <a href="/">Home</a>
                     </div>
                     <div>
@@ -151,69 +151,48 @@
                     <div>
                         <a href="/Jobs/">Jobs</a>
                     </div>
-                    <div>
+                    <div class="transition-current">
                         <a href="/Insights/">Insights</a>
                     </div>
                 </div>
             </div> <!-- end of the topmenu links -->
             <div class="transition-fade main cardlayout">
-                <div class="cardrow" style="background-color: var(--color2)">
+                <div class="cardrow">
                     <div class="cardtext">
-                        <h1>Welcome to Synergy Works Group!</h1>
+                        <h1>Insights</h1>
                         <hr>
-                        <h3>Synergy Works Group is a consulting firm that wants to help you achieve the highest potential for your business.</h3>
-                        <div class="cta-buttons">
-                            <a href="/About-Us/">About Us</a>
-                        </div>
-                    </div>
-                    <div class="cardimg" style="background-image: url(/media/images/homepage/business.jpg); order: 1;">
                     </div>
                 </div>
-                <div class="cardrow" style="background-color: var(--color5)">
-                    <a href="/Insights/" class="newscard latest">
-                        <h2>Weekly Insights</h2>
-                        <h3>Updated July 16</h3>
-                        <h4>With the constant change of economic and political climates keeping up to date can be hard. We want you to know and understand how these changes will affect your business.</h4>
-                        <h3 class="learnmore">Insights ➔</h3>
+                <div class="cardrow">
+                    <a href="/Insights/070820-EconomicCrash/" class="newscard latest">
+                        <h2>Top 10 Tips for Small Business Websites to Stand Out</h2>
+                        <h3>July 16, Jack Krieps</h3>
+                        <h4>As of the last jobs report, the unemployment rate stands at 11.1&#37;. While this is an improvement over the peak...</h4>
                     </a>
                 </div>
-                <div class="cardrow" style="background-color: var(--color4)">
+                <div class="cardrow">
                     <div class="cardtext">
-                        <h3 style="color: var(--color1)">At Synergy we see the value that technology and analytics brings to companies, but have noticed a divide between larger and smaller companies in being able to leverage these opportunities.</h3>
-                        <h3 style="color: var(--color1)">It is our mission to empower decision makers at all levels, not just large corporations, to have the tools and resources they need to succeed.</h3>
+                        <h2>Older Articles</h2>
                     </div>
                 </div>
-                <div class="cardrow" style="background-color: var(--color4)">
-                    <a href="/Our-Services/#Business-Intelligence" class="cardthird">
-                        <img src='/media/images/homepage/businessintelligence.jpg'>
-                        <h2>Business Intelligence:</h2>
-                        <h3>Helping you gain insights into your business using analytic tools such as Python, Microsoft Excel, and VBA to make informed decisions and improve process workflow</h3>
-                        <h3 class="learnmore">Learn More ➔</h3>
-                    </a>
-                    <a href="/Our-Services/#Growth-Strategies" class="cardthird">
-                        <img src='/media/images/homepage/growthstrategies.jpg'>
-                        <h2>Growth Strategies:</h2>
-                        <h3>Analyzing the internal and external factors that impact your business to create tailored recommendations for increased growth.</h3>
-                        <h3 class="learnmore">Learn More ➔</h3>
-                    </a>
-                    <a href="/Our-Services/#Enterprise-Systems-Management" class="cardthird">
-                        <img src='/media/images/homepage/enterprisesystemsmanagement.jpg'>
-                        <h2>Enterprise Systems Management:</h2>
-                        <h3>Leveraging the tools and technologies of popular enterprise systems such as G Suite and Microsoft Office 365, to streamline your internal communication and create a secure hub for all of your work with Synergy as your own personal support team.</h3>
-                        <h3 class="learnmore">Learn More ➔</h3>
-                    </a>
-                    <a href="/Our-Services/#Web-Services" class="cardthird">
-                        <img src='/media/images/homepage/webservices.jpg'>
-                        <h2>Web Services:</h2>
-                        <h3>The internet is becoming an essential component of business and we want you to be able to take advantage of it. When a cookie cutter solution just won't do, we are here to make a website for you with advanced customizability and ease of use.</h3>
-                        <h3 class="learnmore">Learn More ➔</h3>
-                    </a>
-                    <a href="/Our-Services/#Social-Media" class="cardthird">
-                        <img src='/media/images/homepage/socialmedia.jpg'>
-                        <h2>Social Media:</h2>
-                        <h3>As social media channels continue to evolve, knowing how to reach your target market can become difficult. We want to help you navigate social media and utilize it’s full range of tools.</h3>
-                        <h3 class="learnmore">Learn More ➔</h3>
-                    </a>
+                <div class="cardrow">
+                    <div class="oldarticles" style="max-width: 1024px;">
+                        <a href="/Insights/070820-EconomicCrash/" class="newscard">
+                            <h2>Is the worst of the Economic Crash still ahead?</h2>
+                            <h3>July 8</h3>
+                            <h4>As of the last jobs report, the unemployment rate stands at 11.1&#37;. While this is an improvement over the peak...</h4>
+                        </a>
+                        <a href="/Insights/062920-AnotherShutDown/" class="newscard">
+                            <h2>COVID is Spiking Across the South: Is Another Shut Down Inevitable?</h2>
+                            <h3>June 29</h3>
+                            <h4>This week, COVID is back in the news and multiple US states are seeing spikes, mostly across the sunbelt region. This prompts...</h4>
+                        </a>
+                        <a href="/Insights/061620-MayJobsReport/" class="newscard">
+                            <h2>Does the May Jobs Report Indicate the Recovery Has Begun?</h2>
+                            <h3>June 16</h3>
+                            <h4>The United States currently faces a triad of crises unlike anything that it has ever seen before. A global...</h4>
+                        </a>
+                    </div>
                 </div>
                 <footer>
                     <h4 class="copyright">&copy; Synergy Works Group 2019-2020</h4>
