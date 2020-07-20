@@ -20,7 +20,6 @@
     text-size-adjust: none;
 }
 
-
 /*between-page animations*/
 .transition-fade {/*makes the website body normally shown*/
     opacity: 1;
@@ -29,6 +28,15 @@ html.is-animating .transition-fade {/*fade out page for transition*/
     opacity: 0;
     transform: translate3d(0px, -10px, 0px);
     transition-timing-function: cubic-bezier(0, 0, 0, 1);
+}
+html.is-animating.to-our-services body{
+    background-color: var(--color4)!important;
+}
+html.is-animating.to-contact body{
+    background-color: var(--color2)!important;
+}
+html.is-animating.to-homepage body{
+    background-color: var(--color2)!important;
 }
 html.is-leaving .transition-fade {
     transform: translate3d(0px, 10px, 0px);
@@ -424,7 +432,7 @@ footer .copyright {
     position: absolute;
     right: 28px;
     font-size: 15px;
-    margin: 28px 0px;
+    margin: 28px 0px 0px 0px;
     color: var(--color1)
 }
 footer .footerlink {
@@ -437,6 +445,19 @@ footer .footerlink {
 }
 .footerlink:hover {
     text-shadow: 0 0 10px white;
+}
+footer .footersocial {
+    position: absolute;
+    padding: 0px 10px;
+    overflow: hidden;
+}
+footer .footersocial a img {
+    height: 32px;
+    float: left;
+    padding: 20px 10px;
+}
+footer .footersocial a img:hover {
+    transform: scale(1.07);
 }
 
 /*SPECIFIC TO PAGES OF SITE*/
@@ -777,5 +798,15 @@ footer .footerlink {
 @media only screen and (max-width: 675px) {
     .cardimg {
         order: -1;
+    }
+}
+@media only screen and (max-width: 512px) {
+    footer {
+        height: 98px!important;
+    }
+    footer .copyright {
+        position: relative;
+        left: 20px;
+        top: 40px;
     }
 }
