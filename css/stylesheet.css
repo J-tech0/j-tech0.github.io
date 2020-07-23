@@ -29,15 +29,24 @@ html.is-animating .transition-fade {/*fade out page for transition*/
     transform: translate3d(0px, -10px, 0px);
     transition-timing-function: cubic-bezier(0, 0, 0, 1);
 }
-html.is-animating.to-our-services body{
+html.is-animating .clicktocloseoverlay{
+    background-color: var(--color1);
+    visibility: visible;
+    opacity: 1;
+}
+html.to-homepage .clicktocloseoverlay {
+    background-color: var(--color2)!important;
+}
+html.to-our-services .clicktocloseoverlay {
     background-color: var(--color4)!important;
 }
-html.is-animating.to-contact body{
+html.to-contact .clicktocloseoverlay {
     background-color: var(--color2)!important;
 }
-html.is-animating.to-homepage body{
+html.to-jobs .clicktocloseoverlay {
     background-color: var(--color2)!important;
 }
+
 html.is-leaving .transition-fade {
     transform: translate3d(0px, 10px, 0px);
     transition-timing-function: cubic-bezier(1, 0, 1, 1);
@@ -57,13 +66,14 @@ html.is-animating {
 .clicktocloseoverlay { /*Overlay for sidemenu and popups*/
     position: fixed;
     left: 0; right: 0; top: 0; bottom: 0;
-    background-color: rgba(0, 0, 0, .3);
+    background-color: rgba(0, 0, 0, 0);
     visibility: hidden; /*so that it doesn't interfere with scrolling while invisible*/
     opacity: 0;
     z-index: 1001;
 }
 
 .clicktocloseoverlay.show {
+    background-color: rgba(0, 0, 0, .3);
     visibility: visible;
     opacity: 1;
 }
