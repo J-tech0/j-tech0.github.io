@@ -1,0 +1,210 @@
+<html> <!-- It's an HTML document yay. Welcome. -->
+    <head> <!-- Head meta stuff in here -->
+        <title>SWG - Insights</title> <!-- Page title. Quite important -->
+        <!-- Description Meta etc ok i'll stop commenting every line -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="Synergy Works Group is a consulting firm that wants to help you achieve the highest potential for your business">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="J_tech0">
+        <meta name="application-name" content="Synergy Works Group">
+
+        <!-- Overall style code, fonts, CSS file -->
+        <link rel="stylesheet" href="/css/stylesheet.css?v=cache34956">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap" rel="stylesheet">
+
+        <!-- Logo Code -->
+        <link rel="apple-touch-icon" sizes="180x180" href="/media/logos/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/media/logos/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/media/logos/favicon-16x16.png">
+        <link rel="manifest" href="/media/logos/site.webmanifest">
+        <link rel="mask-icon" href="/media/logos/safari-pinned-tab.svg" color="#1a7fba">
+        <link rel="shortcut icon" href="/media/logos/favicon.ico">
+        <meta name="apple-mobile-web-app-title" content="SynergySolutions">
+        <meta name="application-name" content="SynergySolutions">
+        <meta name="msapplication-TileColor" content="#1a7fba">
+        <meta name="msapplication-config" content="/media/logos/browserconfig.xml">
+        <meta name="theme-color" content="#1a7fba">
+
+        <!--import swup library for those smooth transitions and magical page preloading-->
+        <script defer src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>
+        <script defer src="https://unpkg.com/@swup/scroll-plugin@latest/dist/SwupScrollPlugin.min.js"></script>
+        <script defer src="https://unpkg.com/@swup/debug-plugin@1.0.3/dist/SwupDebugPlugin.min.js"></script>
+        <script defer src="/js/script.js"></script>
+
+        <meta name="google-site-verification" content="r_VWCdwGioAISApKdbFcDT59EZG-pFP-oCXlhbhvQSY" />
+    </head>
+    <body>
+
+<!--
+   _____ _     _                           _______          _                   _____          _
+  / ____(_)   | |                         |__   __|        | |                 / ____|        | |
+ | (___  _  __| | ___ _ __   __ ___   ___| |_| | ___  _ __ | |__   __ _ _ __  | |     ___   __| | ___
+  \___ \| |/ _` |/ _ \ '_ \ / _` \ \ / /_   _| |/ _ \| '_ \| '_ \ / _` | '__| | |    / _ \ / _` |/ _ \
+  ____) | | (_| |  __/ | | | (_| |\ V /  |_| | | (_) | |_) | |_) | (_| | |    | |___| (_) | (_| |  __/
+ |_____/|_|\__,_|\___|_| |_|\__,_| \_/       |_|\___/| .__/|_.__/ \__,_|_|     \_____\___/ \__,_|\___|
+                                                     | |
+                                                     |_| this is for mobile/tablet users
+-->
+        <div class="topbar"> <!-- Topbar -->
+            <div class="menubtn" onclick="doMenu()"> <!-- This is the button to open the sidenav -->
+                <div class="bar1"></div>
+                <div class="bar2"></div> <!-- These are the button bits so we can have nice animations -->
+                <div class="bar3"></div>
+            </div>
+            <img src="/media/logos/SynSolLogoWide.svg" class="logo"> <!-- logo for topbar -->
+        </div>
+        <div id="swup"> <!-- contain the sidebar and body in swup animation - this should encapsulate the page content too -->
+            <div class="sidenav"> <!-- Links for side menu bar -->
+                <div>
+                    <a href="/" onclick="navClose()">Home</a>
+                </div>
+                <div>
+                    <a href="/About-Us/" onclick="navClose()">About Us</a>
+                </div>
+                <div>
+                    <a href="/Our-Services/" onclick="navClose()">Our Services</a>
+                </div>
+                <div>
+                    <a href="/Our-Work/" onclick="navClose()">Our Work</a>
+                </div>
+                <div>
+                    <a href="/The-Team/" onclick="navClose()">The Team</a>
+                </div>
+                <div>
+                    <a href="/Contact/" onclick="navClose()">Contact</a>
+                </div>
+                <div>
+                    <a href="/Jobs/" onclick="navClose()">Jobs</a>
+                </div>
+                <div>
+                    <a href="/Insights/" onclick="navClose()">Insights</a>
+                </div>
+            </div> <!-- end of the sidemenu links -->
+
+            <script>
+                /* Scripts that need to be present for any pages */
+                var navIsOpen = 0
+                function doMenu() {
+                    if (navIsOpen == 0 || navIsOpen == '') {
+                        navOpen();
+                    } else {
+                        navClose();
+                    }
+                }
+                function navOpen() {
+                    document.getElementsByClassName("sidenav")[0].classList.add("open");
+                    document.getElementsByClassName("menubtn")[0].classList.add("open");
+                    document.getElementsByClassName("clicktocloseoverlay")[0].classList.add("show");
+                    navIsOpen = 1;
+                }
+                function navClose() {
+                    document.getElementsByClassName("sidenav")[0].classList.remove("open");
+                    document.getElementsByClassName("menubtn")[0].classList.remove("open");
+                    document.getElementsByClassName("clicktocloseoverlay")[0].classList.remove("show");
+                    navIsOpen = 0;
+                }
+                function teamitemopen(n) {
+                    document.getElementsByClassName("teambio")[0].style.transform = "translateY(0)";
+                    document.getElementsByClassName("teambio")[0].innerHTML = document.getElementsByClassName(n)[0].innerHTML + '<h5 class="closebtn" onclick="teamitemclose()">+</h5>';
+                    document.getElementsByClassName("clicktocloseoverlay")[0].classList.add("show");
+
+                }
+                function teamitemclose() {
+                    document.getElementsByClassName("teambio")[0].style.transform = "translateY(-100vh)";
+                    document.getElementsByClassName("clicktocloseoverlay")[0].classList.remove("show");
+                }
+            </script>
+            <div class="clicktocloseoverlay" onclick="navClose()"> <!--overlay to close popup -->
+            </div>
+<!--
+  _______                               _____          _
+ |__   __|                             / ____|        | |
+    | | ___  _ __  _ __   __ ___   __ | |     ___   __| | ___
+    | |/ _ \| '_ \| '_ \ / _` \ \ / / | |    / _ \ / _` |/ _ \
+    | | (_) | |_) | | | | (_| |\ V /  | |___| (_) | (_| |  __/
+    |_|\___/| .__/|_| |_|\__,_| \_/    \_____\___/ \__,_|\___|
+            | |
+            |_|                this is for desktop users
+-->
+            <div class="topnav"> <!--Links for top menu bar-->
+                <a href="/"><img src="/media/logos/SynSolLogoWide.svg" class="logo"></a>
+                <div class="toplinks">
+                    <div>
+                        <a href="/">Home</a>
+                    </div>
+                    <div>
+                        <a href="/About-Us/">About Us</a>
+                    </div>
+                    <div>
+                        <a href="/Our-Services/">Our Services</a>
+                    </div>
+                    <div>
+                        <a href="/Our-Work/">Our Work</a>
+                    </div>
+                    <div>
+                        <a href="/The-Team/">The Team</a>
+                    </div>
+                    <div>
+                        <a href="/Contact/">Contact</a>
+                    </div>
+                    <div>
+                        <a href="/Jobs/">Jobs</a>
+                    </div>
+                    <div class="transition-current">
+                        <a href="/Insights/">Insights</a>
+                    </div>
+                </div>
+            </div> <!-- end of the topmenu links -->
+            <div class="transition-fade main cardlayout newsarticle">
+                <div class="cardrow"> <!--Header row-->
+                    <div class="cardtext">
+                        <h1>7 LinkedIn Tips for Small Businesses</h1>
+                        <hr>
+                        <h4>July 23, Brendan McCarthy</h4>
+                        <h3>When starting a new business, we all know how hard it can be to stand out from your competition, and there are many “guaranteed” ways that plenty of the “business gurus” will tell you is the best. However, it can come down to a few simple things that will make you stand out. One of those is making sure that potential clients and customers see your company as a reliable source or service. This is why you should make sure that your company’s LinkedIn page is up to date and professional. Check out these tips below to see if you are missing anything:</h3>
+                        <h2>1. Completing your company profile - fully</h2>
+                        <h3>This may seem like an obvious tip, but it is quite effective. Having a high-quality logo and header image sets a precedent for the rest of your page. When someone comes to your company page, the header and logo are the first thing that they see, and you want to make a good first impression. Next you want to make sure that your “about” section is thorough but not too long. People visiting a company do not want to read too much when it comes to your about page. Then you want to make sure that your industry and location are filled out so that when there is a search of people in your area, your company can be one of the first to come up in that search result. Completing all of these tasks will allow your company profile to look more legitimate and professional.</h3>
+                    </div>
+                </div>
+                <div class="cardrow">
+                    <div class="cardimg nocover maxwidth" style="background-image: url(/media/images/insights/072320-LinkedInTipsCompanyProfile.png)">
+                    </div>
+                </div>
+                <div class="cardrow">
+                    <div class="cardtext">
+                        <h2>2. Consistently write, comment, and react to posts</h2>
+                        <h3>Engaging in posts lets your connections and potential connections see that you are active. This can be in the form of commenting on a post, liking and reacting to other’s updates, and writing your own posts based on your company. </h3>
+                        <h2>3. Customizing your URL</h2>
+                        <h3>Customizing your personal URL is something that most people do not think about but is very effective when applied. Having a scramble of letters and numbers at the end of your LinkedIn profile does not exemplify the level of professionalism that is expected when a customer is looking to work with a company.</h3>
+                        <h2>4. Sponsored Content</h2>
+                        <h3>By using your posts and updates as sponsored content, you can reach audiences and get impressions that you would not have gotten otherwise. Just like Google and Facebook ads, you are able to fully customize the people that see your content. This can be based on field of work, location, age, gender, etc.  You can also choose the objective of the sponsored content so LinkedIn has a better idea of who to display the content too.</h3>
+                    </div>
+                </div>
+                <div class="cardrow">
+                    <div class="cardimg nocover maxwidth" style="background-image: url(/media/images/insights/072320-LinkedInTipsSponsorPosts.png)">
+                    </div>
+                </div>
+                <div class="cardrow">
+                    <div class="cardtext">
+                        <h2>5. Have all your employees interact with the profile</h2>
+                        <h3>Having all your employees interact with the page is something that is simple and easy but will increase the visibility and traffic to your page. Statista ran a study that found 42&#37; of users have around 400-1000 connections. By having your employees interact with the page, you will also have all their connections’ eyes on your posts, updates, etc. Making sure that your employees update their job statuses to include the quick link to your page makes your company more likely to come up in general searches on LinkedIn.</h3>
+                        <h2>6. Crosslink</h2>
+                        <h3>Linking your LinkedIn page to your website or blog is a great way to drive traffic to the company page. This allows people that may not have originally found you on LinkedIn to easily connect with you right from your website. A small and simple trick that can be surprisingly effective.</h3>
+                        <h2>7. Join an industry group</h2>
+                        <h3>Joining an industry group is one way that you can boost your credibility. By joining a few niche groups that are in your industry, you can make meaningful connections, and assert yourself as an expert in that topic. This means people that come to the group looking for answers to their questions will be more inclined to trust you as a credible source as they see that you are constantly interacting with other users.</h3>
+                    </div>
+                </div>
+                <footer>
+                    <div class="footersocial">
+                        <a href="https://linkedin.com/company/synergy-works-group"><img src="/media/social/linkedin.png"></a>
+                        <a href="https://twitter.com/SynergyWG"><img src="/media/social/twitter.png"></a>
+                        <a href="https://facebook.com/Synergy-Works-Group-102610141455283/"><img src="/media/social/facebook.png"></a>
+                        <a href="https://instagram.com/synergywg"><img src="/media/social/instagram.png"></a>
+                    </div>
+                    <h4 class="copyright">&copy; Synergy Works Group 2019-2020</h4>
+                </footer>
+            </div>
+        </div>
+    </body>
+</html>
