@@ -35,17 +35,12 @@ html.is-animating .clicktocloseoverlay{
     opacity: 1;
 }
 html.to-homepage .clicktocloseoverlay {
-    background-color: var(--color2)!important;
+    background-color: var(--color5)!important;
 }
 html.to-our-services .clicktocloseoverlay {
-    background-color: var(--color4)!important;
+    background-color: var(--color5)!important;
 }
-html.to-contact .clicktocloseoverlay {
-    background-color: var(--color2)!important;
-}
-html.to-jobs .clicktocloseoverlay {
-    background-color: var(--color2)!important;
-}
+
 
 html.is-leaving .transition-fade {
     transform: translate3d(0px, 10px, 0px);
