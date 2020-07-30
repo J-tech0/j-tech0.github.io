@@ -371,7 +371,9 @@ h4 {
     max-width: 1024px;
     height: 400px;
     margin: 0px 30px;
-
+}
+a.cardimg:hover {
+    transform: scale(1.03);
 }
 .cardthird{
     flex-grow: 1;
