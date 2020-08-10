@@ -1,4 +1,4 @@
-<html>
+<html> <!-- It's an HTML document yay. Welcome. -->
     <head> <!-- Head meta stuff in here -->
         <title>SWG - About Us</title> <!-- Page title. Quite important -->
         <!-- Description Meta etc ok i'll stop commenting every line -->
@@ -59,17 +59,14 @@
                 <div>
                     <a href="/" onclick="navClose()">Home</a>
                 </div>
-                <div class="transition-current">
-                    <a href="/About-Us/" onclick="navClose()">About Us</a>
-                </div>
                 <div>
                     <a href="/Our-Services/" onclick="navClose()">Our Services</a>
                 </div>
                 <div>
                     <a href="/Our-Work/" onclick="navClose()">Our Work</a>
                 </div>
-                <div>
-                    <a href="/The-Team/" onclick="navClose()">The Team</a>
+                <div class="transition-current">
+                    <a href="/About-Us/" onclick="navClose()">About Us</a>
                 </div>
                 <div>
                     <a href="/Contact/" onclick="navClose()">Contact</a>
@@ -115,7 +112,7 @@
                     document.getElementsByClassName("clicktocloseoverlay")[0].classList.remove("show");
                 }
             </script>
-            <div class="clicktocloseoverlay" onclick="navClose()"> <!--overlay to close popup -->
+            <div class="clicktocloseoverlay" onclick="navClose(); teamitemclose()"> <!--overlay to close popup -->
             </div>
 <!--
   _______                               _____          _      
@@ -133,17 +130,14 @@
                     <div>
                         <a href="/">Home</a>
                     </div>
-                    <div class="transition-current">
-                        <a href="/About-Us/">About Us</a>
-                    </div>
                     <div>
                         <a href="/Our-Services/">Our Services</a>
                     </div>
                     <div>
                         <a href="/Our-Work/">Our Work</a>
                     </div>
-                    <div>
-                        <a href="/The-Team/">The Team</a>
+                    <div class="transition-current">
+                        <a href="/About-Us/">About Us</a>
                     </div>
                     <div>
                         <a href="/Contact/">Contact</a>
@@ -164,22 +158,368 @@
                         <h2>Who We Are</h2>
                         <h3>Synergy Works Group is an IT and Digital Strategy consulting firm that serves businesses who are looking to transition their business online.</h3>
                         <h3>We know that the past few months have brought challenges and changed the way business is done and we want to help you adapt. At Synergy, we aim to create a custom solution for your business using our diverse backgrounds and experiences.</h3>
+                        <br>
+                        <h2>Our Values</h2>
+                        <h3>tbd</h3>
+                        <br>
+                        <h2>Meet The Team!</h2>
+                        <div class="flexteamcontainer">
+                            <div class="flexitemteam 1" onclick="teamitemopen(1)">
+                                <img src="/media/images/team/Cropped/KoltonTebbey.jpg">
+                                <h2>Kolton Tebbey</h2>
+                                <h3>Chief Executive Officer</h3>
+                                <h3><a href="https://www.linkedin.com/in/koltontebbey/">Linkedin</a></h3>
+                                <h4>
+                                    <p>Kolton Tebbey is the founder and CEO of Synergy Works Group.</p>
+                                    <p>He brings over 10 years of experience in areas such as product management, strategic leadership, marketing, software development, data analysis, and more.</p>
+                                    <p>Throughout his past experiences he has been able to drive traffic over a quarter-billion hits across a portfolio of brands with a focus in targeted advertising, user acquisition &amp; retention, as well as community monetization.</p>
+                                    <p>Kolton studied Information Systems and Marketing at the Kelley School of Business and is currently pursuing a Master of Science in Information Systems.</p>
+                                </h4>
+                            </div>
+                            <div class="flexitemteam 4" onclick="teamitemopen(4)">
+                                <img src="/media/images/team/Cropped/SydneySpindel.jpg">
+                                <h2>Sydney Spindel</h2>
+                                <h3>Director of Marketing</h3>
+                                <h4>
+                                    <p>Sydney Spindel is the Director of Marketing.</p>
+                                    <p>Sydney has experience in retail and brand management through working with small businesses, as well as applied knowledge of data analytics.</p>
+                                    <p>She is in charge of all of the marketing materials for Synergy Works Group.</p>
+                                    <p>Sydney studied Marketing and Digital and Social Media Business Applications at the Kelley School of Business.</p>
+                                </h4>
+                            </div>
+                            <div class="flexitemteam 5" onclick="teamitemopen(5)">
+                                <img src="/media/images/team/Cropped/DennisRauchhaus.jpg">
+                                <h2>Dennis Rauchhaus</h2>
+                                <h3>Vice President of Operations</h3>
+                                <h4>
+                                    <p>Dennis Rauchhaus is the Director of Operations for Synergy Works Group.</p>
+                                    <p>Dennis has extensive experience in marketing and sales and a wide array of business knowledge. He has worked in different industries including, hydraulics overseas, advertising in Chicago, and in a retail position at his University.</p>
+                                    <p>Dennis is fluent in German and has gained global business insight while living overseas and across the US. Dennis studied International Business and minored in Marketing &amp; Management.</p>
+                                    <p>He will further increase his skill set and business knowledge at Loyola University Chicago where he is achieving his Master’s in Business Administration.</p>
+                                </h4>
+                            </div>
+                            <div class="flexitemteam 6" onclick="teamitemopen(6)">
+                                <img src="/media/images/team/Cropped/EthanGriggs.jpg">
+                                <h2>Ethan Griggs</h2>
+                                <h3>Director of Finance</h3>
+                                <h4>
+                                    <p>Ethan Griggs is the Director of Finance at Synergy Works Group.</p>
+                                    <p>Ethan has an array of experiences including Labor Analytics, Benchmarking and staffing projections and tax accounting. He has worked at a company with nearly 30,000 employees and understands how to implement solutions on a large scale.</p>
+                                    <p>Ethan majored in Accounting, Finance, and Law, Ethics, and Decision Making at the Kelley School of business, and is graduating cum laude. He will sit for his CPA this summer and continue his education at Robert H. McKinney School of Law in the fall.</h4>
+                            </div>
+                            <div class="flexitemteam 7" onclick="teamitemopen(7)">
+                                <img src="/media/images/team/Cropped/NickAndry.jpg">
+                                <h2>Nick Andry</h2>
+                                <h3>Data Science Manager</h3>
+                                <h3><a href="https://www.linkedin.com/in/nick-andry/">Linkedin</a></h3>
+                                <h4>
+                                    <p>Nick Andry is a Business Data Analyst for Synergy Works Group.</p>
+                                    <p>Nick is certified in Python programming and software development. He has made it to nationals for Java programming in Business Professionals for America.</p>
+                                    <p>For data analysis, he utilizes modern, feature-rich Python data science libraries to find the best trends and solutions for businesses.</p>
+                                </h4>
+
+                            </div>
+                            <div class="flexitemteam 8" onclick="teamitemopen(8)">
+                                <img src="/media/images/team/Cropped/NicoleMalinowski.jpg">
+                                <h2>Nicole Malinowski</h2>
+                                <h3>Branch Manager</h3>
+                                <h3><a href="https://www.linkedin.com/in/nmalinowski14/">Linkedin</a></h3>
+                                <h4>
+                                    <p>Nicole Malinowski is a consultant team manager for Synergy Works Group.</p>
+                                    <p>Having won several case competitions throughout her collegiate career in business analytics, Microsoft Access, and accounting communications, Nicole understands how to implement creative solutions and drive teams to succeed in multiple different business areas. Nicole has had internship experience in audit and business performance and insights, and she has been able to work with multiple successful teams and gain valuable knowledge through these experiences.</p>
+                                    <p>She studied accounting, business analytics, and minored in mathematics at the Kelley School of Business, graduating at the top of her class. She is continuing her education at Kelley by pursuing her Master of Science in Accounting and plans to sit for the CPA exam in the next year.</p>
+                                </h4>
+                            </div>
+                            <div class="flexitemteam 9" onclick="teamitemopen(9)">
+                                <img src="/media/images/team/Cropped/DakotaSuomela.jpg">
+                                <h2>Dakota Suomela</h2>
+                                <h3>Social Media Manager</h3>
+                                <h4>
+                                    <p>Dakota Suomela is a Consultant Manager for Synergy Works Group.</p>
+                                    <p>Dakota has experience in customer service, marketing, creative development, and brand management.</p>
+                                    <p>Having led many teams and projects in her collegiate and professional tenure, she understands how to utilize each individual's skills and talents to reap the most benefit for each client or cause. Her attention to detail and growth mindset will ensure that both her team and client gain valuable insights from their work.</p>
+                                    <p>Dakota studied Management and Marketing at the Kelley School of Business.</p>
+                                </h4>
+                            </div>
+                            <div class="flexitemteam 10" onclick="teamitemopen(10)">
+                                <img src="/media/images/team/Cropped/TimothyLe.jpg">
+                                <h2>Timothy Le</h2>
+                                <h3>Project Lead</h3>
+                                <h3><a href="https://www.linkedin.com/in/le66332">Linkedin</a></h3>
+                                <h4>
+                                    <p>Timothy Le is a Consultant Manager for Synergy Works Group.</p>
+                                    <p>Timothy has experience in data analytics through his internship last summer where he converted over 10 million data points into dashboards for the company. He is pursuing a career in IT or tech consulting.</p>
+                                    <p>Timothy Le is a junior studying Information Systems and Business Analytics.</p>
+                                </h4>
+                            </div>
+                            <div class="flexitemteam 11" onclick="teamitemopen(11)">
+                                <img src="/media/images/team/Cropped/RaulBledea.jpg">
+                                <h2>Raul Bledea</h2>
+                                <h3>Data Analyst</h3>
+                                <h4>
+                                    <p>In his last year of high school, Raul Bledea is a Data Analyst for Synergy Works Group.</p>
+                                    <p>He is completely self taught on Python, C++, C# and PHP with experience in Information Security and Cryptography.</p>
+                                    <p>Currently learning Machine Learning and Artificial Intelligence.</p>
+                                </h4>
+                            </div>
+                            <div class="flexitemteam 12" onclick="teamitemopen(12)">
+                                <img src="/media/images/team/Cropped/WiktorCielebon.jpg">
+                                <h2>Wiktor Cielebon</h2>
+                                <h3>Data Analyst</h3>
+                                <h3><a href="https://www.linkedin.com/in/wiktor-cielebon/">Linkedin</a></h3>
+                                <h4>
+                                    <p>Wiktor Cielebon is a Data Analyst for Synergy Works Group.</p>
+                                    <p>He has nearly 15 years of informal experience with various programming languages stemming from his fascination with computer science since being a kid.</p>
+                                    <p>Wiktor has worked on projects such as a custom operating system as well as a highly modular game engine spanning over 20 thousand lines of code. He is skilled in ASP.Net and C# development.</p>
+                                </h4>
+                            </div>
+                            <div class="flexitemteam 13" onclick="teamitemopen(13)">
+                                <img src="/media/images/team/Cropped/JamesTurner.jpg">
+                                <h2>James Turner</h2>
+                                <h3>Website Designer</h3>
+                                <h4>
+                                    <p>James Turner is the Website Developer for Synergy Works Group.</p>
+                                    <p>Before joining Synergy, he designed and maintained an interactive webapp to accompany a children's book as part of the Young Enterprise Programme.</p>
+                                    <p>When it comes to web programming, he is entirely self-taught, using HTML, CSS and JavaScript. He is planning to study Electronic Engineering at university.</p>
+                                </h4>
+                            </div>
+                            <div class="flexitemteam 14" onclick="teamitemopen(14)">
+                                <img src="/media/images/team/Cropped/DanielBerry.jpg">
+                                <h2>Daniel Berry</h2>
+                                <h3>Consultant</h3>
+                                <h3><a href="http://linkedin.com/in/daniel-berry-33a1811a7">Linkedin</a></h3>
+                                <h4>
+                                    <p>Daniel Berry is a Tech Consultant for Synergy Works Group.</p>
+                                    <p>He has been part of an Innovate and Create Living learning Community at his University. He finds creative and helpful solutions to many modern Tech problems.</p>
+                                    <p>He studies Engineering Technology and German at Temple University in Philadelphia, PA.</p>
+                                </h4>
+                            </div>
+                            <div class="flexitemteam 15" onclick="teamitemopen(15)">
+                                <img src="/media/images/team/Cropped/LukeHarris.jpg">
+                                <h2>Luke Harris</h2>
+                                <h3>Technical Lead</h3>
+                                <h3><a href="https://www.linkedin.com/in/lkhrs/">Linkedin</a></h3>
+                                <h4>
+                                    <p>Luke Harris brings over 10 years of experience working with non-profits as well as businesses.</p>
+                                    <p>He has experience helping them grow their online presence through website design, SEO optimization, and enterprise-wide IT solutions and support.</p>
+                                </h4>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="cardrow">
                     <div class="cardtext">
-                        <h2>Why You Can Trust Us</h2>
-                        <h3>Synergy Works Group started as a group of highly motivated Kelley Business School alumni. It was founded by Kolton Tebbey, a double major in Marketing and Information Systems and a self-taught coder. He started this venture to help smaller businesses unlock their potential through business intelligence.</h3>
-                        <h3>Throughout our diverse experiences, we have had the opportunity to work with real world cases to create multi-dimensional solutions. Collectively, we have worked on multiple case competitions where we have implemented data analysis and market research, utilized Adobe suites for marketing materials, and have had internships across a variety of industries. Now, we want to apply our experiences to help the small businesses we know and love.</h3>
+                        <h2>Interns</h2>
+                        <div class="flexteamcontainer">
+                            <div class="flexitemteam 16" onclick="teamitemopen(16)">
+                                <img src="/media/images/team/Cropped/DawsonHood.jpg">
+                                <h2>Dawson Hood</h2>
+                                <h3>Consulting Intern</h3>
+                                <h4>
+                                    <p>Dawson Hood is a Consulting Intern at Synergy Works Group.</p>
+                                    <p>He is a senior, graduating in December from the Schroeder School of Business at the University of Evansville with a degree in finance. His classes are focused on the Financial Analyst Framework, with emphasis on CFA level learning.</p>
+                                    <p>Dawson has experience forecasting financials statements and financial modeling from being part of a competition put on by the CFA Institute. He was the President of the Finance Club at his college for a year and understands how to manage and teach peers.</p>
+                                </h4>
+                            </div>
+                            <div class="flexitemteam 17" onclick="teamitemopen(17)">
+                                <img src="/media/images/team/Cropped/MattSawyer.jpg">
+                                <h2>Matt Sawyer</h2>
+                                <h3>Consulting Intern</h3>
+                                <h4>
+                                    <p>Matt Sawyer is a Consulting Intern at Synergy Works Group.</p>
+                                    <p>He will graduate Indiana University in 2021 with a major in Informatics from the Luddy School of Informatics, and minors in Financial Literacy, Marketing, and Business from the Kelley School of Business.</p>
+                                    <p>Matt has been an Undergraduate Instructor helping students understand database design, SQL coding, and number theory. Following graduation, he plans to pursue a Master of Science in Information Systems.</p>
+                                </h4>
+                            </div>
+                            <div class="flexitemteam 18" onclick="teamitemopen(18)">
+                                <img src="/media/images/team/Cropped/BrendanMcCarthy.jpg">
+                                <h2>Brendan McCarthy</h2>
+                                <h3>Consulting Intern</h3>
+                                <h4>
+                                    <p>Brendan McCarthy is a Consulting Intern at Synergy Works Group.</p>
+                                    <p>He is a rising sophomore at Indiana University, planning to major in Marketing and Business Analytics at the Kelley School of Business. He was a peer tutor for a class dealing with Excel and Access and will be applying to be a TA for the class next year to continue helping underclassmen understand the class.</p>
+                                    <p>Brendan has internship experience and was a project intern last summer at a small foodservice LMS, helping them transfer word documents and quizzes to concise Excel workbooks. </p>
+                                </h4>
+                            </div>
+                            <div class="flexitemteam 19" onclick="teamitemopen(19)">
+                                <img src="/media/images/team/Cropped/IsabellaMoss.jpg">
+                                <h2>Isabella Moss</h2>
+                                <h3>Consulting Intern</h3>
+                                <h4>
+                                    <p>Isabella Moss is a Consulting Intern at Synergy Works Group.</p>
+                                    <p>She is a rising sophomore at the Kelley School of Business at Indiana University, majoring in Marketing and Digital Technology Management.</p>
+                                    <p>Isabella has found her passion of analyzing marketing trends from her previous internship where she was doing market research. She plans to apply her passion to social media in her future career. </p>
+                                </h4>
+                            </div>
+                            <div class="flexitemteam 20" onclick="teamitemopen(20)">
+                                <img src="/media/images/team/Cropped/NathanSeiler.jpg">
+                                <h2>Nathan Seiler</h2>
+                                <h3>Sales Intern</h3>
+                                <h4>
+                                    <p>Nathan Seiler is a Sales Intern at Synergy Works Group.</p>
+                                    <p>He is studying Professional Sales and Marketing at the Kelley School of Business at Indiana University. Nathan has gained experience with sales through being a part of the Global Sales Workshop and multiple sales competitions where he has used the SPIN method to discover client needs.</p>
+                                    <p>He has leadership experience from his business fraternity Phi Chi Theta, holding roles as Recruitment and Philanthropy Director, and was a Resident Assistant last year and plans to continue being one when school starts again. </p>
+                                </h4>
+                            </div>
+                            <div class="flexitemteam 21" onclick="teamitemopen(21)">
+                                <img src="/media/images/team/Cropped/GalMalik.jpg">
+                                <h2>Gal Malik</h2>
+                                <h3>Consultant Intern</h3>
+                                <h4>
+                                    <p>Gal Malik is a Consultant Intern at Synergy Works Group.</p>
+                                    <p>She is a rising junior at the University of Florida majoring in Information Systems and Psychology. Gal is the current Co-President of TAMID Group at the University of Florida and the Director of Marketing for a club called Kulanu.</p>
+                                    <p>She plans to combine her interests of technology, consulting, human behavior, and economics in her future. </p>
+                                </h4>
+                            </div>
+                            <div class="flexitemteam 22" onclick="teamitemopen(22)">
+                                <img src="/media/images/team/Cropped/AdvaitDhamdhere.jpg">
+                                <h2>Advait Dhamdhere</h2>
+                                <h3>Consulting Intern</h3>
+                                <h4>
+                                    <p>Advait Dhamdhere is a Consulting Intern at Synergy Works Group.</p>
+                                    <p>He is a rising junior at Indiana University, majoring in Computer Science and Finance. Advait has experience with a variety of different programming languages, frameworks and development tools.</p>
+                                    <p>In his future career, he wants to use technology to solve complex business problems.</p>
+                                </h4>
+                            </div>
+                            <div class="flexitemteam 23" onclick="teamitemopen(23)">
+                                <img src="/media/images/team/Cropped/JackKrieps.jpg">
+                                <h2>Jack Krieps</h2>
+                                <h3>Consulting Intern</h3>
+                                <h4>
+                                    <p>Jack Krieps is a Consulting Intern at Synergy Works Group.</p>
+                                    <p>He is a rising senior at Indiana University, Kelley School of Business, majoring in Marketing and Management.</p>
+                                    <p>He has experience with the Adobe Creative Suite and Microsoft Office software and hopes to utilize his creativity to lead to innovation in his future career. </p>
+                                </h4>
+                            </div>
+                            <div class="flexitemteam 24" onclick="teamitemopen(24)">
+                                <img src="/media/images/team/Cropped/JaiSanghani.jpg">
+                                <h2>Jai Sanghani</h2>
+                                <h3>Consulting Intern</h3>
+                                <h4>
+                                    <p>Jai Sanghani is a Consulting Intern at Synergy Works Group.</p>
+                                    <p>He is a rising junior at Indiana University, Kelley School of Business majoring in Marketing and Business Analytics. Jai has a passion for helping his surrounding community and has done so through his business fraternity Alpha Kappa Psi and being a member of the Kelley Student Government.</p>
+                                    <p>He is in the Retail Workshop and plans to go into a consulting career in the retail industry. </p>
+                                </h4>
+                            </div>
+                            <div class="flexitemteam 25" onclick="teamitemopen(25)">
+                                <img src="/media/images/team/Cropped/LaurenLaTeef.jpg">
+                                <h2>Lauren LaTeef</h2>
+                                <h3>Consulting Intern</h3>
+                                <h4>
+                                    <p>Lauren LaTeef is a Consulting Intern at Synergy Works Group.</p>
+                                    <p>She is a rising senior at the University of Maryland, majoring in Information Systems and a specialization in data science. Through volunteer work and past job experiences, Lauren has experience with various programming languages and strong communication skills.</p>
+                                    <p>In her future, she wants to work directly with others to make a difference in people’s lives by utilizing technology to simplify tasks. </p>
+                                </h4>
+                            </div>
+                            <div class="flexitemteam 26" onclick="teamitemopen(26)">
+                                <img src="/media/images/team/Cropped/WendyMo.jpg">
+                                <h2>Wendy Mo</h2>
+                                <h3>Consulting Intern</h3>
+                                <h4>
+                                    <p>Wendy Mo is a Consulting Intern at Synergy Works Group.</p>
+                                    <p>She is a rising junior at Carnegie Mellon University majoring in Electrical and Computer Engineering with a minor in Business Administration.</p>
+                                    <p>Wendy is interested in how business and technology intersect and how meaningful technology can simplify processes and model data in new and insightful ways. </p>
+                                </h4>
+                            </div>
+                            <div class="flexitemteam 27" onclick="teamitemopen(27)">
+                                <img src="/media/images/team/Cropped/DanielLin.jpg">
+                                <h2>Daniel Lin</h2>
+                                <h3>Consulting Intern</h3>
+                                <h4>
+                                    <p>Daniel Lin is a Consulting Intern at Synergy Works Group.</p>
+                                    <p>He is a rising sophomore at UCLA majoring in Economics and Communications.</p>
+                                    <p>Daniel is looking forward to learning more about consulting and giving back to the community during these hard times.</p>
+                                </h4>
+                            </div>
+                            <div class="flexitemteam 28" onclick="teamitemopen(28)">
+                                <img src="/media/images/team/Cropped/JackMacDonald.jpg">
+                                <h2>Jack MacDonald</h2>
+                                <h3>Consulting Intern</h3>
+                                <h4>
+                                    <p>Jack MacDonald is a Consulting Intern at Synergy Works Group.</p>
+                                    <p>He is a rising senior at Boston College, majoring in International Studies and Mandarin Chinese. Jack is motivated by his love of global affairs and passion for innovative problem solving.</p>
+                                    <p>He is experienced in managing database research, marketing, and translation work.</p>
+                                </h4>
+                            </div>
+                            <div class="flexitemteam 29" onclick="teamitemopen(29)">
+                                <img src="/media/images/team/Cropped/JaredTajfel.jpg">
+                                <h2>Jared Tajfel</h2>
+                                <h3>Consulting Intern</h3>
+                                <h4>
+                                    <p>Jared Tajfel is a Consulting Intern at Synergy Works Group.</p>
+                                    <p>He is a rising senior at the Kelley School of Business at Indiana University, majoring in Professional Sales and Marketing.</p>
+                                    <p>Jared has experience in leadership and communication from holding the position of Mental Health Director of his fraternity. </p>
+                                </h4>
+                            </div>
+                            <div class="flexitemteam 30" onclick="teamitemopen(30)">
+                                <img src="/media/images/team/Cropped/BryceDixon.jpg">
+                                <h2>Bryce Dixon</h2>
+                                <h3>Consulting Intern</h3>
+                                <h4>
+                                    <p>Bryce Dixon is a Consulting Intern at Synergy Works Group.</p>
+                                    <p>He is a rising sophomore at the Kelley School of Business at Indiana University, majoring in Finance, Accounting, and Business Analytics. Bryce wants to explore a consulting career, since he has always been interesting in problem solving and client-facing aspects of business.</p>
+                                    <p>He has started to build his experience through a consulting club at school called 180 Degrees Consulting, where he has participated in multiple case competitions.</p>
+                                </h4>
+                            </div>
+                            <div class="flexitemteam 31" onclick="teamitemopen(31)">
+                                <img src="/media/images/team/Cropped/ParikRavi.jpg">
+                                <h2>Parik Ravi</h2>
+                                <h3>Contractor Intern</h3>
+                                <h4>
+                                    <p>Parik Ravi is a Contractor Intern at Synergy Works Group.</p>
+                                    <p>He recently graduated from the Kelley School of Business at Indiana University, where he majored in Economic Consulting, Public Policy, and Political Science. Parik enjoys working with regulatory aspects of business as well as the confluence of business and government policy.</p>
+                                    <p>Parik will soon be starting his career as an Investment Associate and hopes to gain more experience through this internship. </p>
+                                </h4>
+                            </div>
+                            <div class="flexitemteam 32" onclick="teamitemopen(32)">
+                                <img src="/media/images/team/Cropped/AliceLiu.jpg">
+                                <h2>Alice Liu</h2>
+                                <h3>Consulting Intern</h3>
+                                <h4>
+                                    <p>Alice Liu is a Consulting Intern at Synergy Works Group.</p>
+                                    <p>She just completed the first year of her MBA program at Penn State Smeal College of Business. Alice got her undergraduate degree from Penn State where she was in a dual major program called the Science BS/MBA program.</p>
+                                    <p>She is pursuing a career in Supply Chain Consulting, specifically in the life science or healthcare industry. </p>
+                                </h4>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="cardrow">
                     <div class="cardtext">
-                        <h2>What We Are Offering</h2>
-                        <h3>We want to know the most frustrating aspects of your business and eliminate them. Whether it's difficulties building a website or not knowing how to utilize your company’s data, we are here to guide you through the process.</h3>
-                        <h3>Synergy Works Groups knows how difficult running a small business is and we want to empower you to make more effective and informed decisions. To find out how Synergy can help, take a look at our services page.</h3>
-                        <div class="cta-buttons">
-                            <a href="/Our-Services/">Our Services</a>
+                        <h2>Advisors</h2>
+                        <div class="flexteamcontainer">
+                            <div class="flexitemteam 33" onclick="teamitemopen(33)">
+                                <img src="/media/images/team/Cropped/PaulTebbey.jpg">
+                                <h2>Paul Tebbey</h2>
+                                <h3>Advisor</h3>
+                                <h4>
+                                    <p>Dr Paul W. Tebbey is Vice-President, Oncology, US Medical Affairs, Abbvie, based in Chicago, IL, USA.  He has 25 years of healthcare experience across the biotechnology and pharmaceutical sectors.</p>
+                                    <p>Dr Tebbey received a PhD in Microbiology and Immunology from East Carolina University School of Medicine (Greenville, NC) where his research focused on T lymphocyte cell signalling, immunosuppression and transformation.  Subsequent to his postdoctoral studies at Vanderbilt University (Nashville, TN), which focused on the regulation of gene expression, he then graduated with a MBA in Marketing from Rochester Institute of Technology (Rochester, NY).</p>
+                                    <p>Dr Tebbey’s research, development and launch experiences include therapeutic monoclonal antibodies (adalimumab, infliximab and ustekinumab) &amp; antibody-drug conjugates, oncolytics (venetoclax) as well as complex vaccines (conjugated pneumococcal vaccine).</p>
+                                    <p>Dr Tebbey’s publications include over 40 peer-reviewed articles that span immunology, immune-mediated and infectious diseases, as well as pharmaceutical publication planning and brand success.</p>
+                                </h4>
+                            </div>
+                            <div class="flexitemteam 34" onclick="teamitemopen(34)">
+                                <img src="/media/images/team/Cropped/JamesThrelkeld.jpg">
+                                <h2>J. Shannon Threlkeld</h2>
+                                <h3>Advisor</h3>
+                                <h4>
+                                    <p>J. Shannon Threlkeld is a Senior Lecturer for the Department of Marketing at the Kelley School of Business, Indiana University where he has taught more than 20,000 students at both the undergraduate and MBA level.</p>
+                                    <p>Shannon has won numerous teaching awards, including Innovative Teaching, and Teaching Excellence – Above and Beyond Professor Award.</p>
+                                    <p>Now in his 21st year at Indiana University, Shannon has worked with both students and business executives in the areas of marketing analytics, B-B marketing strategy, data modeling, healthcare marketing strategy, project management, and executive coaching. He has designed and delivered numerous executive education seminars and workshops for both university students and corporate clients.</p>
+                                    <p>Shannon teaches in both traditional and virtual classroom settings. He has extensive experience in executive coaching and has worked with recognized corporations both domestically and internationally for over 13 years. Shannon is married to his wife Sarah, and has one Boxer dog named Sophie.</p>
+                                </h4>
+                            </div>
+                            <div class="flexitemteam 35" onclick="teamitemopen(35)">
+                                <img src="/media/images/team/Cropped/JoshuaZaacks.jpg">
+                                <h2>Joshua Zaacks</h2>
+                                <h3>Advisor</h3>
+                                <h4>
+                                    <p>Josh majored in finance and law, ethics, &amp; decision making at Indiana University's Kelley School of Business and was a member of the Consulting Workshop.</p>
+                                    <p>Josh has experience working with high-growth startups in areas such as market research and business development.</p>
+                                    <p>While at IU, Josh became adept at leading and managing large organizations. He led the IU chapter of TAMID Group, a student consulting organization, and was the president of Kelley Student Government, representing nearly 10,000 business majors and minors at Kelley.</p>
+                                </h4>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -192,6 +532,8 @@
                     </div>
                     <h4 class="copyright">&copy; Synergy Works Group 2019-2020</h4>
                 </footer>
+            </div>
+            <div class="teambio">
             </div>
         </div>
     </body>
