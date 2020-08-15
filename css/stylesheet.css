@@ -209,7 +209,8 @@ html.is-animating .sidenav a { /*swup animation when a link is clicked*/
 .toplinks div { /*div for each link*/
     float: left;
     margin: 10px 5px;
-    border-radius: 10px;
+    border-radius: 1px;
+    border-bottom: 0px solid var(--color3);
 }
 
 .topnav a { /*style for top link text*/
@@ -224,12 +225,12 @@ html.is-animating .sidenav a { /*swup animation when a link is clicked*/
 
 .toplinks div:hover { /*change link style on hover*/
     transform: scale(1.03);
-    box-shadow: 1px 1px 3px #111111;
     outline: none !important;
+    border-bottom: 1px solid var(--color1)
 }
 
 .toplinks .transition-current { /*highlight current page*/
-    background-color: var(--color4);
+    border-bottom: 1px solid var(--color1)
 }
 
 html.is-animating .toplinks .transition-current { /*swup animaton when link is clicked*/
@@ -313,7 +314,7 @@ h4 {
 }
 p {
     color: var(--color5);
-    line-height: 1.1;
+    line-height: 1.6;
     font-size: 1.2em;
     font-weight: 300;
     margin: 10px 0px;
