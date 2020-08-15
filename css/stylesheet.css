@@ -8,7 +8,7 @@
 */
 *:not(.leaflet-zoom-animated):not(.leaflet-interactive) {
     transition: 0.3s;
-    font-family: 'Open Sans', sans-serif, Arial;
+    font-family: 'Mulish', sans-serif, Arial;
 
     /*Colour variables for colour scheme*/
     --color1: #f0ede6;    /*off-white*/
@@ -295,8 +295,8 @@ h2 {
 
 h3 {
     color: var(--color5);
-    line-height: 1.1;
-    font-size: 1.9em;
+    line-height: 1.5;
+    font-size: 1.7em;
     font-weight: 300;
     margin: 20px 0px;
     word-break: break-word;
@@ -304,6 +304,14 @@ h3 {
 }
 
 h4 {
+    color: var(--color5);
+    line-height: 1.1;
+    font-size: 1.2em;
+    font-weight: 300;
+    margin: 10px 0px;
+    word-break: break-word;
+}
+p {
     color: var(--color5);
     line-height: 1.1;
     font-size: 1.2em;
@@ -339,6 +347,7 @@ h4 {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
+    align-items: center;
     overflow: hidden;
     max-width: 100vw;
 }
@@ -504,6 +513,7 @@ footer .footersocial a img:hover {
 .flexitemteam h3 {
     margin: 10px 1px;
     font-size: 1.1em;
+    line-height: 1.1;
 }
 .flexitemteam h4 {
     visibility: hidden;
