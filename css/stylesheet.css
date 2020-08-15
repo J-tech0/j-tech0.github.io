@@ -47,7 +47,7 @@ html.is-leaving .transition-fade {
     transition-timing-function: cubic-bezier(1, 0, 1, 1);
 }
 html.is-animating .sidenav .transition-current {/*make the sidenav bar background transparent when changing page*/
-    background-color: transparent;
+    border-bottom: 0px solid var(--color3);
 }
 html.is-animating hr {/*animate the top horizontal rule*/
     max-width: 0px;
@@ -151,16 +151,16 @@ html.is-animating {
     display: block;
     white-space: nowrap;
     opacity: 1;
+    border-left: 3px solid var(--color3)
 }
 
 .sidenav a:hover { /*change link style on hover*/
-    transform: scale(1.03);
-    text-shadow: 1px 1px 3px #111111;
+    border-left: 3px solid var(--color1);
     outline: none !important;
 }
 
-.sidenav .transition-current { /*highlight current page*/
-    background-color: var(--color4);
+.sidenav .transition-current a{ /*highlight current page*/
+    border-left: 3px solid var(--color1);
 }
 
 html.is-animating .sidenav a { /*swup animation when a link is clicked*/
@@ -210,7 +210,7 @@ html.is-animating .sidenav a { /*swup animation when a link is clicked*/
     float: left;
     margin: 10px 5px;
     border-radius: 1px;
-    border-bottom: 0px solid var(--color3);
+    border-bottom: 1px solid var(--color3);
 }
 
 .topnav a { /*style for top link text*/
@@ -224,17 +224,16 @@ html.is-animating .sidenav a { /*swup animation when a link is clicked*/
 }
 
 .toplinks div:hover { /*change link style on hover*/
-    transform: scale(1.03);
     outline: none !important;
-    border-bottom: 1px solid var(--color1)
+    border-bottom: 1px solid var(--color1);
 }
 
 .toplinks .transition-current { /*highlight current page*/
-    border-bottom: 1px solid var(--color1)
+    border-bottom: 1px solid var(--color1);
 }
 
 html.is-animating .toplinks .transition-current { /*swup animaton when link is clicked*/
-    background-color: var(--color3);
+    border-bottom: 1px solid var(--color3);
 }
 
 html.is-animating .toplinks div { /*swup animation when link is clicked*/
