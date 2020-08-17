@@ -343,7 +343,7 @@ p {
 }
 
 .cardwork { /*for Our-Work page*/
-    padding: 0px;
+    padding: 0px 40px;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -578,18 +578,18 @@ footer .footersocial a img:hover {
 }
 .teambio h2 {
     position: relative;
-    left: 10px;
+    left: 0px;
     top: 0px;
-    margin: 0;
+    margin: 0px 10px;
     max-width: 200px;
     font-size: 1.7em;
 }
 
 .teambio h3 {
     position: relative;
-    left: 10px;
+    left: 0px;
     top: 5px;
-    margin: 0;
+    margin: 0px 10px;
     max-width: 200px;
     font-size: 1.3em;
 }
@@ -623,18 +623,18 @@ footer .footersocial a img:hover {
 @media only screen and (max-width: 500px) {
     .teambio h2,
     .teambio h3 {
-        max-width: 200px;
+        max-width: unset!important;
     }
     .teambio h4 {
         left: 10px;
-        top: 300px;
+        top: 320px;
         right: 10px;
-        height: calc(100vh - 412px)!important;
+        height: calc(100vh - 432px)!important;
     }
     .teambio h4:after {
         left: 10px;
         right: 10px;
-        top: 300px;
+        top: 320px;
         bottom: 0px;
     }
 }
@@ -797,10 +797,10 @@ footer .footersocial a img:hover {
         font-size: 0.9em;
     }
     .teambio h2{
-        max-width: unset;
+        max-width: 200px;
     }
     .teambio h3 {
-        max-width: unset;
+        max-width: 200px;
     }
     .teambio{
         top: 82px;
