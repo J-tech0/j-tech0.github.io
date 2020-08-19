@@ -1,0 +1,3 @@
+==============
+17/8/2020 - Added new clients to Our Work, fixed scaling issue on About Us
+19/8/2020 - an insights article got lost in the transition from old site to new, now fixed
