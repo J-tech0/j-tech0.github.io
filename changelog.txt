@@ -2,3 +2,4 @@
 17/8/2020 - Added new clients to Our Work, fixed scaling issue on About Us
 19/8/2020 - an insights article got lost in the transition from old site to new, now fixed
 29/8/2020 - Removed handshake bets web link as page offline
+30/8/2020 - Changed Meet The Team section of About-Us page to link directly to LinkedIn rather than using biography popups except for those not on LinkedIn, Cache Bust

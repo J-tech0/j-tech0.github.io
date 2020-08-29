@@ -478,7 +478,7 @@ footer .footersocial a img:hover {
 
 /*SPECIFIC TO PAGES OF SITE*/
 /*The-Team*/
-.flexteamcontainer {
+.flexteamcontainer { /*container for the team pictures section*/
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -486,55 +486,70 @@ footer .footersocial a img:hover {
     max-width: 100%;
 }
 
-.flexitemteam {
+.flexitemteam { /*unit for each team member card*/
     display: flex;
     flex-flow: column wrap;
-    width: 180px;
-    height: 320px;
-    padding: 20px;
-    margin: 10px;
-    border-radius: 20px;
-    overflow-x: hidden;
+    width: 160px;
+    height: 295px;
+    padding: 0px;
+    margin: 30px 22px;;
+    border-radius: 15px;
+    overflow: hidden;
     cursor: pointer;
+    position: relative;
 }
 
 .flexitemteam img {
-    width: 180px;
-    height: 180px;
+    width: 160px;
+    height: 160px;
     border-radius: 50%;
     background-size: cover;
     background-image: url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoMDAsKCwsNDhIQDQ4RDgsLEBYQERMUFRUVDA8XGBYUGBIUFRT/2wBDAQMEBAUEBQkFBQkUDQsNFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBT/wAARCABkAGQDASIAAhEBAxEB/8QAHAABAAIDAQEBAAAAAAAAAAAAAAUGAQIDBAcI/8QAKxAAAgICAAQGAQQDAAAAAAAAAAECAwQRBQYhMRITI0FRYSIkJWJxcoGh/8QAGAEBAQEBAQAAAAAAAAAAAAAAAAECAwT/xAAXEQEBAQEAAAAAAAAAAAAAAAAAAREh/9oADAMBAAIRAxEAPwD95gA8jqAAADhl5deFS7LHpL2+StZXMeRbP0vTiXDVsBTFxzMjv1e5KcN5i8yca70k308RcSVPgwmpJNdUzJlQAAAAAAAAA1m/DFv4QFV5izXflOpP8Ie32RB2zLPNyrZLpuTOJtkHYAC38v5jycNRk9yh0JQrPK1ur7K9d1ssxmtQABAAAAAADS1brl/RuYYFAvTjdNNae2aHs4tS6c+1P3ezxm2QAATPK6/WTf8AEtRAcrUuNdljXRvSJ8zWoAAgAAAAAAAAr3M+GtQvXfsyuly48v22wpptmhmMXOSiu7ejB6OHdc2n/JAXHh2MsXErh766nqMLsjJloABAAAAGJSUVtvS+yPy+OY2L08Xjl8RKJE8+TnU4sXKyaX0VzM5juvTjWvLj/wBImds7XuUnJ/ZcTUzxbj0cul01x/F92yEAKgdMa7yL4Wa34XvRzAFuwuYKMnUZ+nL7JOM4zW4tNfR8+PVicSvw5bhN6+GTF1eQQOJzPCSSvj4X8omKMurJinXNS/2RXYAEFO4pxizMtahJxqXZIjW9gG2QAAAAAAAAAADeq+dMlKEnFr4NABY8TmWMaIq2O5rptArgHDaAAAAAAAAAAAAAAAAAAD//2Q==);
 
 
 }
-.flexitemteam h2{
-    font-size: 1.5em;
+.flexitemteam .name{
+    position: absolute;
+    top: 165px; left: 0px; right: 0px;
+    margin: 0px 1px;
+    font-size: 1.4em;
+    line-height: 1.1;
+    text-align: center;
 }
-.flexitemteam h3 {
-    margin: 10px 1px;
+.flexitemteam .title {
+    position: absolute;
+    top: 220px; left: 0px; right: 0px;
+    margin: 0px 1px;
     font-size: 1.1em;
     line-height: 1.1;
+    text-align: center;
 }
-.flexitemteam h4 {
+.flexitemteam .action {
+    position: absolute;
+    top: 265px; left: 0px; right: 0px;
+    margin: 0px 1px;
+    font-size: 1.1em;
+    line-height: 1.1;
+    text-align: center;
+    color: transparent;
+}
+.flexitemteam biography {
     visibility: hidden;
     margin: 0;
     height: 0;
     overflow: hidden;
 }
 
-.flexitemteam a {
-    visibility: hidden;
-    height: 0;
-    overflow: hidden;
-}
-
 .flexitemteam:hover {
     box-shadow: 1px 1px 10px var(--color4);
-    transform: scale(1.03)
+    transform: scale(1.03);
 }
 
 .flexitemteam:hover img {
-    border-radius: 10px;
+    border-radius: 0px;
+}
+.flexitemteam:hover .action {
+    color: var(--color5);
 }
 
 .teambio { /*team bio popups*/
@@ -576,7 +591,7 @@ footer .footersocial a img:hover {
     margin: 10px;
     border-radius: 10px;
 }
-.teambio h2 {
+.teambio .name {
     position: relative;
     left: 0px;
     top: 0px;
@@ -585,7 +600,7 @@ footer .footersocial a img:hover {
     font-size: 1.7em;
 }
 
-.teambio h3 {
+.teambio .title {
     position: relative;
     left: 0px;
     top: 5px;
@@ -594,7 +609,7 @@ footer .footersocial a img:hover {
     font-size: 1.3em;
 }
 
-.teambio h4 {
+.teambio .biography {
     position: absolute;
     font-size: 1.2em;
     left: 220px;
@@ -606,8 +621,8 @@ footer .footersocial a img:hover {
     overflow-x: hidden;
     overflow-y: scroll;
 }
-.teambio a{
-    color: var(--color3)
+.teambio .action{
+    visibility: hidden;
 }
 
 .teambio h4:after {
@@ -781,20 +796,6 @@ footer .footersocial a img:hover {
     .cardthird {
         max-width: unset;
         width: 40%
-    }
-    .flexitemteam {
-        width: 150px;
-        height: 280px;
-    }
-    .flexitemteam img{
-        width: 150px;
-        height: 150px;
-    }
-    .flexitemteam h2{
-        font-size: 1.3em;
-    }
-    .flexitemteam h3 {
-        font-size: 0.9em;
     }
     .teambio h2{
         max-width: 200px;
