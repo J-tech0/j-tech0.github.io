@@ -1,8 +1,9 @@
 ==============
-17/8/2020 - Added new clients to Our Work, fixed scaling issue on About Us
-19/8/2020 - an insights article got lost in the transition from old site to new, now fixed
-29/8/2020 - Removed handshake bets web link as page offline
-30/8/2020 - Changed Meet The Team section of About-Us page to link directly to LinkedIn rather than using biography popups except for those not on LinkedIn, Cache Bust
-31/8/2020 - Add Gordon's image to About-Us
-31/8/2020 - Update text for services cards on Homepage
-31/8/2020 - Added values to About-Us page
+17/08/2020 - Added new clients to Our Work, fixed scaling issue on About Us
+19/08/2020 - an insights article got lost in the transition from old site to new, now fixed
+29/08/2020 - Removed handshake bets web link as page offline
+30/08/2020 - Changed Meet The Team section of About-Us page to link directly to LinkedIn rather than using biography popups except for those not on LinkedIn, Cache Bust
+31/08/2020 - Add Gordon's image to About-Us
+31/08/2020 - Update text for services cards on Homepage
+31/08/2020 - Added values to About-Us page
+09/09/2020 - added Synergy Accelerate blog page
