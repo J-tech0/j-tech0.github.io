@@ -7,7 +7,9 @@ DD/MM/YYYY date format
 31/08/2020 - Add Gordon's image to About-Us
 31/08/2020 - Update text for services cards on Homepage
 31/08/2020 - Added values to About-Us page
-09/09/2020 - added Synergy Accelerate blog page
+09/09/2020 - added Synergy Accelerate blog post
 21/09/2020 - Updated Dennis' picture on About-Us
 21/09/2020 - Removed Interns' pictures from server
 21/09/2020 - Updated Sitemap
+23/09/2020 - Added businesss in a bind blog post
+23/09/2020 - Updated Sitemap
