@@ -172,7 +172,7 @@
                     <div class="cardtext">
                         <h3 class="maptab current" onclick="showUS()">United States</h3>
                         <h3 class="maptab" onclick="showGlobal()">Global</h3>
-                        <script data-swup-reload-script>
+                        <script>
                             function showUS() {
                                 document.getElementsByClassName("maptab")[0].classList.add("current");
                                 document.getElementsByClassName("maptab")[1].classList.remove("current");
@@ -191,7 +191,7 @@
                         </script>
                         <div class="mapembed">
                             <div id="leaflet" >
-                                <script data-swup-reload-script>
+                                <script>
                                     var mymap = L.map('leaflet', {
                                         zoomSnap: 0.05
                                     }).fitBounds([[22, -134],[52, -57]]);
