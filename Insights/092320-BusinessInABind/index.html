@@ -1,6 +1,6 @@
 <html> <!-- It's an HTML document yay. Welcome. -->
     <head> <!-- Head meta stuff in here -->
-        <title>SWG - Home</title> <!-- Page title. Quite important -->
+        <title>SWG - Insights</title> <!-- Page title. Quite important -->
         <!-- Description Meta etc ok i'll stop commenting every line -->
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,11 +8,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="author" content="J_tech0">
         <meta name="application-name" content="Synergy Works Group">
-    
+
         <!-- Overall style code, fonts, CSS file -->
         <link rel="stylesheet" href="/css/stylesheet.css?v=cache94751">
         <link href="https://fonts.googleapis.com/css?family=Mulish:300,400,700&display=swap" rel="stylesheet">
-        
+
         <!-- Logo Code -->
         <link rel="apple-touch-icon" sizes="180x180" href="/media/logos/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="/media/logos/favicon-32x32.png">
@@ -25,25 +25,25 @@
         <meta name="msapplication-TileColor" content="#1a7fba">
         <meta name="msapplication-config" content="/media/logos/browserconfig.xml">
         <meta name="theme-color" content="#1a7fba">
-        
+
         <!--import swup library for those smooth transitions and magical page preloading-->
         <script defer src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>
         <script defer src="https://unpkg.com/@swup/scroll-plugin@latest/dist/SwupScrollPlugin.min.js"></script>
         <script defer src="https://unpkg.com/@swup/debug-plugin@1.0.3/dist/SwupDebugPlugin.min.js"></script>
         <script defer src="/js/script.js"></script>
-        
+
         <meta name="google-site-verification" content="r_VWCdwGioAISApKdbFcDT59EZG-pFP-oCXlhbhvQSY" />
     </head>
     <body>
 
 <!--
-   _____ _     _                           _______          _                   _____          _      
-  / ____(_)   | |                         |__   __|        | |                 / ____|        | |     
- | (___  _  __| | ___ _ __   __ ___   ___| |_| | ___  _ __ | |__   __ _ _ __  | |     ___   __| | ___ 
+   _____ _     _                           _______          _                   _____          _
+  / ____(_)   | |                         |__   __|        | |                 / ____|        | |
+ | (___  _  __| | ___ _ __   __ ___   ___| |_| | ___  _ __ | |__   __ _ _ __  | |     ___   __| | ___
   \___ \| |/ _` |/ _ \ '_ \ / _` \ \ / /_   _| |/ _ \| '_ \| '_ \ / _` | '__| | |    / _ \ / _` |/ _ \
   ____) | | (_| |  __/ | | | (_| |\ V /  |_| | | (_) | |_) | |_) | (_| | |    | |___| (_) | (_| |  __/
  |_____/|_|\__,_|\___|_| |_|\__,_| \_/       |_|\___/| .__/|_.__/ \__,_|_|     \_____\___/ \__,_|\___|
-                                                     | |                                              
+                                                     | |
                                                      |_| this is for mobile/tablet users
 -->
         <div class="topbar"> <!-- Topbar -->
@@ -56,7 +56,7 @@
         </div>
         <div id="swup"> <!-- contain the sidebar and body in swup animation - this should encapsulate the page content too -->
             <div class="sidenav"> <!-- Links for side menu bar -->
-                <div class="transition-current">
+                <div>
                     <a href="/" onclick="navClose()">Home</a>
                 </div>
                 <div>
@@ -74,7 +74,7 @@
                 <div>
                     <a href="/Jobs/" onclick="navClose()">Jobs</a>
                 </div>
-                <div>
+                <div class="transition-current">
                     <a href="/Insights/" onclick="navClose()">Insights</a>
                 </div>
             </div> <!-- end of the sidemenu links -->
@@ -115,19 +115,19 @@
             <div class="clicktocloseoverlay" onclick="navClose()"> <!--overlay to close popup -->
             </div>
 <!--
-  _______                               _____          _      
- |__   __|                             / ____|        | |     
-    | | ___  _ __  _ __   __ ___   __ | |     ___   __| | ___ 
+  _______                               _____          _
+ |__   __|                             / ____|        | |
+    | | ___  _ __  _ __   __ ___   __ | |     ___   __| | ___
     | |/ _ \| '_ \| '_ \ / _` \ \ / / | |    / _ \ / _` |/ _ \
     | | (_) | |_) | | | | (_| |\ V /  | |___| (_) | (_| |  __/
     |_|\___/| .__/|_| |_|\__,_| \_/    \_____\___/ \__,_|\___|
-            | |                                               
+            | |
             |_|                this is for desktop users
 -->
             <div class="topnav"> <!--Links for top menu bar-->
                 <a href="/"><img src="/media/logos/SynSolLogoWide.svg" class="logo"></a>
                 <div class="toplinks">
-                    <div class="transition-current">
+                    <div>
                         <a href="/">Home</a>
                     </div>
                     <div>
@@ -145,52 +145,26 @@
                     <div>
                         <a href="/Jobs/">Jobs</a>
                     </div>
-                    <div>
+                    <div class="transition-current">
                         <a href="/Insights/">Insights</a>
                     </div>
                 </div>
             </div> <!-- end of the topmenu links -->
-            <div class="transition-fade main cardlayout">
-                <div class="cardrow" style="background-image: linear-gradient(#505050, #696969), url(/media/images/homepage/business.jpg); max-width: none; background-position: center; background-size: cover; background-blend-mode: multiply">
+            <div class="transition-fade main cardlayout newsarticle">
+                <div class="cardrow"> <!--Header row-->
                     <div class="cardtext">
-                        <h1 style="color: var(--color1)">Welcome to Synergy Works Group!</h1>
-                        <hr style="background-color: var(--color3)">
-                        <h3 style="color: var(--color1)">Synergy Works Group is an IT and Digital Strategy consulting firm that serves businesses who are looking to transition their business online. </h3>
-                        <div class="cta-buttons">
-                            <a href="/About-Us/">About Us</a>
-                        </div>
-                        <div class="cardrow">
-                            <a href="/Insights/" class="newscard latest">
-                                <h2>Weekly Insights</h2>
-                                <h3>Updated September 23</h3>
-                                <h4>With the constant change of economic and political climates keeping up to date can be hard. We want you to know and understand how these changes will affect your business.</h4>
-                                <h3 class="learnmore">Insights ➔</h3>
-                            </a>
-                        </div>
+                        <h1>Does 2020 have your business in a bind? Find new and exciting energy with Synergy!</h1>
+                        <hr>
+                        <h4>September 23</h4>
+                        <h3>Synergy Works Group was founded in the Spring of 2020 amid the novel coronavirus pandemic that shocked the world and displaced many students and graduates from their internships and jobs. Our mission was to help small businesses who were impacted the most by the pandemic while providing these students with an opportunity to apply their knowledge and skills.</h3>
+                        <h3>Since then, we have been able to help over a dozen businesses start or grow their business with our services in Information Technology, Digital Marketing, and Growth strategies. We have worked with businesses in various industries such as photography, website development, and product retail and have seen each affected uniquely by the pandemic. In response to this, we created personalized solutions to meet the needs of their business.</h3>
+                        <h3>As the year continues, it is increasingly clear that the novel coronavirus is not going away anytime soon. Along with this, we understand that small businesses are still facing challenges and struggling to overcome setbacks from the shutdown period. If this sounds like you and your business, we want to help you find new and exciting energy with Synergy Works Group!</h3>
+                        <h3>To see how we can help you, reach out today by emailing <span id="email"><a ref="mailto:potofhoney@synergyworksgroup.com">potofhoney@synergyworksgroup.com</a></span></h3>
+                        <script>
+                            var asdf="info", ghjk="worksgroup", lzxc="synergy";
+                            document.getElementById("email").innerHTML = '<a href="mailto:' + asdf + '@' + lzxc + ghjk + '.com' + '">'+ asdf + '@' + lzxc + ghjk + '.com' + '</a>';
+                        </script>
                     </div>
-                </div>
-                <div class="cardrow" style="background-color: var(--color5)">
-                </div>
-                <div class="cardrow" style="background-color: var(--color5)">
-                    <div class="cardtext">
-                        <h3 style="color: var(--color1)">At Synergy we see the value that technology and analytics brings to companies, but have noticed a divide between larger and smaller companies in being able to leverage these opportunities.</h3>
-                        <h3 style="color: var(--color1)">It is our mission to empower decision makers at all levels, not just large corporations, to have the tools and resources they need to succeed.</h3>
-                    </div>
-                </div>
-                <div class="cardrow" style="background-color: var(--color1)">
-                    <a href="/Our-Services/#Enterprise-Systems-Management" class="cardthird">
-                        <img src='/media/images/homepage/webservices.jpg'>
-                        <h2>IT Services:</h2>
-                        <h3>For all of the things that happen on the backend, whether it's moving business online, improving your workflows, or enhancing your website- we’re here to serve as your IT partners every step of the way.</h3>
-                        <h3 class="learnmore">Learn More ➔</h3>
-                    </a>
-                    <a href="/Our-Services/#Business-Intelligence" class="cardthird">
-                        <img src='/media/images/homepage/businessintelligence.jpg'>
-                        <h2>Digital Strategy:</h2>
-                        <h3>Giving your business the boost it needs by helping you understand the data collected from your customers and see how you can leverage the data to drive your business. From targeted ad campaigns to social media management or a customized growth plan, we’ve got your back. </h3>
-                        <h3 class="learnmore">Learn More ➔</h3>
-                    </a>
-
                 </div>
                 <footer>
                     <div class="footersocial">
