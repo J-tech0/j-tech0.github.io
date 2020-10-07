@@ -727,7 +727,9 @@ footer .footersocial a img:hover {
 .newsarticle h2 {
     font-family: "Times New Roman", "Open Sans"!important;
 }
-
+.newsarticle a {
+    font-family: "Times New Roman", "Nimbus Roman", "Open Sans"!important;
+}
 
 /*DataAnalysisDemo*/
 .mapembed {
