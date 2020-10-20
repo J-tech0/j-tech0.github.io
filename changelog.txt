@@ -8,10 +8,13 @@ DD/MM/YYYY date format
 31/08/2020 - Update text for services cards on Homepage
 31/08/2020 - Added values to About-Us page
 09/09/2020 - added Synergy Accelerate blog post
-21/09/2020 - Updated Dennis' picture on About-Us
+21/09/2020 - Updated a picture on About-Us
 21/09/2020 - Removed Interns' pictures from server
 21/09/2020 - Updated Sitemap
 23/09/2020 - Added businesss in a bind blog post
 23/09/2020 - Updated Sitemap
 30/09/2020 - Removed ex-employees from About Us page
 07/10/2020 - Added "Importance of social media marketing" blog post, added contact email to contact page, CSS fix to make hyperlinks in the articles the same font as the rest of the page
+20/10/2020 - Added "5 tips for using facebook as a small business" blog post
+20/10/2020 - Fixed About Us biograpy popups
+20/10/2020 - Removed ex-emplyee from About Us page

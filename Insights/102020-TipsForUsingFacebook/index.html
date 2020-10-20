@@ -1,0 +1,209 @@
+<html> <!-- It's an HTML document yay. Welcome. -->
+    <head> <!-- Head meta stuff in here -->
+        <title>SWG - Insights</title> <!-- Page title. Quite important -->
+        <!-- Description Meta etc ok i'll stop commenting every line -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="Synergy Works Group is a consulting firm that wants to help you achieve the highest potential for your business">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="J_tech0">
+        <meta name="application-name" content="Synergy Works Group">
+
+        <!-- Overall style code, fonts, CSS file -->
+        <link rel="stylesheet" href="/css/stylesheet.css?v=cache94751">
+        <link href="https://fonts.googleapis.com/css?family=Mulish:300,400,700&display=swap" rel="stylesheet">
+
+        <!-- Logo Code -->
+        <link rel="apple-touch-icon" sizes="180x180" href="/media/logos/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/media/logos/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/media/logos/favicon-16x16.png">
+        <link rel="manifest" href="/media/logos/site.webmanifest">
+        <link rel="mask-icon" href="/media/logos/safari-pinned-tab.svg" color="#1a7fba">
+        <link rel="shortcut icon" href="/media/logos/favicon.ico">
+        <meta name="apple-mobile-web-app-title" content="SynergySolutions">
+        <meta name="application-name" content="SynergySolutions">
+        <meta name="msapplication-TileColor" content="#1a7fba">
+        <meta name="msapplication-config" content="/media/logos/browserconfig.xml">
+        <meta name="theme-color" content="#1a7fba">
+
+        <!--import swup library for those smooth transitions and magical page preloading-->
+        <script defer src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>
+        <script defer src="https://unpkg.com/@swup/scroll-plugin@latest/dist/SwupScrollPlugin.min.js"></script>
+        <script defer src="https://unpkg.com/@swup/debug-plugin@1.0.3/dist/SwupDebugPlugin.min.js"></script>
+        <script defer src="/js/script.js?v=cache94751"></script>
+
+        <meta name="google-site-verification" content="r_VWCdwGioAISApKdbFcDT59EZG-pFP-oCXlhbhvQSY" />
+    </head>
+    <body>
+
+<!--
+   _____ _     _                           _______          _                   _____          _
+  / ____(_)   | |                         |__   __|        | |                 / ____|        | |
+ | (___  _  __| | ___ _ __   __ ___   ___| |_| | ___  _ __ | |__   __ _ _ __  | |     ___   __| | ___
+  \___ \| |/ _` |/ _ \ '_ \ / _` \ \ / /_   _| |/ _ \| '_ \| '_ \ / _` | '__| | |    / _ \ / _` |/ _ \
+  ____) | | (_| |  __/ | | | (_| |\ V /  |_| | | (_) | |_) | |_) | (_| | |    | |___| (_) | (_| |  __/
+ |_____/|_|\__,_|\___|_| |_|\__,_| \_/       |_|\___/| .__/|_.__/ \__,_|_|     \_____\___/ \__,_|\___|
+                                                     | |
+                                                     |_| this is for mobile/tablet users
+-->
+        <div class="topbar"> <!-- Topbar -->
+            <div class="menubtn" onclick="doMenu()"> <!-- This is the button to open the sidenav -->
+                <div class="bar1"></div>
+                <div class="bar2"></div> <!-- These are the button bits so we can have nice animations -->
+                <div class="bar3"></div>
+            </div>
+            <img src="/media/logos/SynSolLogoWide.svg" class="logo"> <!-- logo for topbar -->
+        </div>
+        <div id="swup"> <!-- contain the sidebar and body in swup animation - this should encapsulate the page content too -->
+            <div class="sidenav"> <!-- Links for side menu bar -->
+                <div>
+                    <a href="/" onclick="navClose()">Home</a>
+                </div>
+                <div>
+                    <a href="/About-Us/" onclick="navClose()">About Us</a>
+                </div>
+                <div>
+                    <a href="/Our-Services/" onclick="navClose()">Our Services</a>
+                </div>
+                <div>
+                    <a href="/Our-Work/" onclick="navClose()">Our Work</a>
+                </div>
+                <div>
+                    <a href="/Contact/" onclick="navClose()">Contact</a>
+                </div>
+                <div>
+                    <a href="/Jobs/" onclick="navClose()">Jobs</a>
+                </div>
+                <div class="transition-current">
+                    <a href="/Insights/" onclick="navClose()">Insights</a>
+                </div>
+            </div> <!-- end of the sidemenu links -->
+
+            <script>
+                /* Scripts that need to be present for any pages */
+                var navIsOpen = 0
+                function doMenu() {
+                    if (navIsOpen == 0 || navIsOpen == '') {
+                        navOpen();
+                    } else {
+                        navClose();
+                    }
+                }
+                function navOpen() {
+                    document.getElementsByClassName("sidenav")[0].classList.add("open");
+                    document.getElementsByClassName("menubtn")[0].classList.add("open");
+                    document.getElementsByClassName("clicktocloseoverlay")[0].classList.add("show");
+                    navIsOpen = 1;
+                }
+                function navClose() {
+                    document.getElementsByClassName("sidenav")[0].classList.remove("open");
+                    document.getElementsByClassName("menubtn")[0].classList.remove("open");
+                    document.getElementsByClassName("clicktocloseoverlay")[0].classList.remove("show");
+                    navIsOpen = 0;
+                }
+                function teamitemopen(n) {
+                    document.getElementsByClassName("teambio")[0].style.transform = "translateY(0)";
+                    document.getElementsByClassName("teambio")[0].innerHTML = document.getElementsByClassName(n)[0].innerHTML + '<h5 class="closebtn" onclick="teamitemclose()">+</h5>';
+                    document.getElementsByClassName("clicktocloseoverlay")[0].classList.add("show");
+
+                }
+                function teamitemclose() {
+                    document.getElementsByClassName("teambio")[0].style.transform = "translateY(-100vh)";
+                    document.getElementsByClassName("clicktocloseoverlay")[0].classList.remove("show");
+                }
+            </script>
+            <div class="clicktocloseoverlay" onclick="navClose()"> <!--overlay to close popup -->
+            </div>
+<!--
+  _______                               _____          _
+ |__   __|                             / ____|        | |
+    | | ___  _ __  _ __   __ ___   __ | |     ___   __| | ___
+    | |/ _ \| '_ \| '_ \ / _` \ \ / / | |    / _ \ / _` |/ _ \
+    | | (_) | |_) | | | | (_| |\ V /  | |___| (_) | (_| |  __/
+    |_|\___/| .__/|_| |_|\__,_| \_/    \_____\___/ \__,_|\___|
+            | |
+            |_|                this is for desktop users
+-->
+            <div class="topnav"> <!--Links for top menu bar-->
+                <a href="/"><img src="/media/logos/SynSolLogoWide.svg" class="logo"></a>
+                <div class="toplinks">
+                    <div>
+                        <a href="/">Home</a>
+                    </div>
+                    <div>
+                        <a href="/About-Us/">About Us</a>
+                    </div>
+                    <div>
+                        <a href="/Our-Services/">Our Services</a>
+                    </div>
+                    <div>
+                        <a href="/Our-Work/">Our Work</a>
+                    </div>
+                    <div>
+                        <a href="/Contact/">Contact</a>
+                    </div>
+                    <div>
+                        <a href="/Jobs/">Jobs</a>
+                    </div>
+                    <div class="transition-current">
+                        <a href="/Insights/">Insights</a>
+                    </div>
+                </div>
+            </div> <!-- end of the topmenu links -->
+            <div class="transition-fade main cardlayout newsarticle">
+                <div class="cardrow"> <!--Header row-->
+                    <div class="cardtext">
+                        <h1>5 Tips for Using Facebook As A Small Business</h1>
+                        <hr>
+                        <h4>October 20</h4>
+                        <h3>We scoured the web to find the best tips for using facebook as a small business. Check them out below:</h3>
+                        <h3>1. Understand the Platform’s Main Purpose:
+                            <br>
+                            Facebook can easily be considered one of the OG social media channels and is the most widely used platform by active users. Facebook can be considered the <a href="https://www.postplanner.com/blog/best-social-networks-for-your-startup/">“Watercooler” social network</a> - a place where you hang out and can chat it up with your fans and followers. Facebook offers a variety of features that can be utilized by small businesses outside of a simple business profile such as messenger, advertising, and groups. Not every feature will be useful to your small business and that’s OK - doing research on your industry and competitors will help you build a baseline of where to start on this platform and testing content and features will help you refine it to fit your individual business needs.
+                        </h3>
+                        <h3>
+                            2. Understand What Content Performs Well
+                            <br>
+                            Video content is on the rise with social media users and platforms are taking notice, emphasizing this content in algorithms as a way to stay relevant to users as more platforms are introduced into the market all of the time. <a href="https://buffer.com/library/what-to-post-on-each-social-media-platform/#what-to-post-on-each-social-media-platform">Buffer</a> tested their content and found that their video content outperformed other content types in terms of reach but performed on par with photo posts in regards to engagement.
+                        </h3>
+                    </div>
+                </div>
+                    <div class="cardrow">
+                    <div class="cardimg nocover maxwidth" style="background-image: url(/media/images/insights/102020-SuccessofPostTypes.png)">
+                    </div>
+                </div>
+                <div class="cardrow">
+                    <div class="cardtext">
+                        <h3>
+                            3. Boost Engagement by Providing Value
+                            <br>
+                            <a href="https://www.wordstream.com/blog/ws/2019/12/11/social-media-marketing-mistakes">Wordstream</a> said it best here, so I’ll just let you know what they suggest:
+                            <br>
+                            People scrolling through Facebook will see your business posts alongside photos of their new-born niece and cake decorating videos (just me?), so don’t take your social posts too seriously. Stay casual, but be sure to continue to provide value. These people followed your business for a reason — make sure you’re posting relevant content for them to consume and ultimately get a little closer to your brand.
+                        </h3>
+                        <h3>
+                            4. Goldilocks Posting Frequency
+                            <br>
+                            Even if you are posting content that adds value, no one likes it when they constantly see you cluttering up their timeline or feed. However, posting too little does no good either. There are no real guidelines for how often you should post as a business (testing helps you understand this for your own business better) but there is a lot of research out there on social media engagement. In a study by <a href="https://www.socialbakers.com/blog/147-how-often-should-you-post-on-your-facebook-pages">Socialbakers</a>, engagement rates per post dropped significantly for businesses posting more than twice per day and for businesses posting only once per week. So, find that goldilocks frequency for your business to make sure that your efforts on Facebook are having the most impact.
+                        </h3>
+                        <h3>
+                            5. <a href="https://www.youtube.com/watch?v=E-LRd6ez6Ec">Optimize Your Facebook Page</a>
+                            <br>
+                            If you drive up to a store that’s dark but the hours listed on the door say that they’re open, are you likely to go in? Probably not. This is the same impression that an incomplete Facebook profile can give prospective customers when they want to learn more and engage with your business. More customers are turning to Facebook to research brands and find local businesses, checking into a business to look at reviews and recommendations, look up address information, find a phone number, etc. If your business page doesn’t have the correct information or it isn’t all filled in, you risk losing credibility and customers. If you’re just getting started and aren’t ready for the public to see your business page, you can always save it as a draft until it’s fully ready to be seen and used by the public.
+                        </h3>
+                        <h3>Still need help with your digital or social media marketing? Contact us today at <span id="infoemail"><a ref="mailto:potofhoney@synergyworksgroup.com">potofhoney@synergyworksgroup.com</a></span>!</h3>
+                    </div>
+                </div>
+                <footer>
+                    <div class="footersocial">
+                        <a href="https://linkedin.com/company/synergy-works-group"><img src="/media/social/linkedin.png"></a>
+                        <a href="https://twitter.com/SynergyWG"><img src="/media/social/twitter.png"></a>
+                        <a href="https://facebook.com/Synergy-Works-Group-102610141455283/"><img src="/media/social/facebook.png"></a>
+                        <a href="https://instagram.com/synergywg"><img src="/media/social/instagram.png"></a>
+                    </div>
+                    <h4 class="copyright">&copy; Synergy Works Group 2019-2020</h4>
+                </footer>
+            </div>
+        </div>
+    </body>
+</html>

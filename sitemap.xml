@@ -6,165 +6,177 @@
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd"
       xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 
-<url>
-  <loc>http://synergyworksgroup.com/</loc>
-  <priority>1.00</priority>
-</url>
-<url>
-  <loc>http://synergyworksgroup.com/About-Us/</loc>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://synergyworksgroup.com/Our-Services/</loc>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://synergyworksgroup.com/Our-Work/</loc>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://synergyworksgroup.com/Contact/</loc>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://synergyworksgroup.com/Jobs/</loc>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://synergyworksgroup.com/Insights/</loc>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://synergyworksgroup.com/DataAnalysisDemoTesting/</loc>
-  <priority>0.64</priority>
-</url>
     <url>
-  <loc>http://synergyworksgroup.com/Insights/100720-ImportanceofSocialMediaMarketing/</loc>
-  <news:news>
-  <news:publication>
-    <news:name>Synergy Insights</news:name>
-    <news:language>en</news:language>
-  </news:publication>
-  <news:publication_date>2020-10-07</news:publication_date>
-    <news:title>The Importance of Social Media Marketing for your Small Business</news:title>
-  </news:news>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://synergyworksgroup.com/Insights/092320-BusinessInABind/</loc>
-  <news:news>
-  <news:publication>
-    <news:name>Synergy Insights</news:name>
-    <news:language>en</news:language>
-  </news:publication>
-  <news:publication_date>2020-09-23</news:publication_date>
-    <news:title>Does 2020 have your business in a bind?</news:title>
-  </news:news>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://synergyworksgroup.com/Insights/090920-SynergyAccelerate/</loc>
-  <news:news>
-  <news:publication>
-    <news:name>Synergy Insights</news:name>
-    <news:language>en</news:language>
-  </news:publication>
-  <news:publication_date>2020-09-09</news:publication_date>
-    <news:title>Announcing Synergy Accelerate</news:title>
-  </news:news>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://synergyworksgroup.com/Insights/080520-InstagramInsights/</loc>
-  <news:news>
-  <news:publication>
-    <news:name>Synergy Insights</news:name>
-    <news:language>en</news:language>
-  </news:publication>
-  <news:publication_date>2020-08-05</news:publication_date>
-    <news:title>Instagram Insights: The Savvy Entrepreneur's Secret Weapon</news:title>
-  </news:news>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://synergyworksgroup.com/Insights/072920-JoeBidensAmerica/</loc>
-  <news:news>
-  <news:publication>
-    <news:name>Synergy Insights</news:name>
-    <news:language>en</news:language>
-  </news:publication>
-  <news:publication_date>2020-07-29</news:publication_date>
-    <news:title>How would Joe Biden’s America look Economically?</news:title>
-  </news:news>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://synergyworksgroup.com/Insights/072320-LinkedInTipsSmallBusiness/</loc>
-  <news:news>
-  <news:publication>
-    <news:name>Synergy Insights</news:name>
-    <news:language>en</news:language>
-  </news:publication>
-  <news:publication_date>2020-07-23</news:publication_date>
-    <news:title>7 LinkedIn Tips for Small Businesses</news:title>
-  </news:news>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://synergyworksgroup.com/Insights/071620-SmallBusinessWebsiteTips/</loc>
-  <news:news>
-  <news:publication>
-    <news:name>Synergy Insights</news:name>
-    <news:language>en</news:language>
-  </news:publication>
-  <news:publication_date>2020-07-16</news:publication_date>
-    <news:title>Top 10 Tips for Small Business Websites to Stand Out</news:title>
-  </news:news>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://synergyworksgroup.com/Insights/070820-EconomicCrash/</loc>
-  <news:news>
-  <news:publication>
-    <news:name>Synergy Insights</news:name>
-    <news:language>en</news:language>
-  </news:publication>
-  <news:publication_date>2020-07-08</news:publication_date>
-    <news:title>Is the worst of the Economic Crash still ahead?</news:title>
-  </news:news>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://synergyworksgroup.com/Insights/062920-AnotherShutDown/</loc>
-  <news:news>
-  <news:publication>
-    <news:name>Synergy Insights</news:name>
-    <news:language>en</news:language>
-  </news:publication>
-  <news:publication_date>2020-06-29</news:publication_date>
-    <news:title>COVID is Spiking Across the South: Is Another Shut Down Inevitable?</news:title>
-  </news:news>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://synergyworksgroup.com/Insights/061620-MayJobsReport/</loc>
-  <news:news>
-  <news:publication>
-    <news:name>Synergy Insights</news:name>
-    <news:language>en</news:language>
-  </news:publication>
-  <news:publication_date>2020-06-16</news:publication_date>
-    <news:title>Does the May Jobs Report Indicate the Recovery Has Begun?</news:title>
-  </news:news>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://synergyworksgroup.com/DataAnalysisDemoTesting/Influence-Analysis/</loc>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>http://synergyworksgroup.com/Privacy</loc>
-  <priority>0.4</priority>
-</url>
+      <loc>http://synergyworksgroup.com/</loc>
+      <priority>1.00</priority>
+    </url>
+    <url>
+      <loc>http://synergyworksgroup.com/About-Us/</loc>
+      <priority>0.80</priority>
+    </url>
+    <url>
+      <loc>http://synergyworksgroup.com/Our-Services/</loc>
+      <priority>0.80</priority>
+    </url>
+    <url>
+      <loc>http://synergyworksgroup.com/Our-Work/</loc>
+      <priority>0.80</priority>
+    </url>
+    <url>
+      <loc>http://synergyworksgroup.com/Contact/</loc>
+      <priority>0.80</priority>
+    </url>
+    <url>
+      <loc>http://synergyworksgroup.com/Jobs/</loc>
+      <priority>0.80</priority>
+    </url>
+    <url>
+      <loc>http://synergyworksgroup.com/Insights/</loc>
+      <priority>0.80</priority>
+    </url>
+    <url>
+      <loc>http://synergyworksgroup.com/DataAnalysisDemoTesting/</loc>
+      <priority>0.64</priority>
+    </url>
+    <url>
+      <loc>http://synergyworksgroup.com/Insights/102020-TipsForUsingFacebook/</loc>
+      <news:news>
+      <news:publication>
+        <news:name>Synergy Insights</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2020-10-20</news:publication_date>
+        <news:title>5 Tips for Using Facebook As A Small Business</news:title>
+      </news:news>
+      <priority>0.64</priority>
+    </url>
+    <url>
+      <loc>http://synergyworksgroup.com/Insights/100720-ImportanceofSocialMediaMarketing/</loc>
+      <news:news>
+      <news:publication>
+        <news:name>Synergy Insights</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2020-10-07</news:publication_date>
+        <news:title>The Importance of Social Media Marketing for your Small Business</news:title>
+      </news:news>
+      <priority>0.64</priority>
+    </url>
+    <url>
+      <loc>http://synergyworksgroup.com/Insights/092320-BusinessInABind/</loc>
+      <news:news>
+      <news:publication>
+        <news:name>Synergy Insights</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2020-09-23</news:publication_date>
+        <news:title>Does 2020 have your business in a bind?</news:title>
+      </news:news>
+      <priority>0.64</priority>
+    </url>
+    <url>
+      <loc>http://synergyworksgroup.com/Insights/090920-SynergyAccelerate/</loc>
+      <news:news>
+      <news:publication>
+        <news:name>Synergy Insights</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2020-09-09</news:publication_date>
+        <news:title>Announcing Synergy Accelerate</news:title>
+      </news:news>
+      <priority>0.64</priority>
+    </url>
+    <url>
+      <loc>http://synergyworksgroup.com/Insights/080520-InstagramInsights/</loc>
+      <news:news>
+      <news:publication>
+        <news:name>Synergy Insights</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2020-08-05</news:publication_date>
+        <news:title>Instagram Insights: The Savvy Entrepreneur's Secret Weapon</news:title>
+      </news:news>
+      <priority>0.64</priority>
+    </url>
+    <url>
+      <loc>http://synergyworksgroup.com/Insights/072920-JoeBidensAmerica/</loc>
+      <news:news>
+      <news:publication>
+        <news:name>Synergy Insights</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2020-07-29</news:publication_date>
+        <news:title>How would Joe Biden’s America look Economically?</news:title>
+      </news:news>
+      <priority>0.64</priority>
+    </url>
+    <url>
+      <loc>http://synergyworksgroup.com/Insights/072320-LinkedInTipsSmallBusiness/</loc>
+      <news:news>
+      <news:publication>
+        <news:name>Synergy Insights</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2020-07-23</news:publication_date>
+        <news:title>7 LinkedIn Tips for Small Businesses</news:title>
+      </news:news>
+      <priority>0.64</priority>
+    </url>
+    <url>
+      <loc>http://synergyworksgroup.com/Insights/071620-SmallBusinessWebsiteTips/</loc>
+      <news:news>
+      <news:publication>
+        <news:name>Synergy Insights</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2020-07-16</news:publication_date>
+        <news:title>Top 10 Tips for Small Business Websites to Stand Out</news:title>
+      </news:news>
+      <priority>0.64</priority>
+    </url>
+    <url>
+      <loc>http://synergyworksgroup.com/Insights/070820-EconomicCrash/</loc>
+      <news:news>
+      <news:publication>
+        <news:name>Synergy Insights</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2020-07-08</news:publication_date>
+        <news:title>Is the worst of the Economic Crash still ahead?</news:title>
+      </news:news>
+      <priority>0.64</priority>
+    </url>
+    <url>
+      <loc>http://synergyworksgroup.com/Insights/062920-AnotherShutDown/</loc>
+      <news:news>
+      <news:publication>
+        <news:name>Synergy Insights</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2020-06-29</news:publication_date>
+        <news:title>COVID is Spiking Across the South: Is Another Shut Down Inevitable?</news:title>
+      </news:news>
+      <priority>0.64</priority>
+    </url>
+    <url>
+      <loc>http://synergyworksgroup.com/Insights/061620-MayJobsReport/</loc>
+      <news:news>
+      <news:publication>
+        <news:name>Synergy Insights</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2020-06-16</news:publication_date>
+        <news:title>Does the May Jobs Report Indicate the Recovery Has Begun?</news:title>
+      </news:news>
+      <priority>0.64</priority>
+    </url>
+    <url>
+      <loc>http://synergyworksgroup.com/DataAnalysisDemoTesting/Influence-Analysis/</loc>
+      <priority>0.51</priority>
+    </url>
+    <url>
+      <loc>http://synergyworksgroup.com/Privacy</loc>
+      <priority>0.4</priority>
+    </url>
 
 </urlset>
