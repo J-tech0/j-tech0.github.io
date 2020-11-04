@@ -1,6 +1,6 @@
 <html> <!-- It's an HTML document yay. Welcome. -->
     <head> <!-- Head meta stuff in here -->
-        <title>SWG - Home</title> <!-- Page title. Quite important -->
+        <title>SWG - Insights</title> <!-- Page title. Quite important -->
         <!-- Description Meta etc ok i'll stop commenting every line -->
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,11 +8,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="author" content="J_tech0">
         <meta name="application-name" content="Synergy Works Group">
-    
+
         <!-- Overall style code, fonts, CSS file -->
         <link rel="stylesheet" href="/css/stylesheet.css?v=cache94751">
         <link href="https://fonts.googleapis.com/css?family=Mulish:300,400,700&display=swap" rel="stylesheet">
-        
+
         <!-- Logo Code -->
         <link rel="apple-touch-icon" sizes="180x180" href="/media/logos/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="/media/logos/favicon-32x32.png">
@@ -25,25 +25,25 @@
         <meta name="msapplication-TileColor" content="#1a7fba">
         <meta name="msapplication-config" content="/media/logos/browserconfig.xml">
         <meta name="theme-color" content="#1a7fba">
-        
+
         <!--import swup library for those smooth transitions and magical page preloading-->
         <script defer src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>
         <script defer src="https://unpkg.com/@swup/scroll-plugin@latest/dist/SwupScrollPlugin.min.js"></script>
         <script defer src="https://unpkg.com/@swup/debug-plugin@1.0.3/dist/SwupDebugPlugin.min.js"></script>
         <script defer src="/js/script.js?v=cache94751"></script>
-        
+
         <meta name="google-site-verification" content="r_VWCdwGioAISApKdbFcDT59EZG-pFP-oCXlhbhvQSY" />
     </head>
     <body>
 
 <!--
-   _____ _     _                           _______          _                   _____          _      
-  / ____(_)   | |                         |__   __|        | |                 / ____|        | |     
- | (___  _  __| | ___ _ __   __ ___   ___| |_| | ___  _ __ | |__   __ _ _ __  | |     ___   __| | ___ 
+   _____ _     _                           _______          _                   _____          _
+  / ____(_)   | |                         |__   __|        | |                 / ____|        | |
+ | (___  _  __| | ___ _ __   __ ___   ___| |_| | ___  _ __ | |__   __ _ _ __  | |     ___   __| | ___
   \___ \| |/ _` |/ _ \ '_ \ / _` \ \ / /_   _| |/ _ \| '_ \| '_ \ / _` | '__| | |    / _ \ / _` |/ _ \
   ____) | | (_| |  __/ | | | (_| |\ V /  |_| | | (_) | |_) | |_) | (_| | |    | |___| (_) | (_| |  __/
  |_____/|_|\__,_|\___|_| |_|\__,_| \_/       |_|\___/| .__/|_.__/ \__,_|_|     \_____\___/ \__,_|\___|
-                                                     | |                                              
+                                                     | |
                                                      |_| this is for mobile/tablet users
 -->
         <div class="topbar"> <!-- Topbar -->
@@ -56,7 +56,7 @@
         </div>
         <div id="swup"> <!-- contain the sidebar and body in swup animation - this should encapsulate the page content too -->
             <div class="sidenav"> <!-- Links for side menu bar -->
-                <div class="transition-current">
+                <div>
                     <a href="/" onclick="navClose()">Home</a>
                 </div>
                 <div>
@@ -74,7 +74,7 @@
                 <div>
                     <a href="/Jobs/" onclick="navClose()">Jobs</a>
                 </div>
-                <div>
+                <div class="transition-current">
                     <a href="/Insights/" onclick="navClose()">Insights</a>
                 </div>
             </div> <!-- end of the sidemenu links -->
@@ -115,19 +115,19 @@
             <div class="clicktocloseoverlay" onclick="navClose()"> <!--overlay to close popup -->
             </div>
 <!--
-  _______                               _____          _      
- |__   __|                             / ____|        | |     
-    | | ___  _ __  _ __   __ ___   __ | |     ___   __| | ___ 
+  _______                               _____          _
+ |__   __|                             / ____|        | |
+    | | ___  _ __  _ __   __ ___   __ | |     ___   __| | ___
     | |/ _ \| '_ \| '_ \ / _` \ \ / / | |    / _ \ / _` |/ _ \
     | | (_) | |_) | | | | (_| |\ V /  | |___| (_) | (_| |  __/
     |_|\___/| .__/|_| |_|\__,_| \_/    \_____\___/ \__,_|\___|
-            | |                                               
+            | |
             |_|                this is for desktop users
 -->
             <div class="topnav"> <!--Links for top menu bar-->
                 <a href="/"><img src="/media/logos/SynSolLogoWide.svg" class="logo"></a>
                 <div class="toplinks">
-                    <div class="transition-current">
+                    <div>
                         <a href="/">Home</a>
                     </div>
                     <div>
@@ -145,52 +145,48 @@
                     <div>
                         <a href="/Jobs/">Jobs</a>
                     </div>
-                    <div>
+                    <div class="transition-current">
                         <a href="/Insights/">Insights</a>
                     </div>
                 </div>
             </div> <!-- end of the topmenu links -->
-            <div class="transition-fade main cardlayout">
-                <div class="cardrow" style="background-image: linear-gradient(#505050, #696969), url(/media/images/homepage/business.jpg); max-width: none; background-position: center; background-size: cover; background-blend-mode: multiply">
+            <div class="transition-fade main cardlayout newsarticle">
+                <div class="cardrow"> <!--Header row-->
                     <div class="cardtext">
-                        <h1 style="color: var(--color1)">Welcome to Synergy Works Group!</h1>
-                        <hr style="background-color: var(--color3)">
-                        <h3 style="color: var(--color1)">Synergy Works Group is an IT and Digital Strategy consulting firm that serves businesses who are looking to transition their business online. </h3>
-                        <div class="cta-buttons">
-                            <a href="/About-Us/">About Us</a>
-                        </div>
-                        <div class="cardrow">
-                            <a href="/Insights/" class="newscard latest">
-                                <h2>Weekly Insights</h2>
-                                <h3>Updated November 4</h3>
-                                <h4>With the constant change of economic and political climates keeping up to date can be hard. We want you to know and understand how these changes will affect your business.</h4>
-                                <h3 class="learnmore">Insights ➔</h3>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="cardrow" style="background-color: var(--color5)">
-                </div>
-                <div class="cardrow" style="background-color: var(--color5)">
-                    <div class="cardtext">
-                        <h3 style="color: var(--color1)">At Synergy we see the value that technology and analytics brings to companies, but have noticed a divide between larger and smaller companies in being able to leverage these opportunities.</h3>
-                        <h3 style="color: var(--color1)">It is our mission to empower decision makers at all levels, not just large corporations, to have the tools and resources they need to succeed.</h3>
-                    </div>
-                </div>
-                <div class="cardrow" style="background-color: var(--color1)">
-                    <a href="/Our-Services/#Enterprise-Systems-Management" class="cardthird">
-                        <img src='/media/images/homepage/webservices.jpg'>
-                        <h2>IT Services:</h2>
-                        <h3>For all of the things that happen on the backend, whether it's moving business online, improving your workflows, or enhancing your website- we’re here to serve as your IT partners every step of the way.</h3>
-                        <h3 class="learnmore">Learn More ➔</h3>
-                    </a>
-                    <a href="/Our-Services/#Business-Intelligence" class="cardthird">
-                        <img src='/media/images/homepage/businessintelligence.jpg'>
-                        <h2>Digital Strategy:</h2>
-                        <h3>Giving your business the boost it needs by helping you understand the data collected from your customers and see how you can leverage the data to drive your business. From targeted ad campaigns to social media management or a customized growth plan, we’ve got your back. </h3>
-                        <h3 class="learnmore">Learn More ➔</h3>
-                    </a>
+                        <h1>5 Tips for Using Instagram as a Small Business</h1>
+                        <hr>
+                        <h4>November 4</h4>
+                        <h3>While Facebook is the most popular social media channel for small businesses and their customers overall, the younger generation is <a href="https://themanifest.com/social-media/how-different-generations-use-social-media">using Instagram more often than Facebook.</a> We scoured the web to find the best tips for using Instagram as a small business so that you are able to reach this customer group who may not be on Facebook. Check them out below:</h3>
+                        <h3>
+                            1. Understand the Platform's Main Purpose
+                            <br>
+                            Although Instagram is owned by Facebook and they share systems such as Creator Studio and Ads Center, Instagram requires a very different approach to content. The first and most obvious  is the fact that every post is visual; whether a feed post, story, IGTV or the new reels, every post revolves around a picture or graphic or video. This is what caused Post Planner to dub the platform as the “<a href="https://www.postplanner.com/blog/best-social-networks-for-your-startup/">Storefront Network</a>”, or a place where you can show off your products and services visually. Small businesses should capture, create and use stunning and eye-catching visuals to help customers window shop and learn more about what the business sells.
 
+                        </h3>
+                        <h3>
+                            2. Make  a Content Plan
+                            <br>
+                            With the different formats that Instagram has for sharing content, making a content plan is more important than ever! There are three main things that you have to decide on when building this plan: type of content, format to share it on, and content pillars to base that content on. The first thing to decide is the type of content, as that can play a factor in the format. For example, if you decide that you want to share video content, you can share it as a feed post, in IGTV, Reels, and on your story -- but they all have different length settings. Each individual story on Instagram has a maximum length of 15 seconds, although you can string a longer video together in separate stories. IGTV videos can range from 15 seconds to 10 minutes in length and the new Reels format has a maximum length of 30 seconds. Videos posted on your feed can range from 3 to 60 seconds, and you can promote IGTV videos with a preview on your feed as well. Finally, choose some content pillars to base your content on such as product promotion, team introductions, user generated content, or more. Check out some examples of content pillars shared by Buffer and other brands <a href="https://buffer.com/library/instagram-marketing/#creating-a-content-strategy-for-instagram">here</a>.
+                        </h3>
+                        <h3>
+                            3. Develop a Brand Voice
+                            <br>
+                            Similar to how content on Instagram differs from that on Facebook, so should the voice of your brand. <a href="https://sproutsocial.com/insights/social-media-content-strategy/">Sprout Social</a> recommends building a target persona of your audience - things like their demographics, interests, and content preferences - and using it to help plan your content. You can evaluate whether your brand voice is aligned with your target audience by reviewing the engagement statistics of your content.
+                        </h3>
+                        <h3>
+                            4. How Often To Share
+                            <br>
+                            You may be wondering, with all of the different types of content that I can post on Instagram, what is the posting frequency that I should build into my plan? Well, we’re gonna give the most commonly used phrase in consulting to answer this one: it depends. Wordstream agrees with us:
+                            <br>
+                            <i style="display: inline-block; margin:1em">Posting on Instagram is all about quality and consistency. If you start by posting a couple of times a week and then suddenly drop off, you could lose followers or engagement. Some brands post multiple times per day; it likely depends on how visual your industry is. <b>Find what works for your business and stick to it.</b> Posting Instagram Stories can be more frequent—even daily—as long as you have content and moments you’d like to share with your followers.</i>
+                        </h3>
+                        <h3>
+                            5. Understand the Hashtag
+                            <br>
+                            While hashtags are used on almost all social media platforms these days, Instagram is unique in that their search features looks for hashtags instead of keywords. For example, if you search for a word like hamburgers in Facebook or Twitter, the results will show you posts with the word hamburger in it while Instagram will only show you posts with #hamburgers used in the caption. Mastering the hashtag can do so much for your small business on Instagram, from growing your audience to staying on top of industry trends. Check out <a href="https://sproutsocial.com/insights/instagram-hashtags/">this Sprout Social</a> article for more insight on the various ways, whys and hows of using hashtags on Instagram.
+                        </h3>
+                        <h3>Still need help with your digital or social media marketing? Contact us today at <span id="infoemail"><a href="mailto:potofhoney@synergyworksgroup.com">potofhoney@synergyworksgroup.com</a></span>!</h3>
+                    </div>
                 </div>
                 <footer>
                     <div class="footersocial">

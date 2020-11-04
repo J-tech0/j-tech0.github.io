@@ -724,19 +724,14 @@ footer .footersocial a img:hover {
     max-width: 600px;
 }
 
-.newsarticle h3 {
+.newsarticle h3, newsarticle li, .newsarticle a, .newsarticle i, .newsarticle b  {
     font-family: "Times New Roman", "Nimbus Roman", "Open Sans"!important;
 }
 .newsarticle h2 {
     font-family: "Times New Roman", "Open Sans"!important;
 }
-.newsarticle a {
-    font-family: "Times New Roman", "Nimbus Roman", "Open Sans"!important;
-}
-.newsarticle li{
-    font-family: "Times New Roman", "Nimbus Roman", "Open Sans"!important;
 
-}
+
 
 /*DataAnalysisDemo*/
 .mapembed {
