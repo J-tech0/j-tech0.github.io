@@ -1,6 +1,6 @@
 <html> <!-- It's an HTML document yay. Welcome. -->
     <head> <!-- Head meta stuff in here -->
-        <title>SWG - Home</title> <!-- Page title. Quite important -->
+        <title>SWG - Insights</title> <!-- Page title. Quite important -->
         <!-- Description Meta etc ok i'll stop commenting every line -->
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,11 +8,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="author" content="J_tech0">
         <meta name="application-name" content="Synergy Works Group">
-    
+
         <!-- Overall style code, fonts, CSS file -->
         <link rel="stylesheet" href="/css/stylesheet.css?v=cache94751">
         <link href="https://fonts.googleapis.com/css?family=Mulish:300,400,700&display=swap" rel="stylesheet">
-        
+
         <!-- Logo Code -->
         <link rel="apple-touch-icon" sizes="180x180" href="/media/logos/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="/media/logos/favicon-32x32.png">
@@ -25,25 +25,25 @@
         <meta name="msapplication-TileColor" content="#1a7fba">
         <meta name="msapplication-config" content="/media/logos/browserconfig.xml">
         <meta name="theme-color" content="#1a7fba">
-        
+
         <!--import swup library for those smooth transitions and magical page preloading-->
         <script defer src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>
         <script defer src="https://unpkg.com/@swup/scroll-plugin@latest/dist/SwupScrollPlugin.min.js"></script>
         <script defer src="https://unpkg.com/@swup/debug-plugin@1.0.3/dist/SwupDebugPlugin.min.js"></script>
         <script defer src="/js/script.js?v=cache94751"></script>
-        
+
         <meta name="google-site-verification" content="r_VWCdwGioAISApKdbFcDT59EZG-pFP-oCXlhbhvQSY" />
     </head>
     <body>
 
 <!--
-   _____ _     _                           _______          _                   _____          _      
-  / ____(_)   | |                         |__   __|        | |                 / ____|        | |     
- | (___  _  __| | ___ _ __   __ ___   ___| |_| | ___  _ __ | |__   __ _ _ __  | |     ___   __| | ___ 
+   _____ _     _                           _______          _                   _____          _
+  / ____(_)   | |                         |__   __|        | |                 / ____|        | |
+ | (___  _  __| | ___ _ __   __ ___   ___| |_| | ___  _ __ | |__   __ _ _ __  | |     ___   __| | ___
   \___ \| |/ _` |/ _ \ '_ \ / _` \ \ / /_   _| |/ _ \| '_ \| '_ \ / _` | '__| | |    / _ \ / _` |/ _ \
   ____) | | (_| |  __/ | | | (_| |\ V /  |_| | | (_) | |_) | |_) | (_| | |    | |___| (_) | (_| |  __/
  |_____/|_|\__,_|\___|_| |_|\__,_| \_/       |_|\___/| .__/|_.__/ \__,_|_|     \_____\___/ \__,_|\___|
-                                                     | |                                              
+                                                     | |
                                                      |_| this is for mobile/tablet users
 -->
         <div class="topbar"> <!-- Topbar -->
@@ -56,7 +56,7 @@
         </div>
         <div id="swup"> <!-- contain the sidebar and body in swup animation - this should encapsulate the page content too -->
             <div class="sidenav"> <!-- Links for side menu bar -->
-                <div class="transition-current">
+                <div>
                     <a href="/" onclick="navClose()">Home</a>
                 </div>
                 <div>
@@ -74,7 +74,7 @@
                 <div>
                     <a href="/Jobs/" onclick="navClose()">Jobs</a>
                 </div>
-                <div>
+                <div class="transition-current">
                     <a href="/Insights/" onclick="navClose()">Insights</a>
                 </div>
             </div> <!-- end of the sidemenu links -->
@@ -115,19 +115,19 @@
             <div class="clicktocloseoverlay" onclick="navClose()"> <!--overlay to close popup -->
             </div>
 <!--
-  _______                               _____          _      
- |__   __|                             / ____|        | |     
-    | | ___  _ __  _ __   __ ___   __ | |     ___   __| | ___ 
+  _______                               _____          _
+ |__   __|                             / ____|        | |
+    | | ___  _ __  _ __   __ ___   __ | |     ___   __| | ___
     | |/ _ \| '_ \| '_ \ / _` \ \ / / | |    / _ \ / _` |/ _ \
     | | (_) | |_) | | | | (_| |\ V /  | |___| (_) | (_| |  __/
     |_|\___/| .__/|_| |_|\__,_| \_/    \_____\___/ \__,_|\___|
-            | |                                               
+            | |
             |_|                this is for desktop users
 -->
             <div class="topnav"> <!--Links for top menu bar-->
                 <a href="/"><img src="/media/logos/SynSolLogoWide.svg" class="logo"></a>
                 <div class="toplinks">
-                    <div class="transition-current">
+                    <div>
                         <a href="/">Home</a>
                     </div>
                     <div>
@@ -145,52 +145,51 @@
                     <div>
                         <a href="/Jobs/">Jobs</a>
                     </div>
-                    <div>
+                    <div class="transition-current">
                         <a href="/Insights/">Insights</a>
                     </div>
                 </div>
             </div> <!-- end of the topmenu links -->
-            <div class="transition-fade main cardlayout">
-                <div class="cardrow" style="background-image: linear-gradient(#505050, #696969), url(/media/images/homepage/business.jpg); max-width: none; background-position: center; background-size: cover; background-blend-mode: multiply">
+            <div class="transition-fade main cardlayout newsarticle">
+                <div class="cardrow"> <!--Header row-->
                     <div class="cardtext">
-                        <h1 style="color: var(--color1)">Welcome to Synergy Works Group!</h1>
-                        <hr style="background-color: var(--color3)">
-                        <h3 style="color: var(--color1)">Synergy Works Group is an IT and Digital Strategy consulting firm that serves businesses who are looking to transition their business online. </h3>
-                        <div class="cta-buttons">
-                            <a href="/About-Us/">About Us</a>
-                        </div>
-                        <div class="cardrow">
-                            <a href="/Insights/" class="newscard latest">
-                                <h2>Weekly Insights</h2>
-                                <h3>Updated December 2</h3>
-                                <h4>With the constant change of economic and political climates keeping up to date can be hard. We want you to know and understand how these changes will affect your business.</h4>
-                                <h3 class="learnmore">Insights ➔</h3>
-                            </a>
-                        </div>
+                        <h1>5 Tips for Using LinkedIn as a Small Business</h1>
+                        <hr>
+                        <h4>December 2</h4>
+                        <h3>For our fourth and final installment of the Tips for Using Social Media as a Small Business, we tackle the platform that most businesses should consider the bare minimum for promoting their company, LinkedIn. We scoured the web and compiled our top 5 favorite tips for using LinkedIn as a small business:</h3>
+                        <h3>
+                            <b>1. Understand the Platform's Main Purpose</b>
+                            <br>
+                            As a small business owner, you may want to consider your (company’s) LinkedIn profile to be the go-to place when you first start your business and the best place to go when you’re trying to grow. PostPlanner called LinkedIn “<a href="https://www.postplanner.com/blog/best-social-networks-for-your-startup/">The Boardroom and Professional Network</a>” because it is the place professionals, business owners, executives, and others connect with one another in a virtual space that is centered around the workplace.
+                            <br>
+                            For small businesses and startups, LinkedIn is a good place to start making introductions to other business professionals, getting news about your industry, and establishing credibility for yourself and your business.
+                        </h3>
+                        <h3>
+                            <b>2. Content Tips</b>
+                            <br>
+                            Being a professional network, LinkedIn should be focused around your small business and efforts to promote it. Content such as company news, trainings, webinars, whitepapers, industry studies, and more are great ways to build your business’ credibility and promote your company.
+                            <br>
+                            Buffer shared another important aspect of content for your LinkedIn page: <a href="https://buffer.com/library/what-to-post-on-each-social-media-platform/#what-to-post-on-linkedin">Jobs and Career Information</a>. As your small business grows and you look to recruit and hire more people to join you, sharing about your company culture, your team, and achievements on your LinkedIn profile will give prospective employees an inside look into what it’s like to be a part of your small business team.
+                        </h3>
+                        <h3>
+                            <b>3. How Often to Post</b>
+                            <br>
+                            <a href="https://business.linkedin.com/marketing-solutions/linkedin-pages/best-practices#0">LinkedIn</a> has a lot of data from their users, including business pages, and they say “Companies that post weekly see a 2x lift in engagement with their content.” So post more if you have the content, but try to make an appearance on your followers' feed at least once a week.
+                        </h3>
+                        <h3>
+                            <b>4. Ways to Boost Engagement</b>
+                            <br>
+                            <a href="https://business.linkedin.com/marketing-solutions/linkedin-pages/best-practices#6">LinkedIn</a> suggests posting original photos (image collages are better than single images), videos, and documents as posts with these attributes have higher levels of engagement by followers. You can also use their Content Suggestions page to “discover trending topics and articles” that your target audience is interested in, using 3-5 top of mind hashtags for your company on your posts, and using their targeting feature to “Target your organic Page posts to a specific language, location, region, university, function, seniority, industry, or company size.”
+                            <br>
+                            In addition to posting the right types of content types, make sure it’s <a href="https://www.wordstream.com/blog/ws/2019/03/19/social-media-for-small-business">helpful</a> to your industry, consumers, or brand. “LinkedIn is a professional environment for people to connect with each other, and your content should reflect that. You want to share the best aspects of your business, wins people can learn from, and insights they can’t get anywhere else.”
+                        </h3>
+                        <h3>
+                            <b>5. Get The Best Tips Straight From the Horse’s Mouth</b>
+                            <br>
+                            Like we said, LinkedIn has a lot of data on their users and company profiles and you should take advantage of that! Browse their <a href="https://business.linkedin.com/marketing-solutions">Marketing Solutions</a> pages to find the information that is most tailored to your industry and company!
+                        </h3>
+                        <h3>Still need help with your digital or social media marketing? Contact us today at <span id="infoemail"><a href="mailto:potofhoney@synergyworksgroup.com">potofhoney@synergyworksgroup.com</a></span>!</h3>
                     </div>
-                </div>
-                <div class="cardrow" style="background-color: var(--color5)">
-                </div>
-                <div class="cardrow" style="background-color: var(--color5)">
-                    <div class="cardtext">
-                        <h3 style="color: var(--color1)">At Synergy we see the value that technology and analytics brings to companies, but have noticed a divide between larger and smaller companies in being able to leverage these opportunities.</h3>
-                        <h3 style="color: var(--color1)">It is our mission to empower decision makers at all levels, not just large corporations, to have the tools and resources they need to succeed.</h3>
-                    </div>
-                </div>
-                <div class="cardrow" style="background-color: var(--color1)">
-                    <a href="/Our-Services/#Enterprise-Systems-Management" class="cardthird">
-                        <img src='/media/images/homepage/webservices.jpg'>
-                        <h2>IT Services:</h2>
-                        <h3>For all of the things that happen on the backend, whether it's moving business online, improving your workflows, or enhancing your website- we’re here to serve as your IT partners every step of the way.</h3>
-                        <h3 class="learnmore">Learn More ➔</h3>
-                    </a>
-                    <a href="/Our-Services/#Business-Intelligence" class="cardthird">
-                        <img src='/media/images/homepage/businessintelligence.jpg'>
-                        <h2>Digital Strategy:</h2>
-                        <h3>Giving your business the boost it needs by helping you understand the data collected from your customers and see how you can leverage the data to drive your business. From targeted ad campaigns to social media management or a customized growth plan, we’ve got your back. </h3>
-                        <h3 class="learnmore">Learn More ➔</h3>
-                    </a>
-
                 </div>
                 <footer>
                     <div class="footersocial">
