@@ -22,3 +22,4 @@ DD/MM/YYYY date format
 18/11/2020 - Added "Tips for using Twitter as a small business" blog post
 02/12/2020 - Added "Tips for using LinkedIn as a small business" blog post
 22/12/2020 - Added "2020 Wrapped: Small Business Edition" blog post
+22/12/2020 - Tweaked mobile font scaling so that h2 and h3 aren't too similar
