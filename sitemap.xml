@@ -39,13 +39,25 @@
       <priority>0.64</priority>
     </url>
     <url>
+      <loc>http://synergyworksgroup.com/Insights/122220-WrappedSmallBusiness/</loc>
+      <news:news>
+      <news:publication>
+        <news:name>Synergy Insights</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2020-12-22</news:publication_date>
+        <news:title>2020 Wrapped: Small Business Edition</news:title>
+      </news:news>
+      <priority>0.64</priority>
+    </url>
+    <url>
       <loc>http://synergyworksgroup.com/Insights/120220-LinkedInSmallBusiness/</loc>
       <news:news>
       <news:publication>
         <news:name>Synergy Insights</news:name>
         <news:language>en</news:language>
       </news:publication>
-      <news:publication_date>2020-11-04</news:publication_date>
+      <news:publication_date>2020-11-18</news:publication_date>
         <news:title>5 Tips for Using Instagram as a Small Business</news:title>
       </news:news>
       <priority>0.64</priority>
