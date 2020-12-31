@@ -25,3 +25,4 @@ DD/MM/YYYY date format
 22/12/2020 - Tweaked mobile font scaling so that h2 and h3 aren't too similar
 31/12/2020 - Added/removed people from The Team on the About Us page
 31/12/2020 - Tweaked sitemap
+31/12/2020 - Tweaked About Us - Meet The Team section to follow to use 3 columns instead of 4 to avoid being top-heavy
