@@ -16,10 +16,12 @@ DD/MM/YYYY date format
 30/09/2020 - Removed ex-employees from About Us page
 07/10/2020 - Added "Importance of social media marketing" blog post, added contact email to contact page, CSS fix to make hyperlinks in the articles the same font as the rest of the page
 20/10/2020 - Added "5 tips for using facebook as a small business" blog post
-20/10/2020 - Fixed About Us biograpy popups
-20/10/2020 - Removed ex-emplyee from About Us page
+20/10/2020 - Fixed About Us biography popups
+20/10/2020 - Removed ex-employee from About Us page
 04/11/2020 - Added "Tips for using Instagram as a small business" blog post
 18/11/2020 - Added "Tips for using Twitter as a small business" blog post
 02/12/2020 - Added "Tips for using LinkedIn as a small business" blog post
 22/12/2020 - Added "2020 Wrapped: Small Business Edition" blog post
 22/12/2020 - Tweaked mobile font scaling so that h2 and h3 aren't too similar
+31/12/2020 - Added/removed people from The Team on the About Us page
+31/12/2020 - Tweaked sitemap

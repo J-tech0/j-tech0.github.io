@@ -7,39 +7,39 @@
       xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 
     <url>
-      <loc>http://synergyworksgroup.com/</loc>
+      <loc>https://synergyworksgroup.com/</loc>
       <priority>1.00</priority>
     </url>
     <url>
-      <loc>http://synergyworksgroup.com/About-Us/</loc>
+      <loc>https://synergyworksgroup.com/About-Us/</loc>
       <priority>0.80</priority>
     </url>
     <url>
-      <loc>http://synergyworksgroup.com/Our-Services/</loc>
+      <loc>https://synergyworksgroup.com/Our-Services/</loc>
       <priority>0.80</priority>
     </url>
     <url>
-      <loc>http://synergyworksgroup.com/Our-Work/</loc>
+      <loc>https://synergyworksgroup.com/Our-Work/</loc>
       <priority>0.80</priority>
     </url>
     <url>
-      <loc>http://synergyworksgroup.com/Contact/</loc>
+      <loc>https://synergyworksgroup.com/Contact/</loc>
       <priority>0.80</priority>
     </url>
     <url>
-      <loc>http://synergyworksgroup.com/Jobs/</loc>
+      <loc>https://synergyworksgroup.com/Jobs/</loc>
       <priority>0.80</priority>
     </url>
     <url>
-      <loc>http://synergyworksgroup.com/Insights/</loc>
+      <loc>https://synergyworksgroup.com/Insights/</loc>
       <priority>0.80</priority>
     </url>
     <url>
-      <loc>http://synergyworksgroup.com/DataAnalysisDemoTesting/</loc>
+      <loc>https://synergyworksgroup.com/DataAnalysisDemoTesting/</loc>
       <priority>0.64</priority>
     </url>
     <url>
-      <loc>http://synergyworksgroup.com/Insights/122220-WrappedSmallBusiness/</loc>
+      <loc>https://synergyworksgroup.com/Insights/122220-WrappedSmallBusiness/</loc>
       <news:news>
       <news:publication>
         <news:name>Synergy Insights</news:name>
@@ -51,7 +51,7 @@
       <priority>0.64</priority>
     </url>
     <url>
-      <loc>http://synergyworksgroup.com/Insights/120220-LinkedInSmallBusiness/</loc>
+      <loc>https://synergyworksgroup.com/Insights/120220-LinkedInSmallBusiness/</loc>
       <news:news>
       <news:publication>
         <news:name>Synergy Insights</news:name>
@@ -63,7 +63,7 @@
       <priority>0.64</priority>
     </url>
     <url>
-      <loc>http://synergyworksgroup.com/Insights/111820-TwitterSmallBusiness/</loc>
+      <loc>https://synergyworksgroup.com/Insights/111820-TwitterSmallBusiness/</loc>
       <news:news>
       <news:publication>
         <news:name>Synergy Insights</news:name>
@@ -75,7 +75,7 @@
       <priority>0.64</priority>
     </url>
     <url>
-      <loc>http://synergyworksgroup.com/Insights/110420-InstagramSmallBusiness/</loc>
+      <loc>https://synergyworksgroup.com/Insights/110420-InstagramSmallBusiness/</loc>
       <news:news>
       <news:publication>
         <news:name>Synergy Insights</news:name>
@@ -87,7 +87,7 @@
       <priority>0.64</priority>
     </url>
     <url>
-      <loc>http://synergyworksgroup.com/Insights/102020-TipsForUsingFacebook/</loc>
+      <loc>https://synergyworksgroup.com/Insights/102020-TipsForUsingFacebook/</loc>
       <news:news>
       <news:publication>
         <news:name>Synergy Insights</news:name>
@@ -99,7 +99,7 @@
       <priority>0.64</priority>
     </url>
     <url>
-      <loc>http://synergyworksgroup.com/Insights/100720-ImportanceofSocialMediaMarketing/</loc>
+      <loc>https://synergyworksgroup.com/Insights/100720-ImportanceofSocialMediaMarketing/</loc>
       <news:news>
       <news:publication>
         <news:name>Synergy Insights</news:name>
@@ -111,7 +111,7 @@
       <priority>0.64</priority>
     </url>
     <url>
-      <loc>http://synergyworksgroup.com/Insights/092320-BusinessInABind/</loc>
+      <loc>https://synergyworksgroup.com/Insights/092320-BusinessInABind/</loc>
       <news:news>
       <news:publication>
         <news:name>Synergy Insights</news:name>
@@ -123,7 +123,7 @@
       <priority>0.64</priority>
     </url>
     <url>
-      <loc>http://synergyworksgroup.com/Insights/090920-SynergyAccelerate/</loc>
+      <loc>https://synergyworksgroup.com/Insights/090920-SynergyAccelerate/</loc>
       <news:news>
       <news:publication>
         <news:name>Synergy Insights</news:name>
@@ -135,7 +135,7 @@
       <priority>0.64</priority>
     </url>
     <url>
-      <loc>http://synergyworksgroup.com/Insights/080520-InstagramInsights/</loc>
+      <loc>https://synergyworksgroup.com/Insights/080520-InstagramInsights/</loc>
       <news:news>
       <news:publication>
         <news:name>Synergy Insights</news:name>
@@ -147,7 +147,7 @@
       <priority>0.64</priority>
     </url>
     <url>
-      <loc>http://synergyworksgroup.com/Insights/072920-JoeBidensAmerica/</loc>
+      <loc>https://synergyworksgroup.com/Insights/072920-JoeBidensAmerica/</loc>
       <news:news>
       <news:publication>
         <news:name>Synergy Insights</news:name>
@@ -159,7 +159,7 @@
       <priority>0.64</priority>
     </url>
     <url>
-      <loc>http://synergyworksgroup.com/Insights/072320-LinkedInTipsSmallBusiness/</loc>
+      <loc>https://synergyworksgroup.com/Insights/072320-LinkedInTipsSmallBusiness/</loc>
       <news:news>
       <news:publication>
         <news:name>Synergy Insights</news:name>
@@ -171,7 +171,7 @@
       <priority>0.64</priority>
     </url>
     <url>
-      <loc>http://synergyworksgroup.com/Insights/071620-SmallBusinessWebsiteTips/</loc>
+      <loc>https://synergyworksgroup.com/Insights/071620-SmallBusinessWebsiteTips/</loc>
       <news:news>
       <news:publication>
         <news:name>Synergy Insights</news:name>
@@ -183,7 +183,7 @@
       <priority>0.64</priority>
     </url>
     <url>
-      <loc>http://synergyworksgroup.com/Insights/070820-EconomicCrash/</loc>
+      <loc>https://synergyworksgroup.com/Insights/070820-EconomicCrash/</loc>
       <news:news>
       <news:publication>
         <news:name>Synergy Insights</news:name>
@@ -195,7 +195,7 @@
       <priority>0.64</priority>
     </url>
     <url>
-      <loc>http://synergyworksgroup.com/Insights/062920-AnotherShutDown/</loc>
+      <loc>https://synergyworksgroup.com/Insights/062920-AnotherShutDown/</loc>
       <news:news>
       <news:publication>
         <news:name>Synergy Insights</news:name>
@@ -207,7 +207,7 @@
       <priority>0.64</priority>
     </url>
     <url>
-      <loc>http://synergyworksgroup.com/Insights/061620-MayJobsReport/</loc>
+      <loc>https://synergyworksgroup.com/Insights/061620-MayJobsReport/</loc>
       <news:news>
       <news:publication>
         <news:name>Synergy Insights</news:name>
@@ -219,11 +219,11 @@
       <priority>0.64</priority>
     </url>
     <url>
-      <loc>http://synergyworksgroup.com/DataAnalysisDemoTesting/Influence-Analysis/</loc>
+      <loc>https://synergyworksgroup.com/DataAnalysisDemoTesting/Influence-Analysis/</loc>
       <priority>0.51</priority>
     </url>
     <url>
-      <loc>http://synergyworksgroup.com/Privacy</loc>
+      <loc>https://synergyworksgroup.com/Privacy</loc>
       <priority>0.4</priority>
     </url>
 
