@@ -26,3 +26,5 @@ DD/MM/YYYY date format
 31/12/2020 - Added/removed people from The Team on the About Us page
 31/12/2020 - Tweaked sitemap
 31/12/2020 - Tweaked About Us - Meet The Team section to follow to use 3 columns instead of 4 to avoid being top-heavy
+13/01/2021 - Edited some job titles
+13/01/2021 - Added client to Our Work page
