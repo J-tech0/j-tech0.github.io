@@ -724,7 +724,7 @@ footer .footersocial a img:hover {
     max-width: 600px;
 }
 
-.newsarticle h3, newsarticle li, .newsarticle a, .newsarticle i, .newsarticle b  {
+.newsarticle h3, newsarticle li, .newsarticle h3 a, .newsarticle h3 i, .newsarticle h3 b  {
     font-family: "Times New Roman", "Nimbus Roman", "Open Sans"!important;
 }
 .newsarticle h2 {
