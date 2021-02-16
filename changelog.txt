@@ -36,3 +36,4 @@
 - - S -   13/01/2021 - Added client to Our Work page, added handshakebets' new URL
 - - S -   28/01/2021 - Added job postings to Jobs page
 - B - T   01/02/2021 - Added "The First Week of The Biden - Harris Administration" blog post, updated sitemap
+- - S -   16/02/2021 - Updated Copyright Stamps on page footers (should've been done earlier :facepalm:)
