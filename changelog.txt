@@ -1,32 +1,38 @@
-DD/MM/YYYY date format
-==============
-17/08/2020 - Added new clients to Our Work, fixed scaling issue on About Us
-19/08/2020 - an insights article got lost in the transition from old site to new, now fixed
-29/08/2020 - Removed handshake bets web link as page offline
-30/08/2020 - Changed Meet The Team section of About-Us page to link directly to LinkedIn rather than using biography popups except for those not on LinkedIn, Cache Bust
-31/08/2020 - Add Gordon's image to About-Us
-31/08/2020 - Update text for services cards on Homepage
-31/08/2020 - Added values to About-Us page
-09/09/2020 - added Synergy Accelerate blog post
-21/09/2020 - Updated a picture on About-Us
-21/09/2020 - Removed Interns' pictures from server
-21/09/2020 - Updated Sitemap
-23/09/2020 - Added businesss in a bind blog post
-23/09/2020 - Updated Sitemap
-30/09/2020 - Removed ex-employees from About Us page
-07/10/2020 - Added "Importance of social media marketing" blog post, added contact email to contact page, CSS fix to make hyperlinks in the articles the same font as the rest of the page
-20/10/2020 - Added "5 tips for using facebook as a small business" blog post
-20/10/2020 - Fixed About Us biography popups
-20/10/2020 - Removed ex-employee from About Us page
-04/11/2020 - Added "Tips for using Instagram as a small business" blog post
-18/11/2020 - Added "Tips for using Twitter as a small business" blog post
-02/12/2020 - Added "Tips for using LinkedIn as a small business" blog post
-22/12/2020 - Added "2020 Wrapped: Small Business Edition" blog post
-22/12/2020 - Tweaked mobile font scaling so that h2 and h3 aren't too similar
-31/12/2020 - Added/removed people from The Team on the About Us page
-31/12/2020 - Tweaked sitemap
-31/12/2020 - Tweaked About Us - Meet The Team section to follow to use 3 columns instead of 4 to avoid being top-heavy
-13/01/2021 - Edited some job titles
-13/01/2021 - Added client to Our Work page
-28/01/2021 - Added job postings to Jobs page
-01/02/2021 - Added "The First Week of The Biden - Harris Administration" blog post
+          DD/MM/YYYY date format
+
+   /----- Section Change
+  / /---- Blog Post
+ / / /--- Small Change
+/ / / /-- Tweaks/fixes
+| | | |
+          ==============
+- - S T   17/08/2020 - Added new clients to Our Work section, fixed scaling issue on About Us
+- - - T   19/08/2020 - an insights article got lost in the transition from old site to new, now fixed
+- - - T   29/08/2020 - Removed handshake bets web link as page offline
+- - S -   30/08/2020 - Changed Meet The Team section of About-Us page to link directly to LinkedIn rather than using biography popups except for those not on LinkedIn, Cache Bust
+- - S -   31/08/2020 - Add Gordon's image to About-Us
+- - S -   31/08/2020 - Update text for services cards on Homepage
+- - S -   31/08/2020 - Added values to About-Us page
+- B - -   09/09/2020 - added Synergy Accelerate blog post
+- - - T   21/09/2020 - Updated employee photo on About-Us
+- - - T   21/09/2020 - Removed Old Interns' pictures from server
+- - - T   21/09/2020 - Updated Sitemap
+- B - -   23/09/2020 - Added businesss in a bind blog post
+- - - T   23/09/2020 - Updated Sitemap
+- - S -   30/09/2020 - Removed ex-employees from About Us page
+- B - T   07/10/2020 - Added "Importance of social media marketing" blog post, added contact email to contact page, CSS fix to make hyperlinks in the articles the same font as the rest of the page
+- B - -   20/10/2020 - Added "5 tips for using facebook as a small business" blog post
+- - - T   20/10/2020 - Fixed About Us biography popups
+- - - T   20/10/2020 - Removed ex-employee from About Us page
+- B - -   04/11/2020 - Added "Tips for using Instagram as a small business" blog post
+- B - -   18/11/2020 - Added "Tips for using Twitter as a small business" blog post
+- B - -   02/12/2020 - Added "Tips for using LinkedIn as a small business" blog post
+- B - -   22/12/2020 - Added "2020 Wrapped: Small Business Edition" blog post
+- - - T   22/12/2020 - Tweaked mobile font scaling so that h2 and h3 aren't too similar
+- - S -   31/12/2020 - Added/removed people from The Team on the About Us page
+- - - T   31/12/2020 - Tweaked sitemap
+- - - T   31/12/2020 - Tweaked About Us - Meet The Team section to follow to use 3 columns instead of 4 to avoid being top-heavy
+- - S -   13/01/2021 - Edited some job titles
+- - S -   13/01/2021 - Added client to Our Work page, added handshakebets' new URL
+- - S -   28/01/2021 - Added job postings to Jobs page
+- B - T   01/02/2021 - Added "The First Week of The Biden - Harris Administration" blog post, updated sitemap
