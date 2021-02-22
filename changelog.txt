@@ -37,3 +37,4 @@
 - - S -   28/01/2021 - Added job postings to Jobs page
 - B - T   01/02/2021 - Added "The First Week of The Biden - Harris Administration" blog post, updated sitemap
 - - S -   16/02/2021 - Updated Copyright Stamps on page footers (should've been done earlier :facepalm:)
+- B - -   22/02/2021 - Added "Coronavirus Still Dominates the Conversation for the Biden-Harris Administration" blog post
