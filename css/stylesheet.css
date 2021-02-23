@@ -397,8 +397,8 @@ a.cardimg:hover {
 }
 .cardthird{
     flex-grow: 1;
-    min-width: 300px;
-    max-width: 25%;
+    flex-basis: 400px;
+    max-width: 800px ;
     background-color: var(--color5);
     margin: 20px;
     border-radius: 5px;
@@ -465,7 +465,7 @@ footer .copyright {
     right: 28px;
     font-size: 15px;
     margin: 28px 0px 0px 0px;
-    color: var(--color1)
+    color: var(--color1);
 }
 footer .footerlink {
     position: absolute;
@@ -814,8 +814,6 @@ footer .footersocial a img:hover {
         font-size: 1.6em;
     }
     .cardthird {
-        max-width: unset;
-        width: 40%
     }
     .teambio h2{
         max-width: 200px;
